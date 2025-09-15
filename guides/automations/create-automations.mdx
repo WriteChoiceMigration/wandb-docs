@@ -9,8 +9,10 @@ url: guides/automations/create-automations
 cascade:
 - url: guides/automations/create-automations/:filename
 ---
+import EnterpriseCloudOnly from "/snippets/en/_includes/enterprise-cloud-only.mdx";
+
 <Info>
-{{< readfile file="/_includes/enterprise-cloud-only.md" >}}
+<EnterpriseCloudOnly/>
 </Info>
 
 This page gives an overview of creating and managing W&B [automations](/guides/core/automations/). For more detailed instructions, refer to [Create a Slack automation](/guides/core/automations/create-automations/slack) or [Create a webhook automation](/guides/core/automations/create-automations/webhook).
@@ -40,7 +42,7 @@ Or, from a line plot in the workspace, you can quickly create a [run metric auto
 
     <Frame>
     <img src="/images/automations/run_metric_automation_from_panel.png" alt="Automation bell icon location"  />
-</Frame>
+    </Frame>
 1. Configure the automation using the basic or advanced configuration controls. For example, apply a run filter to limit the scope of the automation, or configure an absolute threshold.
 
 For details, refer to:

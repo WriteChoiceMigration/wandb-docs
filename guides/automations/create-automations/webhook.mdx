@@ -6,11 +6,13 @@ menu:
 title: Create a webhook automation
 weight: 3
 ---
+import EnterpriseCloudOnly from "/snippets/en/_includes/enterprise-cloud-only.mdx";
+
 <Info>
-{{< readfile file="/_includes/enterprise-cloud-only.md" >}}
+<EnterpriseCloudOnly/>
 </Info>
 
-This page shows how to create a webhook [automation]({{< relref "/guides/core/automations/" >}}> ). To create a Slack automation, refer to [Create a Slack automation](/guides/core/automations/create-automations/slack) instead.
+This page shows how to create a webhook [automation](/guides/core/automations/). To create a Slack automation, refer to [Create a Slack automation](/guides/core/automations/create-automations/slack) instead.
 
 At a high level, to create a webhook automation, you take these steps:
 1. If necessary, [create a W&B secret](/guides/core/secrets) for each sensitive string required by the automation, such as an access token, password, or SSH key. Secrets are defined in your **Team Settings**.
@@ -38,7 +40,9 @@ If the webhook requires a Bearer token or its payload requires a sensitive strin
 
     If the test does not succeed, verify the webhook's configuration and try again. If necessary, refer to [Troubleshoot your webhook](#troubleshoot-your-webhook).
 
+<Frame>
 ![Screenshot showing two webhooks in a Team](/images/automations/webhooks.png)
+</Frame>
 
 Now you can [create an automation](#create-a-webhook-automation) that uses the webhook.
 
@@ -70,7 +74,7 @@ A W&B admin can create automations in a project.
     Or, from a line plot in the workspace, you can quickly create a [run metric automation](/guides/core/automations/automation-events.md#run-events) for the metric it shows. Hover over the panel, then click the bell icon at the top of the panel.
     <Frame>
     <img src="/images/automations/run_metric_automation_from_panel.png" alt="Automation bell icon location"  />
-</Frame>
+    </Frame>
 1. Choose the [event](/guides/core/automations/automation-events) to watch for, such as when an artifact alias is added or when a run metric meets a given threshold.
 
     1. Fill in any additional fields that appear, which depend upon the event. For example, if you select **An artifact alias is added**, you must specify the **Alias regex**.
@@ -217,7 +221,7 @@ You can use template strings to inject W&B data into your payload at the time of
 </Tab>
 <Tab title="Slack notifications">
 <Note>
-This section is provided for historical purposes. If you currently use a webhook to integrate with Slack, W&B recommends that you update your configuration to use the [new Slack integration]({{ relref "#create-a-slack-automation"}}) instead.
+This section is provided for historical purposes. If you currently use a webhook to integrate with Slack, W&B recommends that you update your configuration to use the [new Slack integration](#create-a-slack-automation) instead.
 </Note>
 
 Set up your Slack app and add an incoming webhook integration with the instructions highlighted in the [Slack API documentation](https://api.slack.com/messaging/webhooks). Ensure that you have the secret specified under `Bot User OAuth Token` as your W&B webhook’s access token. 
@@ -274,11 +278,11 @@ A team admin can test a webhook interactively with the W&B App UI.
 5. From the UI panel that appears, paste your POST request to the field that appears. 
     <Frame>
     <img src="/images/models/webhook_ui.png" alt="Demo of testing a webhook payload"  />
-</Frame>
+    </Frame>
 6. Click on **Test webhook**. Within the W&B App UI, W&B posts the response from your endpoint.
     <Frame>
     <img src="/images/models/webhook_ui_testing.gif" alt="Demo of testing a webhook"  />
-</Frame>
+    </Frame>
 
 Watch the video [Testing Webhooks in W&B](https://www.youtube.com/watch?v=bl44fDpMGJw&ab_channel=Weights%26Biases) for a demonstration.
 </Tab>
@@ -292,6 +296,32 @@ Copy and paste the code below into a shell script to troubleshoot your webhook. 
 * `PAYLOAD`
 * `API_ENDPOINT`
 
-{{< prism file="/webhook_test.sh" title="webhook_test.sh">}}{{< /prism >}}
+```bash webhook_test.sh
+#!/bin/bash
+
+# Your access token and secret
+ACCESS_TOKEN="your_api_key"
+SECRET="your_api_secret"
+
+# The data you want to send (for example, in JSON 
+format)
+PAYLOAD='{"key1": "value1", "key2": "value2"}'
+
+# Generate the HMAC signature
+# For security, Wandb includes the 
+X-Wandb-Signature in the header computed
+# from the payload and the shared secret key 
+associated with the webhook
+# using the HMAC with SHA-256 algorithm.
+SIGNATURE=$(echo -n "$PAYLOAD" | openssl dgst 
+-sha256 -hmac "$SECRET" -binary | base64)
+
+# Make the cURL request
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H "X-Wandb-Signature: $SIGNATURE" \
+  -d "$PAYLOAD" API_ENDPOINT
+```
 </Tab>
 </Tabs>

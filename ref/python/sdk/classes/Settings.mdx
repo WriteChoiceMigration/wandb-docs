@@ -4,9 +4,7 @@ object_type: python_sdk_actions
 data_type_classification: class
 ---
 
-{{< cta-button githubLink=https://github.com/wandb/wandb/blob/main/wandb/sdk/wandb_settings.py >}}
-
-
+<Card title="View the source code" href="https://github.com/wandb/wandb/blob/main/wandb/sdk/wandb_settings.py" icon="github"/>
 
 Settings for the W&B SDK.
 
@@ -230,7 +228,7 @@ Attributes:
 - x_stats_open_metrics_endpoints (Optional): OpenMetrics `/metrics` endpoints to monitor for system metrics.
 - x_stats_open_metrics_filters (Union): Filter to apply to metrics collected from OpenMetrics `/metrics` endpoints.
     Supports two formats:
-    - {"metric regex pattern, including endpoint name as prefix": {"label": "label value regex pattern"}}
+    - `{"metric regex pattern, including endpoint name as prefix": {"label": "label value regex pattern"}}`
     - ("metric regex pattern 1", "metric regex pattern 2", ...)
 - x_stats_open_metrics_http_headers (Optional): HTTP headers to add to OpenMetrics requests.
 

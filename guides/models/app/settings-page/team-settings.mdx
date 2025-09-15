@@ -9,6 +9,8 @@ title: Manage team settings
 weight: 30
 ---
 
+import EnterpriseOnly from "/snippets/en/_includes/enterprise-only.mdx";
+
 # Team settings
 
 Change your team's settings, including members, avatar, alerts, privacy, and usage. Organization admins and team admins can view and edit a team's settings.
@@ -45,14 +47,14 @@ For more information about how to set up and manage alerts, see [Send alerts wit
 Configure Slack destinations where your team's [automations](/guides/core/automations/) can send notifications when an event occurs in a Registry or a project, such as when a new artifact is created or when a run metric meets a defined threshold. Refer to [Create a Slack automation](/guides/core/automations/create-automations/slack).
 
 <Info>
-{{< readfile file="/_includes/enterprise-only.md" >}}
+<EnterpriseOnly/>
 </Info>
 
 ## Webhooks
 Configure webhooks that your team's [automations](/guides/core/automations/) can run when an event occurs in a Registry or a project, such as when a new artifact is created or when a run metric meets a defined threshold. Refer to [Create a webhook automation](/guides/core/automations/create-automations/slack).
 
 <Info>
-{{< readfile file="/_includes/enterprise-only.md" >}}
+<EnterpriseOnly/>
 </Info>
 
 ## Privacy

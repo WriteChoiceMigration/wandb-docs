@@ -6,7 +6,7 @@ menu:
 title: 3D brain tumor segmentation with MONAI
 weight: 10
 ---
-{{< cta-button colabLink="https://colab.research.google.com/github/wandb/examples/blob/master/colabs/monai/3d_brain_tumor_segmentation.ipynb" >}}
+<Card title="Try in Colab" href="https://colab.research.google.com/github/wandb/examples/blob/master/colabs/monai/3d_brain_tumor_segmentation.ipynb" icon="python"/>
 
 This tutorial demonstrates how to construct a training workflow of multi-labels 3D brain tumor segmentation task using [MONAI](https://github.com/Project-MONAI/MONAI) and use experiment tracking and data visualization features of [W&B](https://wandb.ai/site). The tutorial contains the following features:
 
@@ -357,17 +357,13 @@ run.log({"Tumor-Segmentation-Data": table})
 
 The data appears on the W&B dashboard in an interactive tabular format. We can see each channel of a particular slice from a data volume overlaid with the respective segmentation mask in each row. You can write [Weave queries](/guides/weave) to filter the data on the table and focus on one particular row.
 
-| <Frame>
-    <img src="/images/tutorials/monai/viz-1.gif" alt="Logged table data"  />
-</Frame> | 
+| <img src="/images/tutorials/monai/viz-1.gif" alt="Logged table data"  /> | 
 |:--:| 
 | **An example of logged table data.** |
 
 Open an image and see how you can interact with each of the segmentation masks using the interactive overlay.
 
-| <Frame>
-    <img src="/images/tutorials/monai/viz-2.gif" alt="Segmentation maps"  />
-</Frame> | 
+| <img src="/images/tutorials/monai/viz-2.gif" alt="Segmentation maps"  /> | 
 |:--:| 
 | **An example of visualized segmentation maps.* |
 
@@ -590,17 +586,13 @@ with wandb.init(
 
 Instrumenting the code with `wandb.log` not only enables tracking all metrics associated with the training and validation process, but also logs all system metrics (our CPU and GPU in this case) on the W&B dashboard.
 
-| <Frame>
-    <img src="/images/tutorials/monai/viz-3.gif" alt="Training and validation tracking"  />
-</Frame> | 
+| <img src="/images/tutorials/monai/viz-3.gif" alt="Training and validation tracking"  /> | 
 |:--:| 
 | **An example of training and validation process tracking on W&B.** |
 
 Navigate to the artifacts tab in the W&B run dashboard to access the different versions of model checkpoint artifacts logged during training.
 
-| <Frame>
-    <img src="/images/tutorials/monai/viz-4.gif" alt="Model checkpoints logging"  />
-</Frame> | 
+| <img src="/images/tutorials/monai/viz-4.gif" alt="Model checkpoints logging"  /> | 
 |:--:| 
 | **An example of model checkpoints logging and versioning on W&B.** |
 
@@ -608,9 +600,7 @@ Navigate to the artifacts tab in the W&B run dashboard to access the different v
 
 Using the artifacts interface, you can select which version of the artifact is the best model checkpoint, in this case, the mean epoch-wise training loss. You can also explore the entire lineage of the artifact and use the version that you need.
 
-| <Frame>
-    <img src="/images/tutorials/monai/viz-5.gif" alt="Model artifact tracking"  />
-</Frame> | 
+| <img src="/images/tutorials/monai/viz-5.gif" alt="Model artifact tracking"  /> | 
 |:--:| 
 | **An example of model artifact tracking on W&B.** |
 
@@ -759,9 +749,7 @@ run.finish()
 
 Use the interactive segmentation mask overlay to analyze and compare the predicted segmentation masks and the ground-truth labels for each class.
 
-| <Frame>
-    <img src="/images/tutorials/monai/viz-6.gif" alt="Predictions and ground-truth"  />
-</Frame> | 
+| <img src="/images/tutorials/monai/viz-6.gif" alt="Predictions and ground-truth"  />| 
 |:--:| 
 | **An example of predictions and ground-truth visualization on W&B.** |
 

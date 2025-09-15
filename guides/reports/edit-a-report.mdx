@@ -503,17 +503,13 @@ runset = wr.Runset(
 
 Add code blocks to your report interactively with the App UI or with the W&B SDK.
 
-{{< tabpane text=true >}}
-{{% tab header="App UI" value="app" %}}
-
+<Tabs>
+<Tab title="App UI">
 Enter a forward slash (`/`) in the report to display a dropdown menu. From the dropdown choose **Code**.
 
 Select the name of the programming language on the right hand of the code block. This will expand a dropdown. From the dropdown, select your programming language syntax. You can choose from Javascript, Python, CSS, JSON, HTML, Markdown, and YAML.
-
-{{% /tab %}}
-
-{{% tab header="Report and Workspace API" value="python_wr_api" %}}
-
+</Tab>
+<Tab title="Report and Workspace API">
 Use the `wr.CodeBlock` Class to create a code block programmatically. Provide the name of the language and the code you want to display for the language and code parameters, respectively.
 
 For example the proceeding example demonstrates a list in YAML file:
@@ -560,24 +556,18 @@ This will render a code block similar to:
 ```md
 Hello, World!
 ```
-
-{{% /tab %}}
-
-{{% /tabpane %}}
+</Tab>
+</Tabs>
 
 ## Add markdown
 
 Add markdown to your report interactively with the App UI or with the W&B SDK.
 
-{{< tabpane text=true >}}
-{{% tab header="App UI" value="app" %}}
-
+<Tabs>
+<Tab title="App UI">
 Enter a forward slash (`/`) in the report to display a dropdown menu. From the dropdown choose **Markdown**.
-
-{{% /tab %}}
-
-{{% tab header="Report and Workspace API" value="python_wr_api" %}}
-
+</Tab>
+<Tab title="Report and Workspace API">
 Use the `wandb.apis.reports.MarkdownBlock` Class to create a markdown block programmatically. Pass a string to the `text` parameter:
 
 ```python
@@ -596,25 +586,19 @@ This will render a markdown block similar to:
 <Frame>
     <img src="/images/reports/markdown.png" alt="Rendered markdown block"  />
 </Frame>
-
-{{% /tab %}}
-
-{{% /tabpane %}}
+</Tab>
+</Tabs>
 
 
 ## Add HTML elements
 
 Add HTML elements to your report interactively with the App UI or with the W&B SDK.
 
-{{< tabpane text=true >}}
-{{% tab header="App UI" value="app" %}}
-
+<Tabs>
+<Tab title="App UI">
 Enter a forward slash (`/`) in the report to display a dropdown menu. From the dropdown select a type of text block. For example, to create an H2 heading block, select the `Heading 2` option.
-
-{{% /tab %}}
-
-{{% tab header="Report and Workspace API" value="python_wr_api" %}}
-
+</Tab>
+<Tab title="Report and Workspace API">
 Pass a list of one or more HTML elements to `wandb.apis.reports.blocks` attribute. The proceeding example demonstrates how to create an H1, H2, and an unordered list:
 
 ```python
@@ -638,18 +622,15 @@ This will render a HTML elements  to the following:
 <Frame>
     <img src="/images/reports/render_html.png" alt="Rendered HTML elements"  />
 </Frame>
-
-{{% /tab %}}
-
-{{% /tabpane %}}
+</Tab>
+</Tabs>
 
 ## Embed rich media links
 
 Embed rich media within the report with the App UI or with the W&B SDK.
 
-{{< tabpane text=true >}}
-{{% tab header="App UI" value="app" %}}
-
+<Tabs>
+<Tab title="App UI">
 Copy and past URLs into reports to embed rich media within the report. The following animations demonstrate how to copy and paste URLs from Twitter, YouTube, and SoundCloud.
 
 ### Twitter
@@ -675,11 +656,8 @@ Copy and paste a SoundCloud link to embed an audio file into a report.
 <Frame>
     <img src="/images/reports/soundcloud.gif" alt="Embedding SoundCloud audio"  />
 </Frame>
-
-{{% /tab %}}
-
-{{% tab header="Report and Workspace API" value="python_wr_api" %}}
-
+</Tab>
+<Tab title="Report and Workspace API">
 Pass a list of one or more embedded media objects to the `wandb.apis.reports.blocks` attribute. The proceeding example demonstrates how to embed video and Twitter media into a report:
 
 ```python
@@ -696,10 +674,8 @@ report.blocks = [
 ]
 report.save()
 ```
-
-{{% /tab %}}
-
-{{% /tabpane %}}
+</Tab>
+</Tabs>
 
 ## Duplicate and delete panel grids
 

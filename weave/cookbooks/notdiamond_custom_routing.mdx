@@ -77,7 +77,9 @@ for model, evaluation_results in model_evals.items():
 Now that you have EvaluationResults, you can train a custom router. Make sure you have [created an account](https://app.notdiamond.ai/keys) and
 [generated an API key](https://app.notdiamond.ai/keys), then insert your API key below.
 
+<Frame>
 ![Create an API key](/guides/integrations/imgs/notdiamond/api-keys.png)
+</Frame>
 
 ```python
 import os
@@ -101,7 +103,9 @@ preference_id = train_router(
 
 You can then follow the training process for your custom router via the Not Diamond app.
 
+<Frame>
 ![Check on router training progress](/guides/integrations/imgs/notdiamond/router-preferences.png)
+</Frame>
 
 Once your custom router has finished training, you can use it to route your prompts.
 
@@ -151,7 +155,9 @@ print(f"Target Model: {routing_target_model}")
 
 This example also used Not Diamond's compatibility with Weave auto-tracing. You can see the results in the Weave UI.
 
+<Frame>
 ![Weave UI for custom routing](/guides/integrations/imgs/notdiamond/weave-trace.png)
+</Frame>
 
 ## Evaluating your custom router
 
@@ -199,5 +205,7 @@ Training the custom router via Weave will also run evaluations and upload result
 
 In the UI we see that the Not Diamond "meta-model" outperforms the best-performing model by routing prompts to other models with higher likelihood of answering the prompt accurately.
 
+<Frame>
 ![Evaluating Not Diamond](/guides/integrations/imgs/notdiamond/evaluations.png)
+</Frame>
 

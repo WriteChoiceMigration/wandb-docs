@@ -8,7 +8,7 @@ title: Log media and objects
 ---
 
 
-{{< cta-button colabLink="https://colab.research.google.com/github/wandb/examples/blob/master/colabs/wandb-log/Log_(Almost)_Anything_with_W%26B_Media.ipynb" >}}
+<Card title="Try in Colab" href="https://colab.research.google.com/github/wandb/examples/blob/master/colabs/wandb-log/Log_(Almost)_Anything_with_W%26B_Media.ipynb" icon="python"/>
 
 We support images, video, audio, and more. Log rich media to explore your results and visually compare your runs, models, and datasets. Read on for examples and how-to guides.
 
@@ -540,9 +540,6 @@ run.log({"my_cloud_from_numpy_rgb": wandb.Object3D.from_numpy(
 )})
 ```
 
-  </TabItem>
-  <TabItem value="molecules">
-
 ```python
 run.log({"protein": wandb.Molecule("6lu7.pdb")})
 ```
@@ -570,8 +567,6 @@ When your run finishes, you'll be able to interact with 3D visualizations of you
 <Frame>
     <img src="/images/track/docs-molecule.png" alt="Molecule structure"  />
 </Frame>
-  </TabItem>
-</Tabs>
 
 ### PNG image
 

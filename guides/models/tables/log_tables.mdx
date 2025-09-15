@@ -46,9 +46,9 @@ The following describes the three logging modes, the high-level differences, and
 
 | Mode  | Definition | Use Cases  | Benefits  |
 | ----- | ---------- | ---------- | ----------|
-| `IMMUTABLE`   | Once a table is logged to W&B, you cannot modify it. |- Storing tabular data generated at the end of a run for further analysis                              | - Minimal overhead when logged at the end of a run<br>- All rows rendered in UI |
-| `MUTABLE`     | After you log a table to W&B, you can overwrite the existing table with a new one. | - Adding columns or rows to existing tables<br>- Enriching results with new information                        | - Capture Table mutations<br>- All rows rendered in UI                          |
-| `INCREMENTAL` |  Add batches of new rows to a table throughout the machine learning experiment. | - Adding rows to tables in batches<br> - Long-running training jobs<br>- Processing large datasets in batches<br>- Monitoring ongoing results | - View updates on UI during training<br>- Ability to step through increments    |
+| `IMMUTABLE`   | Once a table is logged to W&B, you cannot modify it. |- Storing tabular data generated at the end of a run for further analysis                              | - Minimal overhead when logged at the end of a run<br/>- All rows rendered in UI |
+| `MUTABLE`     | After you log a table to W&B, you can overwrite the existing table with a new one. | - Adding columns or rows to existing tables<br/>- Enriching results with new information                        | - Capture Table mutations<br/>- All rows rendered in UI                          |
+| `INCREMENTAL` |  Add batches of new rows to a table throughout the machine learning experiment. | - Adding rows to tables in batches<br/> - Long-running training jobs<br/>- Processing large datasets in batches<br/>- Monitoring ongoing results | - View updates on UI during training<br/>- Ability to step through increments    |
 
 The next sections show example code snippets for each mode along with considerations when to use each mode.
 

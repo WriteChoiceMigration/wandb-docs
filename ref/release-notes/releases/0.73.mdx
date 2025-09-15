@@ -16,7 +16,9 @@ The latest patch is **v0.73.1**. Refer to [Patches](#patches).
   <li>W&B Server v0.60 is scheduled to reach end of life in late September 2025.</li>
 </ul>{/* This is in HTML to fix the admonition included below showing up as a child of the second item */}
 
-{{% readfile "/_includes/release-notes-support-eol-reminder.md" %}}
+import Text from "/snippets/en/_includes/release-notes-support-eol-reminder.mdx";
+
+<Text/>
 
 ## Upcoming changes
 - In an upcoming release, we will align multi-run and single-run workspace views, so when you drill into a single run, you'll see the same layout and configuration of panels as you've configured for the multi-run view, including any custom charts, layouts, and settings. The goal is help you stay in context and avoid re-work around configuring your views. However, this will remove the ability to customize unique single-run views, isolated from the rest of the workspace. Reach out to your W&B team or [support](mailto:support@wandb.ai) for any questions about the migration.

@@ -13,7 +13,7 @@ To:
 {{% tab header="W&B App" value="app" %}}
 Content here
 {{% /tab %}}
-{{< /tabpane >}}
+{{% /tabpane %}}
 To:
 <Tabs>
 <Tab title="W&B App">
@@ -37,9 +37,43 @@ To:
 Content here
 </Note>
 
+{{ %alert% }}
+Content here
+{{ /%alert% }}
+To:
+<Note>
+Content here
+</Note>
+
+{{< alert title="Important" color="warning" >}}
+Content here
+{{< /alert >}}
+To:
+<Warning>
+**Important**
+
+Content here
+</Warning>
+
+{{< alert title="Tip" >}}
+Content here
+{{< /alert >}}
+To:
+<Tip>
+Content here
+</Tip>
+
 [W&B Runs]({{< relref "/ref/python/sdk/classes/run.md" >}})
 To:
 [W&B Runs](/ref/python/sdk/classes/run)
+
+[automation]({{< relref "/guides/core/automations/" >}}> )
+To:
+[automation](/guides/core/automations/)
+
+[new Slack integration]({{ relref "#create-a-slack-automation" }})
+To:
+[new Slack integration](#create-a-slack-automation)
 
 <!-- HTML comment -->
 To:
@@ -53,6 +87,36 @@ To:
 <Card title="Try in W&B" href="https://wandb.ai/..." icon="sliders-up">
 </Card>
 </CardGroup>
+
+{{< cta-button githubLink="https://github.com/wandb/wandb/tree/main/wandb/sdk/launch/agent.py" >}}
+To:
+<Card title="View the source code" href="https://github.com/wandb/wandb/tree/main/wandb/sdk/launch/agent.py" icon="github">
+</Card>
+
+{{< cardpane >}}
+{{< card >}}
+<a href="/tutorials/experiments/">
+<h2 className="card-title">Track experiments</h2>
+</a>
+<p className="card-content">Use W&B for machine learning experiment tracking...</p>
+{{< /card >}}
+{{< /cardpane >}}
+To:
+<Card title="Track experiments" href="/tutorials/experiments/">
+Use W&B for machine learning experiment tracking...
+</Card>
+
+{{< readfile file="/_includes/enterprise-cloud-only.md" >}}
+To:
+import EnterpriseCloudOnly from "/snippets/en/_includes/enterprise-cloud-only.mdx";
+
+<EnterpriseCloudOnly/>
+
+![Screenshot of the Registry Automations tab](/images/automations/registry_tab.png)
+To:
+<Frame>
+![Screenshot of the Registry Automations tab](/images/automations/registry_tab.png)
+</Frame>
 """
 
 import os
@@ -73,7 +137,7 @@ def convert_image_shortcodes(content):
     """
     # Pattern to match Hugo img shortcodes
     # Matches: {{< img src="..." alt="..." >}} with optional additional attributes
-    pattern = r'\{\{<\s*img\s+([^>]+)\s*>\}\}'
+    pattern = r"\{\{<\s*img\s+([^>]+)\s*>\}\}"
 
     def replace_shortcode(match):
         attributes = match.group(1).strip()
@@ -95,11 +159,15 @@ def convert_image_shortcodes(content):
             img_attrs += f' alt="{alt}"'
 
         # Add any other attributes (excluding src and alt)
-        other_attrs = re.sub(r'(src\s*=\s*["\'][^"\']+["\']|alt\s*=\s*["\'][^"\']*["\'])\s*', '', attributes).strip()
+        other_attrs = re.sub(
+            r'(src\s*=\s*["\'][^"\']+["\']|alt\s*=\s*["\'][^"\']*["\'])\s*',
+            "",
+            attributes,
+        ).strip()
         if other_attrs:
-            img_attrs += f' {other_attrs}'
+            img_attrs += f" {other_attrs}"
 
-        return f'<Frame>\n    <img {img_attrs}  />\n</Frame>'
+        return f"<Frame>\n    <img {img_attrs}  />\n</Frame>"
 
     converted_content = re.sub(pattern, replace_shortcode, content)
     count = len(re.findall(pattern, content))
@@ -120,15 +188,15 @@ def convert_tab_shortcodes(content):
     count = 0
 
     # Pattern to match tabpane and tab blocks
-    # This handles nested structure: {{< tabpane >}} ... {{% tab %}} ... {{% /tab %}} ... {{< /tabpane >}}
-    tabpane_pattern = r'\{\{<\s*tabpane[^>]*>\}\}([\s\S]*?)\{\{<\s*/tabpane\s*>\}\}'
+    # This handles nested structure: {{< tabpane >}} ... {{% tab %}} ... {{% /tab %}} ... {{% /tabpane %}}
+    tabpane_pattern = r"\{\{<\s*tabpane[^>]*>\}\}([\s\S]*?)\{\{%\s*/tabpane\s*%\}\}"
 
     def replace_tabpane(match):
         nonlocal count
         tabpane_content = match.group(1).strip()
 
         # Extract individual tabs
-        tab_pattern = r'\{\{%\s*tab\s+([^%}]+)%\}\}([\s\S]*?)\{\{%\s*/tab\s*%\}\}'
+        tab_pattern = r"\{\{%\s*tab\s+([^%}]+)%\}\}([\s\S]*?)\{\{%\s*/tab\s*%\}\}"
         tabs = []
 
         for tab_match in re.finditer(tab_pattern, tabpane_content):
@@ -163,77 +231,97 @@ def convert_callout_shortcodes(content):
         tuple: (converted_content, count_of_replacements)
     """
     count = 0
-    
+
     # Pattern to match pageinfo blocks with optional attributes
-    pageinfo_pattern = r'\{\{%\s*pageinfo\s*([^%}]*)\s*%\}\}([\s\S]*?)\{\{%\s*/pageinfo\s*%\}\}'
-    
+    pageinfo_pattern = (
+        r"\{\{%\s*pageinfo\s*([^%}]*)\s*%\}\}([\s\S]*?)\{\{%\s*/pageinfo\s*%\}\}"
+    )
+
     def replace_pageinfo(match):
         nonlocal count
         attrs = match.group(1).strip()
         content_text = match.group(2).strip()
-        
+
         # Extract color attribute
         color_match = re.search(r'color\s*=\s*["\']([^"\']*)["\']', attrs)
         color = color_match.group(1) if color_match else ""
-        
+
         # Extract title attribute if present
         title_match = re.search(r'title\s*=\s*["\']([^"\']*)["\']', attrs)
         title = title_match.group(1) if title_match else ""
-        
-        # Determine callout type based on color
-        if color == "info":
+
+        # Determine callout type based on title first, then color
+        if title and title.lower() == "tip":
+            callout_type = "Tip"
+        elif color == "info":
             callout_type = "Info"
         elif color == "secondary" or color == "warning":
             callout_type = "Warning"
         else:
             callout_type = "Note"
-        
+
         # Build callout content
-        if title:
+        if title and title.lower() != "tip":
             callout_content = f"**{title}**\n\n{content_text}"
         else:
             callout_content = content_text
-        
+
         count += 1
-        return f'<{callout_type}>\n{callout_content}\n</{callout_type}>'
-    
-    # Pattern to match alert blocks
-    alert_pattern = r'\{\{%\s*alert\s*([^%}]*)\s*%\}\}([\s\S]*?)\{\{%\s*/alert\s*%\}\}'
-    
+        return f"<{callout_type}>\n{callout_content}\n</{callout_type}>"
+
+    # Pattern to match alert blocks with {% %} syntax
+    alert_pattern = r"\{\{%\s*alert\s*([^%}]*)\s*%\}\}([\s\S]*?)\{\{%\s*/alert\s*%\}\}"
+
+    # Pattern to match alert blocks with {{ %alert% }} syntax
+    alert_percent_pattern = r"\{\{\s*%\s*alert\s*%\s*\}\}([\s\S]*?)\{\{\s*/\s*%\s*alert\s*%\s*\}\}"
+
+    # Pattern to match alert blocks with {{< alert >}} syntax
+    alert_angle_pattern = r"\{\{<\s*alert\s*([^>]*)\s*>\}\}([\s\S]*?)\{\{<\s*/alert\s*>\}\}"
+
     def replace_alert(match):
         nonlocal count
         attrs = match.group(1).strip() if match.group(1) else ""
         content_text = match.group(2).strip()
-        
+
         # Extract title attribute if present
         title_match = re.search(r'title\s*=\s*["\']([^"\']*)["\']', attrs)
         title = title_match.group(1) if title_match else ""
-        
+
         # Extract color attribute if present
         color_match = re.search(r'color\s*=\s*["\']([^"\']*)["\']', attrs)
         color = color_match.group(1) if color_match else ""
-        
-        # Determine callout type based on color (default to Note for alerts)
-        if color == "info":
+
+        # Determine callout type based on title first, then color
+        if title and title.lower() == "tip":
+            callout_type = "Tip"
+        elif color == "info":
             callout_type = "Info"
         elif color == "secondary" or color == "warning":
             callout_type = "Warning"
         else:
             callout_type = "Note"
-        
+
         # Build callout content
-        if title:
+        if title and title.lower() != "tip":
             callout_content = f"**{title}**\n\n{content_text}"
         else:
             callout_content = content_text
-        
+
         count += 1
-        return f'<{callout_type}>\n{callout_content}\n</{callout_type}>'
-    
+        return f"<{callout_type}>\n{callout_content}\n</{callout_type}>"
+
+    def replace_alert_percent(match):
+        nonlocal count
+        content_text = match.group(1).strip()
+        count += 1
+        return f"<Note>\n{content_text}\n</Note>"
+
     # Apply conversions
     converted_content = re.sub(pageinfo_pattern, replace_pageinfo, content)
     converted_content = re.sub(alert_pattern, replace_alert, converted_content)
-    
+    converted_content = re.sub(alert_percent_pattern, replace_alert_percent, converted_content)
+    converted_content = re.sub(alert_angle_pattern, replace_alert, converted_content)
+
     return converted_content, count
 
 
@@ -248,21 +336,32 @@ def convert_link_shortcodes(content):
         tuple: (converted_content, count_of_replacements)
     """
     # Pattern to match relref shortcodes within markdown links
-    # Matches: [text]({{< relref "path" >}})
-    pattern = r'\[([^\]]*)\]\(\{\{<\s*relref\s+["\']([^"\']+)["\']\s*>\}\}\)'
-    
+    # Matches: [text]({{< relref "path" >}}) with optional trailing characters
+    pattern1 = r'\[([^\]]*)\]\(\{\{<\s*relref\s+["\']([^"\']+)["\']\s*>\}\}[^)]*\)'
+
+    # Pattern to match simple relref shortcodes within markdown links
+    # Matches: [text]({{ relref "path" }}) or [text]({{ relref "#anchor" }})
+    pattern2 = r'\[([^\]]*)\]\(\{\{\s*relref\s+["\']([^"\']+)["\']\s*\}\}[^)]*\)'
+
     def replace_relref(match):
         link_text = match.group(1)
         link_path = match.group(2)
-        
+
+        # Handle anchor links (starting with #)
+        if link_path.startswith('#'):
+            return f"[{link_text}]({link_path})"
+
         # Remove file extensions (.md, .mdx)
-        clean_path = re.sub(r'\.(md|mdx)$', '', link_path)
-        
-        return f'[{link_text}]({clean_path})'
-    
-    converted_content = re.sub(pattern, replace_relref, content)
-    count = len(re.findall(pattern, content))
-    
+        clean_path = re.sub(r"\.(md|mdx)$", "", link_path)
+
+        return f"[{link_text}]({clean_path})"
+
+    # Apply both patterns
+    converted_content = re.sub(pattern1, replace_relref, content)
+    converted_content = re.sub(pattern2, replace_relref, converted_content)
+
+    count = len(re.findall(pattern1, content)) + len(re.findall(pattern2, content))
+
     return converted_content, count
 
 
@@ -278,15 +377,270 @@ def convert_html_comments(content):
     """
     # Pattern to match HTML comments
     # Matches: <!-- comment content -->
-    pattern = r'<!--\s*(.*?)\s*-->'
-    
+    pattern = r"<!--\s*(.*?)\s*-->"
+
     def replace_comment(match):
         comment_content = match.group(1).strip()
-        return f'{{/* {comment_content} */}}'
-    
+        return f"{{/* {comment_content} */}}"
+
     converted_content = re.sub(pattern, replace_comment, content, flags=re.DOTALL)
     count = len(re.findall(pattern, content, flags=re.DOTALL))
+
+    return converted_content, count
+
+
+def convert_cta_buttons(content):
+    """
+    Convert Hugo cta-button shortcodes to Mintlify Card components.
+
+    Args:
+        content (str): File content to process
+
+    Returns:
+        tuple: (converted_content, count_of_replacements)
+    """
+    # Pattern to match cta-button shortcodes
+    # Matches: {{< cta-button productLink="..." colabLink="..." >}}
+    pattern = r"\{\{<\s*cta-button\s+([^>]+)\s*>\}\}"
+
+    def replace_cta_button(match):
+        attributes = match.group(1).strip()
+
+        # Extract productLink, colabLink, and githubLink attributes
+        product_match = re.search(r'productLink\s*=\s*["\']([^"\']+)["\']', attributes)
+        colab_match = re.search(r'colabLink\s*=\s*["\']([^"\']+)["\']', attributes)
+        github_match = re.search(r'githubLink\s*=\s*["\']?([^"\'>\s]+)["\']?', attributes)
+
+        product_link = product_match.group(1) if product_match else ""
+        colab_link = colab_match.group(1) if colab_match else ""
+        github_link = github_match.group(1) if github_match else ""
+
+        cards = []
+
+        # Add Colab card if link exists
+        if colab_link:
+            cards.append(
+                f'<Card title="Try in Colab" href="{colab_link}" icon="python"/>'
+            )
+
+        # Add W&B card if link exists
+        if product_link:
+            cards.append(
+                f'<Card title="Try in W&B" href="{product_link}" icon="sliders-up"/>'
+            )
+
+        # Add GitHub card if link exists
+        if github_link:
+            cards.append(
+                f'<Card title="View the source code" href="{github_link}" icon="github"/>'
+            )
+
+        if not cards:
+            return match.group(0)  # Return original if no valid links found
+
+        if len(cards) == 1:
+            # Single card, no CardGroup needed
+            return cards[0]
+        else:
+            # Multiple cards, wrap in CardGroup
+            card_content = "\n".join(cards)
+            return f"<CardGroup cols={{2}}>\n{card_content}\n</CardGroup>"
+
+    converted_content = re.sub(pattern, replace_cta_button, content)
+    count = len(re.findall(pattern, content))
+
+    return converted_content, count
+
+
+def convert_cardpane_shortcodes(content):
+    """
+    Convert Hugo cardpane shortcodes to Mintlify Card components.
+
+    Args:
+        content (str): File content to process
+
+    Returns:
+        tuple: (converted_content, count_of_replacements)
+    """
+    count = 0
     
+    # Pattern to match cardpane blocks
+    # This handles nested structure: {{< cardpane >}} ... {{< card >}} ... {{< /card >}} ... {{< /cardpane >}}
+    cardpane_pattern = r"\{\{<\s*cardpane[^>]*>\}\}([\s\S]*?)\{\{<\s*/cardpane\s*>\}\}"
+    
+    def replace_cardpane(match):
+        nonlocal count
+        cardpane_content = match.group(1).strip()
+        
+        # Extract individual cards
+        card_pattern = r"\{\{<\s*card[^>]*>\}\}([\s\S]*?)\{\{<\s*/card\s*>\}\}"
+        cards = []
+        
+        for card_match in re.finditer(card_pattern, cardpane_content):
+            card_content = card_match.group(1).strip()
+            
+            # Extract title from h2 with card-title class
+            title_match = re.search(r'<h2[^>]*className\s*=\s*["\'][^"\']*card-title[^"\']*["\'][^>]*>(.*?)</h2>', card_content, re.DOTALL)
+            title = title_match.group(1).strip() if title_match else ""
+            
+            # Extract href from anchor tag
+            href_match = re.search(r'<a[^>]*href\s*=\s*["\']([^"\']+)["\'][^>]*>', card_content)
+            href = href_match.group(1) if href_match else ""
+            
+            # Extract content from p with card-content class
+            content_match = re.search(r'<p[^>]*className\s*=\s*["\'][^"\']*card-content[^"\']*["\'][^>]*>(.*?)</p>', card_content, re.DOTALL)
+            card_text = content_match.group(1).strip() if content_match else ""
+            
+            # If we couldn't extract structured content, use the raw content (minus HTML tags)
+            if not title and not card_text:
+                # Remove HTML tags and extract text
+                clean_content = re.sub(r'<[^>]+>', '', card_content).strip()
+                card_text = clean_content
+                
+            # Build the card
+            card_attrs = []
+            if title:
+                card_attrs.append(f'title="{title}"')
+            if href:
+                card_attrs.append(f'href="{href}"')
+                
+            attrs_str = " ".join(card_attrs)
+            if card_text:
+                cards.append(f'<Card {attrs_str}>\n{card_text}\n</Card>')
+            else:
+                cards.append(f'<Card {attrs_str}/>')
+        
+        if cards:
+            count += 1
+            if len(cards) == 1:
+                # Single card
+                return cards[0]
+            else:
+                # Multiple cards, wrap in CardGroup or Columns
+                card_content = "\n".join(cards)
+                cols_count = len(cards) if len(cards) <= 4 else 2
+                return f"<CardGroup cols={{{cols_count}}}>\n{card_content}\n</CardGroup>"
+        else:
+            return match.group(0)  # Return original if no cards found
+    
+    converted_content = re.sub(cardpane_pattern, replace_cardpane, content)
+    
+    return converted_content, count
+
+
+def convert_readfile_shortcodes(content):
+    """
+    Convert Hugo readfile shortcodes to Mintlify snippet imports.
+
+    Args:
+        content (str): File content to process
+
+    Returns:
+        tuple: (converted_content, count_of_replacements)
+    """
+    count = 0
+    imports = []
+
+    # Pattern to match readfile shortcodes
+    # Matches: {{< readfile file="/_includes/enterprise-cloud-only.md" >}}
+    pattern = r'\{\{<\s*readfile\s+file\s*=\s*["\']([^"\']+)["\']\s*>\}\}'
+
+    def replace_readfile(match):
+        nonlocal count, imports
+        file_path = match.group(1)
+
+        # Extract filename without extension and create component name
+        # /_includes/enterprise-cloud-only.md -> enterprise-cloud-only
+        filename = file_path.split('/')[-1]
+        component_name = filename.replace('.md', '').replace('.mdx', '')
+
+        # Convert to PascalCase for component name
+        component_name = ''.join(word.capitalize() for word in component_name.replace('-', '_').split('_'))
+
+        # Create import statement
+        snippet_path = f"/snippets/en{file_path.replace('.md', '.mdx')}"
+        import_statement = f'import {component_name} from "{snippet_path}";'
+
+        if import_statement not in imports:
+            imports.append(import_statement)
+
+        count += 1
+        return f'<{component_name}/>'
+
+    # Replace readfile shortcodes
+    converted_content = re.sub(pattern, replace_readfile, content)
+
+    # Add imports to the top of the file (after frontmatter)
+    if imports:
+        # Find the end of frontmatter
+        frontmatter_end = content.find('---', 3)  # Find second occurrence of ---
+        if frontmatter_end != -1:
+            frontmatter_end += 3
+            # Find the next non-empty line
+            while frontmatter_end < len(content) and content[frontmatter_end] in ['\n', '\r']:
+                frontmatter_end += 1
+
+            # Insert imports after frontmatter
+            import_block = '\n'.join(imports) + '\n\n'
+            converted_content = (
+                converted_content[:frontmatter_end] +
+                import_block +
+                converted_content[frontmatter_end:]
+            )
+        else:
+            # No frontmatter, add imports at the beginning
+            import_block = '\n'.join(imports) + '\n\n'
+            converted_content = import_block + converted_content
+
+    return converted_content, count
+
+
+def convert_markdown_images(content):
+    """
+    Convert standalone markdown images to Frame-wrapped images.
+
+    Args:
+        content (str): File content to process
+
+    Returns:
+        tuple: (converted_content, count_of_replacements)
+    """
+    count = 0
+
+    # Pattern to match standalone markdown images (not already in Frame)
+    # Matches: ![alt text](image_path) on its own line, not already inside <Frame>
+    pattern = r'^!\[([^\]]*)\]\(([^)]+)\)\s*$'
+
+    def replace_markdown_image(match):
+        nonlocal count
+        alt_text = match.group(1)
+        image_path = match.group(2)
+
+        count += 1
+        return f'<Frame>\n![{alt_text}]({image_path})\n</Frame>'
+
+    # Split content into lines and process each line
+    lines = content.split('\n')
+    converted_lines = []
+    in_frame = False
+    frame_depth = 0
+
+    for line in lines:
+        # Track if we're inside a Frame component
+        if '<Frame>' in line or '<Frame' in line:
+            frame_depth += line.count('<Frame>') + line.count('<Frame ')
+            in_frame = frame_depth > 0
+        if '</Frame>' in line:
+            frame_depth -= line.count('</Frame>')
+            in_frame = frame_depth > 0
+
+        # Only convert markdown images that are not inside Frame components
+        if not in_frame and re.match(pattern, line.strip()):
+            converted_lines.append(re.sub(pattern, replace_markdown_image, line))
+        else:
+            converted_lines.append(line)
+
+    converted_content = '\n'.join(converted_lines)
     return converted_content, count
 
 
@@ -322,6 +676,22 @@ def convert_shortcodes(content):
     content, comment_count = convert_html_comments(content)
     total_count += comment_count
 
+    # Convert CTA buttons
+    content, cta_count = convert_cta_buttons(content)
+    total_count += cta_count
+
+    # Convert cardpanes
+    content, cardpane_count = convert_cardpane_shortcodes(content)
+    total_count += cardpane_count
+
+    # Convert readfile shortcodes
+    content, readfile_count = convert_readfile_shortcodes(content)
+    total_count += readfile_count
+
+    # Convert markdown images
+    content, md_img_count = convert_markdown_images(content)
+    total_count += md_img_count
+
     return content, total_count
 
 
@@ -337,7 +707,7 @@ def process_file(file_path, dry_run=False):
         int: Number of replacements made
     """
     try:
-        with open(file_path, 'r', encoding='utf-8') as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             original_content = f.read()
 
         converted_content, count = convert_shortcodes(original_content)
@@ -346,7 +716,7 @@ def process_file(file_path, dry_run=False):
             if dry_run:
                 print(f"Would convert {count} shortcode(s) in: {file_path}")
             else:
-                with open(file_path, 'w', encoding='utf-8') as f:
+                with open(file_path, "w", encoding="utf-8") as f:
                     f.write(converted_content)
                 print(f"Converted {count} shortcode(s) in: {file_path}")
 
@@ -370,7 +740,7 @@ def find_and_convert_files(directory, file_extensions=None, dry_run=False):
         tuple: (total_files_processed, total_replacements)
     """
     if file_extensions is None:
-        file_extensions = ['.md', '.mdx']
+        file_extensions = [".md", ".mdx"]
 
     directory_path = Path(directory)
     total_files = 0
@@ -378,7 +748,7 @@ def find_and_convert_files(directory, file_extensions=None, dry_run=False):
 
     # Find all matching files
     for ext in file_extensions:
-        for file_path in directory_path.rglob(f'*{ext}'):
+        for file_path in directory_path.rglob(f"*{ext}"):
             if file_path.is_file():
                 total_files += 1
                 replacements = process_file(file_path, dry_run)
@@ -389,29 +759,26 @@ def find_and_convert_files(directory, file_extensions=None, dry_run=False):
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Convert Hugo shortcodes to Mintlify components'
+        description="Convert Hugo shortcodes to Mintlify components"
     )
     parser.add_argument(
-        'directory',
-        nargs='?',
-        default='.',
-        help='Directory to process (default: current directory)'
+        "directory",
+        nargs="?",
+        default=".",
+        help="Directory to process (default: current directory)",
     )
     parser.add_argument(
-        '--extensions',
-        nargs='+',
-        default=['.md', '.mdx'],
-        help='File extensions to process (default: .md .mdx)'
+        "--extensions",
+        nargs="+",
+        default=[".md", ".mdx"],
+        help="File extensions to process (default: .md .mdx)",
     )
     parser.add_argument(
-        '--dry-run',
-        action='store_true',
-        help='Show what would be changed without making actual changes'
+        "--dry-run",
+        action="store_true",
+        help="Show what would be changed without making actual changes",
     )
-    parser.add_argument(
-        '--file',
-        help='Process a specific file instead of a directory'
-    )
+    parser.add_argument("--file", help="Process a specific file instead of a directory")
 
     args = parser.parse_args()
 
@@ -438,9 +805,7 @@ def main():
             print("DRY RUN MODE - no files will be modified")
 
         total_files, total_replacements = find_and_convert_files(
-            args.directory,
-            args.extensions,
-            args.dry_run
+            args.directory, args.extensions, args.dry_run
         )
 
         print(f"\nProcessed {total_files} files")
@@ -452,5 +817,5 @@ def main():
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     exit(main())

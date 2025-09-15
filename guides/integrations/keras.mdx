@@ -6,7 +6,7 @@ menu:
 title: Keras
 weight: 160
 ---
-{{< cta-button colabLink="https://colab.research.google.com/github/wandb/examples/blob/master/colabs/intro/Intro_to_Weights_%26_Biases_keras.ipynb" >}}
+<Card title="Try in Colab" href="https://colab.research.google.com/github/wandb/examples/blob/master/colabs/intro/Intro_to_Weights_%26_Biases_keras.ipynb" icon="python"/>
 
 ## Keras callbacks
 
@@ -27,7 +27,7 @@ These new callbacks:
 
 ## Track experiments with `WandbMetricsLogger`
 
-{{< cta-button colabLink="https://github.com/wandb/examples/blob/master/colabs/keras/Use_WandbMetricLogger_in_your_Keras_workflow.ipynb" >}}
+<Card title="Try in Colab" href="https://github.com/wandb/examples/blob/master/colabs/keras/Use_WandbMetricLogger_in_your_Keras_workflow.ipynb" icon="python"/>
 
 `WandbMetricsLogger` automatically logs Keras' `logs` dictionary that callback methods such as `on_epoch_end`, `on_batch_end` etc, take as an argument.
 
@@ -60,7 +60,7 @@ model.fit(
 
 ## Checkpoint a model using `WandbModelCheckpoint`
 
-{{< cta-button colabLink="https://github.com/wandb/examples/blob/master/colabs/keras/Use_WandbModelCheckpoint_in_your_Keras_workflow.ipynb" >}}
+<Card title="Try in Colab" href="https://github.com/wandb/examples/blob/master/colabs/keras/Use_WandbModelCheckpoint_in_your_Keras_workflow.ipynb" icon="python"/>
 
 Use `WandbModelCheckpoint` callback to save the Keras model (`SavedModel` format) or model weights periodically and uploads them to W&B as a `wandb.Artifact` for model versioning. 
 
@@ -135,7 +135,7 @@ WandbModelCheckpoint(
 
 ## Visualize model predictions using `WandbEvalCallback`
 
-{{< cta-button colabLink="https://github.com/wandb/examples/blob/e66f16fbe7ae7a2e636d59350a50059d3f7e5494/colabs/keras/Use_WandbEvalCallback_in_your_Keras_workflow.ipynb" >}}
+<Card title="Try in Colab" href="https://github.com/wandb/examples/blob/e66f16fbe7ae7a2e636d59350a50059d3f7e5494/colabs/keras/Use_WandbEvalCallback_in_your_Keras_workflow.ipynb" icon="python"/>
 
 The `WandbEvalCallback` is an abstract base class to build Keras callbacks primarily for model prediction and, secondarily, dataset visualization.
 

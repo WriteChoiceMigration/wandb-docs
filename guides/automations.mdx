@@ -11,8 +11,10 @@ cascade:
 aliases:
 - /guides/core/automations/
 ---
+import EnterpriseCloudOnly from "/snippets/en/_includes/enterprise-cloud-only.mdx";
+
 <Info>
-{{< readfile file="/_includes/enterprise-cloud-only.md" >}}
+<EnterpriseCloudOnly/>
 </Info>
 
 This page describes _automations_ in W&B. [Create an automation](create-automations/) to trigger workflow steps, such as automated model testing and deployment, based on an event in W&B, such as when an [artifact](/guides/core/artifacts) artifact version is created or when a [run metric](/guides/models/track/runs) meets or changes by a threshold.

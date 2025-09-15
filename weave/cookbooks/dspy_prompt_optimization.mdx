@@ -109,7 +109,9 @@ def get_dataset(metadata: Metadata):
 dspy_train_examples, dspy_val_examples = get_dataset(metadata)
 ```
 
+<Frame>
 ![](/images/cookbooks/../../media/dspy_optimization/1.png)
+</Frame>
 
 ## The DSPy Program
 
@@ -168,7 +170,9 @@ prediction = baseline_module(dspy_train_examples[0]["question"])
 rich.print(prediction)
 ```
 
+<Frame>
 ![](/images/cookbooks/../../media/dspy_optimization/2.png)
+</Frame>
 
 ## Evaluating our DSPy Program
 
@@ -198,7 +202,9 @@ evaluation = weave.Evaluation(
 await evaluation.evaluate(baseline_module.forward)
 ```
 
+<Frame>
 ![](/images/cookbooks/../../media/dspy_optimization/3.png)
+</Frame>
 
 <Note>
 If you're running from a python script, you can use the following code to run the evaluation:
@@ -236,7 +242,9 @@ def get_optimized_program(model: dspy.Module, metadata: Metadata) -> dspy.Module
 optimized_module = get_optimized_program(baseline_module, metadata)
 ```
 
+<Frame>
 ![](/images/cookbooks/../../media/dspy_optimization/4.png)
+</Frame>
 
 <Warning>
 Running the evaluation causal reasoning dataset will cost approximately $0.04 in OpenAI credits.
@@ -254,7 +262,9 @@ evaluation = weave.Evaluation(
 await evaluation.evaluate(optimized_module.forward)
 ```
 
+<Frame>
 ![](/images/cookbooks/../../media/dspy_optimization/5.png)
+</Frame>
 
 When coomparing the evalution of the baseline program with the optimized one shows that the optimized program answers the causal reasoning questions with siginificantly more accuracy.
 

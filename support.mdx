@@ -2,10 +2,10 @@
 title: Support
 ---
 
-{{< banner title="How can we help?" background="/images/support/support_banner.png" >}}
-Search for help from support articles, product documentation,<br>
+{/* {{< banner title="How can we help?" background="/images/support/support_banner.png" >}} */}
+Search for help from support articles, product documentation,<br/>
 and the W&B community. 
-{{< /banner >}}
+{/* {{< /banner >}} */}
 
 ## Featured articles
 
@@ -24,45 +24,29 @@ If you can't find what you are looking for, browse through the [popular categori
 
 Browse articles by category.
 
-{{< cardpane >}}
-  {{< card >}}
-    <a href="/support/experiments">
-      <h2 className="card-title">Experiments</h2>
-    </a>
-    <p className="card-content">Track, visualize, and compare machine learning experiments</p>
-    </a>
-  {{< /card >}}
-  {{< card >}}
-    <a href="/support/artifacts">
-      <h2 className="card-title">Artifacts</h2>
-    </a>
-    <p className="card-content">Version and track datasets, models, and other machine learning artifacts</p>
-  {{< /card >}}
-{{< /cardpane >}}
-{{< cardpane >}}
-  {{< card >}}
-    <a href="/support/reports">
-      <h2 className="card-title">Reports</h2>
-    </a>
-    <p className="card-content">Create interactive, collaborative reports to share your work</p>
-  {{< /card >}}
-  {{< card >}}
-    <a href="/support/sweeps">
-      <h2 className="card-title">Sweeps</h2>
-    </a>
-    <p className="card-content">Automate hyperparameter search</p>
-  {{< /card >}}
-{{< /cardpane >}}
+<CardGroup cols={2}>
+<Card title="Experiments" href="/support/experiments">
+Track, visualize, and compare machine learning experiments
+</Card>
+<Card title="Artifacts" href="/support/artifacts">
+Version and track datasets, models, and other machine learning artifacts
+</Card>
+</CardGroup>
+<CardGroup cols={2}>
+<Card title="Reports" href="/support/reports">
+Create interactive, collaborative reports to share your work
+</Card>
+<Card title="Sweeps" href="/support/sweeps">
+Automate hyperparameter search
+</Card>
+</CardGroup>
 
 
-{{< card >}}
-  <div className="card-banner-icon" style="float:left;margin-right:10px !important; margin-top: -12px !important">
-    <Frame>
-    <img src="/images/support/callout-icon.svg" alt="Callout Icon" width="32" height="32"  />
-</Frame>
-  </div>
-  <h2>Still can't find what you are looking for?</h2>
-  <a href="mailto:support@wandb.com" className="contact-us-button">
-    Contact support
-  </a>
- {{< /card >}}
+<Card
+  title="Still can't find what you are looking for?"
+  link="mailto:support@wandb.com"
+  icon="info"
+>
+  Contact support
+</Card>
+

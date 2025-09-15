@@ -6,11 +6,13 @@ menu:
 title: Create a Slack automation
 weight: 1
 ---
+import EnterpriseCloudOnly from "/snippets/en/_includes/enterprise-cloud-only.mdx";
+
 <Info>
-{{< readfile file="/_includes/enterprise-cloud-only.md" >}}
+<EnterpriseCloudOnly/>
 </Info>
 
-This page shows how to create a Slack [automation]({{< relref "/guides/core/automations/" >}}> ). To create a webhook automation, refer to [Create a webhook automation](/guides/core/automations/create-automations/webhook) instead.
+This page shows how to create a Slack [automation](/guides/core/automations/). To create a webhook automation, refer to [Create a webhook automation](/guides/core/automations/create-automations/webhook) instead.
 
 At a high level, to create a Slack automation, you take these steps:
 1. [Add a Slack integration](#add-a-slack-integration), which authorizes W&B to post to the Slack instance and channel.
@@ -66,7 +68,7 @@ A W&B admin can create automations in a project.
     Or, from a line plot in the workspace, you can quickly create a [run metric automation](/guides/core/automations/automation-events.md#run-events) for the metric it shows. Hover over the panel, then click the bell icon at the top of the panel.
     <Frame>
     <img src="/images/automations/run_metric_automation_from_panel.png" alt="Automation bell icon location"  />
-</Frame>
+    </Frame>
 1. Choose the [event](/guides/core/automations/automation-events) to watch for.
 
     Fill in any additional fields that appear, which depend upon the event. For example, if you select **An artifact alias is added**, you must specify the **Alias regex**.

@@ -5,15 +5,19 @@ description: "June 14, 2023"
 parent: archived-releases
 ---
 
+import Text from "/snippets/en/_includes/unsupported_server_version.mdx";
+
 <Warning>
-{{% readfile "/_includes/unsupported_server_version.md" %}}
+<Text/>
 </Warning>
 
 ## Features
 
 **Clone Runs with Launch**
 
+<Frame>
 ![Run cloning interface in W&B Launch allowing hyperparameter adjustments and infrastructure selection](https://github.com/wandb/server/assets/47005026/4aebe22a-70c9-4186-be74-feaf73c1b2d2)
+</Frame>
 
 
 If you want to repeat a run but tweak a couple hyperparameters--say bump the batch size to take advantage of a larger machine--it's now easy to clone a run using W&B Launch.   Go to the run overview, click Clone, and you'll be able to select new infrastructure to execute the job on, with new hyperparameters.  Learn more in the [Launch documentation](https://docs.wandb.ai/guides/launch).

@@ -93,7 +93,7 @@ The API response contains new-line separated JSON objects. Objects will include 
 ### Use basic authentication
 To use basic authentication with your API key to access the audit logs API, set the HTTP request's `Authorization` header to the string `Basic` followed by a space, then the base-64 encoded string in the format `username:API-KEY`. In other words, replace the username and API key with your values separated with a `:` character, then base-64-encode the result. For example, to authorize as `demo:p@55w0rd`, the header should be `Authorization: Basic ZGVtbzpwQDU1dzByZA==`.
 
-### Exclude PII when fetching audit logs {#exclude-pii}
+### Exclude PII when fetching audit logs
 For [Self-Managed](/guides/hosting/hosting-options/self-managed) and [Dedicated Cloud](/guides/hosting/hosting-options/dedicated_cloud), a W&B organization or instance admin can exclude PII when fetching audit logs. For [Multi-tenant Cloud](/guides/hosting/hosting-options/saas_cloud), the API endpoint always returns relevant fields for audit logs, including PII. This is not configurable.
 
 

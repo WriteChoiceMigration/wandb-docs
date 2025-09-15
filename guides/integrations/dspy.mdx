@@ -17,14 +17,16 @@ Use W&B with DSPy to track and optimize your language model programs. W&B comple
 
 For comprehensive observability when optimizing DSPy modules, enable the integration in both W&B and Weave.
 
-{{< alert title="Note" color="info" >}}
+<Info>
+**Note**
+
 As of `wandb==0.21.2` and `weave==0.52.5`, Weave initializes automatically when used with W&B:
 
 - If `weave` is imported and then `wandb.init()` is called (script case)
 - If `wandb.init()` was called and then `weave` is imported later (notebook/Jupyter case)
 
 No explicit `weave.init(...)` call is required.
-{{< /alert >}}
+</Info>
 
 ## Install and authenticate
 
@@ -72,7 +74,7 @@ wandb.login()
 New to W&B? See our [quickstart guide](/guides/quickstart).
 
 
-## Track program optimization (experimental) {#track-program-optimization}
+## Track program optimization (experimental)
 
 
 For DSPy optimizers that use `dspy.Evaluate` (such as MIPROv2), use the `WandbDSPyCallback` to log evaluation metrics over time and track program signature evolution in W&B Tables.

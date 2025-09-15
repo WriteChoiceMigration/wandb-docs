@@ -11,6 +11,9 @@ cascade:
 - url: guides/track/log/:filename
 ---
 
+import MetricNamingRules from "/snippets/en/_includes/metric-naming-rules.mdx";
+import MetricNamingExamples from "/snippets/en/_includes/metric-naming-examples.mdx";
+
 Log a dictionary of metrics, media, or custom objects to a step with the W&B Python SDK. W&B collects the key-value pairs during each step and stores them in one unified dictionary each time you log data with `wandb.Run.log()`. Data logged from your script is saved locally to your machine in a directory called `wandb`, then synced to the W&B cloud or your [private server](/guides/hosting/). 
 
 <Note>
@@ -72,13 +75,13 @@ With W&B, you can decide exactly what you want to log. The following lists some 
 
 Due to GraphQL limitations, metric names in W&B must follow specific naming rules:
 
-{{< readfile file="/_includes/metric-naming-rules.md" >}}
+<MetricNamingRules/>
 
 <Warning>
 Avoid naming metrics with invalid characters (such as commas, spaces, or special symbols), which may cause problems with sorting, querying, or display in the W&B UI.
 </Warning>
 
-{{< readfile file="/_includes/metric-naming-examples.md" >}}
+<MetricNamingExamples/>
 
 ## Common workflows
 

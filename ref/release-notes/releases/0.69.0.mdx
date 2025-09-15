@@ -7,6 +7,8 @@ description: "May 28, 2025"
 
 ---
 
+import Text from "/snippets/en/_includes/release-notes-support-eol-reminder.mdx"
+
 W&B 0.69 focuses on making the workspace more intuitive, collaborative, and efficient. Clearer visualizations and faster artifact downloads streamline how you interact with your data, so you can gain and share insights more quickly. Updates to W&B Weave improve team workflows and evaluation tracking. A range of quality-of-life fixes tidy up the overall user experience.
 
 This release also marks the end of life for v0.54 and older, which are now officially unsupported.
@@ -20,7 +22,7 @@ The latest patch is **v0.69.1**.{/* more */} Refer to [Patches](#patches).
   <li>W&B Server v0.56 is scheduled to reach end of life in July 2025</li>
 </ul>{/* Fix the admonition showing up as a child of the second item */}
 
-{{% readfile "/_includes/release-notes-support-eol-reminder.md" %}}
+<Text/>
 
 ## Upgrading
 To [upgrade](/guides/hosting/hosting-options/self-managed/server-upgrade-process.md#update-with-helm) to W&B v0.69.x, you must use v0.31.4+ of the `operator-wandb` Helm chart. Otherwise, after the upgrade, the `weave-cache-clear` container can fail to start. Ensure that your deployment uses these values:

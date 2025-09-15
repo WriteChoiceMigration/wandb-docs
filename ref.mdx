@@ -10,47 +10,29 @@ cascade:
 no_list: true
 ---
 
-{{< cardpane >}}
-  {{< card >}}
-    <a href="./python/">
-      <h2 className="card-title">Python Library</h2>
-    </a>
-    <p className="card-content">Train, fine-tune, and manage models from experimentation to production.</p>
-  {{< /card >}}
-  {{< card >}}
-    <a href="./cli/">
-      <h2 className="card-title">Command Line Interface</h2>
-    </a>
-    <p className="card-content">Log in, run jobs, execute sweeps, and more using shell commands.</p>
-  {{< /card >}}
-{{< /cardpane >}}
+<CardGroup cols={2}>
+<Card title="Python Library" href="./python/">
+Train, fine-tune, and manage models from experimentation to production.
+</Card>
+<Card title="Command Line Interface" href="./cli/">
+Log in, run jobs, execute sweeps, and more using shell commands.
+</Card>
+</CardGroup>
 
-{{< cardpane >}}
-  {{< card >}}
-    <a href="./query-panel/">
-      <h2 className="card-title">Query Panels</h2>
-    </a>
-    <p className="card-content"> A beta query language to select and aggregate data.</p>
-  {{< /card >}}
-  {{< card >}}
-    <a href="https://weave-docs.wandb.ai/">
-    <h2 className="card-title">W&B Weave</h2>
-  </a>
-    <p className="card-content">Looking for Weave API? See the <a href="https://weave-docs.wandb.ai/">W&B Weave Docs</a>.</p>
-  {{< /card >}}
-{{< /cardpane >}}
+<CardGroup cols={2}>
+<Card title="Query Panels" href="./query-panel/">
+A beta query language to select and aggregate data.
+</Card>
+<Card title="W&B Weave" href="https://weave-docs.wandb.ai/">
+Looking for Weave API? See the <a href="https://weave-docs.wandb.ai/">W&B Weave Docs</a>.
+</Card>
+</CardGroup>
 
-{{< cardpane >}}
-  {{< card >}}
-    <a href="./release-notes/">
-      <h2 className="card-title">Release notes</h2>
-    </a>
-    <p className="card-content">Learn about W&B releases, including new features, performance improvements, and bug fixes.</p>
-  {{< /card >}}
-    {{< card >}}
-    <a href="./release-notes/release-policies/">
-      <h2 className="card-title">Release policies and processes</h2>
-    </a>
-    <p className="card-content">Learn more about W&B releases, including frequency, support policies, and end of life.</p>
-  {{< /card >}}
-{{< /cardpane >}}
+<CardGroup cols={2}>
+<Card title="Release notes" href="./release-notes/">
+Learn about W&B releases, including new features, performance improvements, and bug fixes.
+</Card>
+<Card title="Release policies and processes" href="./release-notes/release-policies/">
+Learn more about W&B releases, including frequency, support policies, and end of life.
+</Card>
+</CardGroup>

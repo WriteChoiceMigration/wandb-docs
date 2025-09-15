@@ -6,8 +6,11 @@ menu:
 title: Automation events and scopes
 weight: 2
 ---
+
+import Text from "/snippets/en/_includes/enterprise-cloud-only.mdx";
+
 <Info>
-{{< readfile file="/_includes/enterprise-cloud-only.md" >}}
+<Text/>
 </Info>
 
 An automation can start when a specific event occurs within a project or registry. This page describes the events that can trigger an automation within each scope. Learn more about automations in the [Automations overview](/guides/core/automations/) or [Create an automation](create-automations/).
@@ -18,7 +21,9 @@ This section describes the scopes and events for an automation in a [Registry](/
 1. Navigate to the **Registry** App at https://wandb.ai/registry/.
 1. Click the name of a registry, then view and create automations in the **Automations** tab.
 
+<Frame>
 ![Screenshot of the Registry Automations tab with an automation](/images/automations/registry_automations_tab.png)
+</Frame>
 
 Learn more about [creating automations](create-automations/).
 
@@ -38,7 +43,9 @@ This section describes the scopes and events for an automation in a [project](/g
 1. Navigate to your W&B project on the W&B App at `https://wandb.ai/<team>/<project-name>`.
 1. View and create automations in the **Automations** tab.
 
+<Frame>
 ![Screenshot of the Project Automations tab with an automation](/images/automations/project_automations_tab.png)
+</Frame>
 
 Learn more about [creating automations](create-automations/).
 
@@ -65,7 +72,9 @@ An automation can be triggered by a change in a [run's status](/guides/models/tr
 
 Trigger a workflow when a run changes its [status](/guides/models/track/runs/_index.md#run-states) to **Running**, **Finished**, or **Failed**. Optionally, you can further limit the runs that can trigger an automation by filtering by the user that started a run or the run's name.
 
+<Frame>
 ![Screenshot showing a run status change automation](/images/automations/run_status_change.png)
+</Frame>
 
 Because run status is a property of the entire run, you can create a run status automation only from the the **Automations** page, not from a workspace.
 
@@ -96,7 +105,9 @@ For **Run metrics threshold met** events, you configure:
 
 For example, trigger an automation when average `accuracy` is above `.6`.
 
+<Frame>
 ![Screenshot showing a run metrics threshold automation](/images/automations/run_metrics_threshold_automation.png)
+</Frame>
 
 ##### Change threshold
 For **Run metrics change threshold met** events, the automation uses two "windows" of values to check whether to start:
@@ -117,7 +128,9 @@ To create the automation, you configure:
 
 For example, trigger an automation when average `loss` decreases by at least `.25`.
 
+<Frame>
 ![Screenshot showing a run metrics change threshold automation](/images/automations/run_metrics_change_threshold_automation.png)
+</Frame>
 
 #### Run filters
 This section describes how the automation selects runs to evaluate.

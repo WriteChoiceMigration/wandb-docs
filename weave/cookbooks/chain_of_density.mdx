@@ -13,7 +13,9 @@ This is an interactive notebook. You can run it locally or use the links below:
 
 Summarizing complex technical documents while preserving crucial details is a challenging task. The Chain of Density (CoD) summarization technique offers a solution by iteratively refining summaries to be more concise and information-dense. This guide demonstrates how to implement CoD using Weave for tracking and evaluating the application. 
 
+<Frame>
 ![](/images/cookbooks/../../media/summarization/eval_dash.png)
+</Frame>
 
 ## What is Chain of Density Summarization?
 
@@ -129,7 +131,9 @@ def load_pdf(pdf_url: str) -> str:
 
 Now, let's implement the core CoD summarization logic using Weave operations:
 
+<Frame>
 ![](/images/cookbooks/../../media/summarization/summarization_trace.png)
+</Frame>
 
 ```python
 # Chain of Density Summarization
@@ -218,7 +222,9 @@ By using `@weave.op()` decorators, we ensure that Weave tracks the inputs, outpu
 
 Now, let's wrap our summarization pipeline in a Weave Model:
 
+<Frame>
 ![](/images/cookbooks/../../media/summarization/model.png)
+</Frame>
 
 ```python
 # Weave Model
@@ -306,7 +312,9 @@ These evaluation functions use the Claude model to assess the quality of the gen
 
 To evaluate our pipeline, we'll create a Weave Dataset and run an evaluation:
 
+<Frame>
 ![](/images/cookbooks/../../media/summarization/dataset.png)
+</Frame>
 
 ```python
 # Create a Weave Dataset
@@ -327,7 +335,9 @@ For our evaluation, we'll use an LLM-as-a-judge approach. This technique involve
 
 [![arXiv](https://img.shields.io/badge/arXiv-2306.05685-b31b1b.svg)](https://arxiv.org/abs/2306.05685)
 
+<Frame>
 ![](/images/cookbooks/../../media/summarization/eval_dash.png)
+</Frame>
 
 ```python
 # Define the scorer function
