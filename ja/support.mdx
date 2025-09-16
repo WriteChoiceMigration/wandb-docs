@@ -5,10 +5,12 @@ menu:
     identifier: ja-support-_index
 ---
 
-{/* {{< banner title="どのようにお手伝いできますか?" background="/images/support/support_banner.png" >}} */}
+import {Banner} from "/snippets/Banner.jsx";
+
+<Banner title="どのようにお手伝いできますか?" background="/images/support/support_banner.png" >
 サポート記事、製品ドキュメント、<br/>
 そして W&B コミュニティからのヘルプを検索してください。
-{/* {{< /banner >}} */}
+</Banner>
 
 ## 注目の記事
 
@@ -45,7 +47,8 @@ menu:
 <Card
   title="それでも探しているものが見つからないですか？"
   href="mailto:support@wandb.com"
-  img="/images/support/callout-icon.svg"
+  icon="circle-info"
+  horizontal
 >
   サポートに連絡
 </Card>

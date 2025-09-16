@@ -91,14 +91,14 @@ When you use Line Plot Grouping, W&B applies the following based on the mode sel
 - **Full fidelity (grouping and expressions)**: Similar to non-windowed sampling, but fetches up to 500 points per run to balance performance and detail.
 </Note>
 
- 
+
 ## Random sampling
 
 Random sampling uses 1500 randomly sampled points to render line plots. Random sampling is useful for performance reasons when you have a large number of data points. 
 
-<Warning>
+<Danger>
 Random sampling samples non-deterministically. This means that random sampling sometimes excludes important outliers or spikes in the data and therefore reduces data accuracy.
-</Warning>
+</Danger>
 
 
 ### Enable random sampling

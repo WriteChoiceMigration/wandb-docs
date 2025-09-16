@@ -2,10 +2,12 @@
 title: Support
 ---
 
-{/* {{< banner title="How can we help?" background="/images/support/support_banner.png" >}} */}
-Search for help from support articles, product documentation,<br/>
+import {Banner} from "/snippets/Banner.jsx";
+
+<Banner title="How can we help?" background="/images/support/support_banner.png">
+  Search for help from support articles, product documentation,<br/>
 and the W&B community. 
-{/* {{< /banner >}} */}
+</Banner>
 
 ## Featured articles
 
@@ -45,7 +47,7 @@ Automate hyperparameter search
 <Card
   title="Still can't find what you are looking for?"
   link="mailto:support@wandb.com"
-  icon="info"
+  icon="circle-info"
 >
   Contact support
 </Card>

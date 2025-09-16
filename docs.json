@@ -60,9 +60,14 @@
         "language": "en",
         "tabs": [
           {
+            "tab": "Home",
+            "pages": [
+              "index"
+            ]
+          },
+          {
             "tab": "Platform",
             "pages": [
-              "index",
               {
                 "group": "Configuring W&B",
                 "pages": [
@@ -169,7 +174,6 @@
           {
             "tab": "W&B Models",
             "pages": [
-              "models/index",
               {
                 "group": "W&B Models",
                 "pages": [
@@ -1090,7 +1094,6 @@
           {
             "tab": "W&B Models",
             "pages": [
-              "models/index",
               {
                 "group": "W&B Models",
                 "pages": [

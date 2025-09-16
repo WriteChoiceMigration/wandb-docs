@@ -261,8 +261,10 @@ def convert_callout_shortcodes(content):
             callout_type = "Tip"
         elif color == "info":
             callout_type = "Info"
-        elif color == "secondary" or color == "warning":
+        elif color == "secondary":
             callout_type = "Warning"
+        elif color == "warning":
+            callout_type = "Danger"
         else:
             callout_type = "Note"
 
