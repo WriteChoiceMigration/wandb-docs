@@ -985,7 +985,6 @@
           {
             "tab": "Platform",
             "pages": [
-              "index",
               {
                 "group": "Configuring W&B",
                 "pages": [
@@ -1096,7 +1095,7 @@
                 "group": "W&B Models",
                 "pages": [
                   "ja/guides/models/index",
-                  "quickstart",
+                  "ja/quickstart",
                   {
                     "group": "Experiments",
                     "pages": [
@@ -1484,7 +1483,6 @@
                   "ja/support/environment_variables",
                   "ja/support/experiments",
                   "ja/support/hyperparameter",
-                  "ja/support/inference",
                   "ja/support/logs",
                   "ja/support/metrics",
                   "ja/support/notebooks",
