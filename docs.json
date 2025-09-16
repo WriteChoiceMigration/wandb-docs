@@ -978,6 +978,537 @@
             ]
           }
         ]
+      },
+      {
+        "language": "ja",
+        "tabs": [
+          {
+            "tab": "Platform",
+            "pages": [
+              "index",
+              {
+                "group": "Configuring W&B",
+                "pages": [
+                  "ja/guides/models/app/settings-page/user-settings",
+                  "ja/guides/models/app/settings-page/billing-settings",
+                  "ja/guides/models/app/settings-page/team-settings",
+                  "ja/guides/models/app/settings-page/emails",
+                  "ja/guides/models/app/settings-page/teams",
+                  "ja/guides/models/app/settings-page/storage",
+                  "ja/guides/models/app/settings-page/anon",
+                  "ja/guides/secrets",
+                  {
+                    "group": "Deployment Options",
+                    "pages": [
+                      "ja/guides/hosting",
+                      {
+                        "group": "Deployment Options",
+                        "pages": [
+                          "ja/guides/hosting/hosting-options/saas_cloud",
+                          {
+                            "group": "Dedicated Cloud",
+                            "pages": [
+                              "ja/guides/hosting/hosting-options/dedicated_regions",
+                              "ja/guides/hosting/export-data-from-dedicated-cloud"
+                            ]
+                          },
+                          {
+                            "group": "Self-Managed",
+                            "pages": [
+                              "ja/guides/hosting/self-managed/ref-arch",
+                              {
+                                "group": "Run W&B Server on Kubernetes",
+                                "pages": [
+                                  "ja/guides/hosting/self-managed/operator-airgapped"
+                                ]
+                              },
+                              {
+                                "group": "Install on public cloud",
+                                "pages": [
+                                  "ja/guides/hosting/self-managed/aws-tf",
+                                  "ja/guides/hosting/self-managed/gcp-tf",
+                                  "ja/guides/hosting/self-managed/azure-tf"
+                                ]
+                              },
+                              "ja/guides/hosting/self-managed/bare-metal",
+                              "ja/guides/hosting/server-upgrade-process"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Identity and access management (IAM)",
+                        "pages": [
+                          {
+                            "group": "Authentication",
+                            "pages": [
+                              "ja/guides/hosting/iam/ldap",
+                              "ja/guides/hosting/iam/sso",
+                              "ja/guides/hosting/iam/identity_federation",
+                              "ja/guides/hosting/iam/service-accounts"
+                            ]
+                          },
+                          {
+                            "group": "Access management",
+                            "pages": [
+                              "ja/guides/hosting/iam/access-management/manage-organization",
+                              "ja/guides/hosting/iam/access-management/restricted-projects"
+                            ]
+                          },
+                          "ja/guides/hosting/iam/automate_iam",
+                          "ja/guides/hosting/iam/scim",
+                          "ja/guides/hosting/iam/advanced_env_vars"
+                        ]
+                      },
+                      {
+                        "group": "Data security",
+                        "pages": [
+                          "ja/guides/hosting/data-security/secure-storage-connector",
+                          "ja/guides/hosting/data-security/presigned-urls",
+                          "ja/guides/hosting/data-security/ip-allowlisting",
+                          "ja/guides/hosting/data-security/private-connectivity",
+                          "ja/guides/hosting/data-security/data-encryption"
+                        ]
+                      },
+                      "ja/guides/hosting/privacy-settings",
+                      {
+                        "group": "Monitoring and usage",
+                        "pages": [
+                          "ja/guides/hosting/monitoring-usage/audit-logging",
+                          "ja/guides/hosting/monitoring-usage/prometheus-logging",
+                          "ja/guides/hosting/monitoring-usage/slack-alerts",
+                          "ja/guides/hosting/monitoring-usage/org_dashboard"
+                        ]
+                      },
+                      "ja/guides/hosting/smtp",
+                      "ja/guides/hosting/env-vars"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "W&B Models",
+            "pages": [
+              "models/index",
+              {
+                "group": "W&B Models",
+                "pages": [
+                  "ja/guides/models/index",
+                  "quickstart",
+                  {
+                    "group": "Experiments",
+                    "pages": [
+                      "ja/guides/track/create-an-experiment",
+                      "ja/guides/track/config",
+                      "ja/guides/track/project-page",
+                      "ja/guides/track/workspaces",
+                      {
+                        "group": "What are runs?",
+                        "pages": [
+                          "ja/guides/runs/tags",
+                          "ja/guides/runs/filter-runs",
+                          "ja/guides/runs/forking",
+                          "ja/guides/runs/grouping",
+                          "ja/guides/runs/manage-runs",
+                          "ja/guides/runs/resuming",
+                          "ja/guides/runs/rewind",
+                          "ja/guides/runs/alert"
+                        ]
+                      },
+                      {
+                        "group": "Log objects and media",
+                        "pages": [
+                          "ja/guides/track/log/plots",
+                          "ja/guides/track/log/customize-logging-axes",
+                          "ja/guides/track/log/distributed-training",
+                          "ja/guides/track/log/media",
+                          "ja/guides/track/log/log-models",
+                          "ja/guides/track/log/log-summary",
+                          "ja/guides/track/log/log-tables",
+                          "ja/guides/track/log/working-with-csv"
+                        ]
+                      },
+                      "ja/guides/track/jupyter",
+                      "ja/guides/track/limits",
+                      "ja/guides/track/reproduce_experiments",
+                      "ja/guides/track/public-api-guide",
+                      "ja/guides/track/environment-variables"
+                    ]
+                  },
+                  {
+                    "group": "Sweeps",
+                    "pages": [
+                      "ja/guides/sweeps/walkthrough",
+                      "ja/guides/sweeps/add-w-and-b-to-your-code",
+                      {
+                        "group": "Define a sweep configuration",
+                        "pages": [
+                          "ja/guides/sweeps/sweep-config-keys"
+                        ]
+                      },
+                      "ja/guides/sweeps/initialize-sweeps",
+                      "ja/guides/sweeps/start-sweep-agents",
+                      "ja/guides/sweeps/parallelize-agents",
+                      "ja/guides/sweeps/visualize-sweep-results",
+                      "ja/guides/sweeps/pause-resume-and-cancel-sweeps",
+                      "ja/guides/sweeps/useful-resources",
+                      "ja/guides/sweeps/local-controller",
+                      "ja/guides/sweeps/troubleshoot-sweeps",
+                      "ja/guides/sweeps/sweeps-ui",
+                      "ja/guides/sweeps/existing-project"
+                    ]
+                  },
+                  {
+                    "group": "Tables",
+                    "pages": [
+                      "ja/guides/tables/tables-walkthrough",
+                      "ja/guides/tables/visualize-tables",
+                      "ja/guides/tables/tables-gallery",
+                      "ja/guides/tables/tables-download"
+                    ]
+                  },
+                  {
+                    "group": "W&B App UI",
+                    "pages": [
+                      {
+                        "group": "Panels",
+                        "pages": [
+                          {
+                            "group": "Line plots",
+                            "pages": [
+                              "ja/guides/app/features/panels/line-plot/reference",
+                              "ja/guides/app/features/panels/line-plot/sampling",
+                              "ja/guides/app/features/panels/line-plot/smoothing"
+                            ]
+                          },
+                          "ja/guides/app/features/panels/bar-plot",
+                          "ja/guides/app/features/panels/parallel-coordinates",
+                          "ja/guides/app/features/panels/scatter-plot",
+                          "ja/guides/app/features/panels/code",
+                          "ja/guides/app/features/panels/parameter-importance",
+                          "ja/guides/app/features/panels/run-comparer",
+                          {
+                            "group": "Query panels",
+                            "pages": [
+                              "ja/guides/app/features/panels/query-panels/embedding-projector"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Custom charts",
+                        "pages": [
+                          "ja/guides/app/features/custom-charts/walkthrough"
+                        ]
+                      },
+                      "ja/guides/app/features/cascade-settings"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "W&B Core",
+                "pages": [
+                  "ja/guides/core",
+                  {
+                    "group": "Artifacts",
+                    "pages": [
+                      "ja/guides/artifacts/construct-an-artifact",
+                      "ja/guides/artifacts/download-and-use-an-artifact",
+                      "ja/guides/artifacts/update-an-artifact",
+                      "ja/guides/artifacts/create-a-custom-alias",
+                      "ja/guides/artifacts/create-a-new-artifact-version",
+                      "ja/guides/artifacts/track-external-files",
+                      {
+                        "group": "Manage data",
+                        "pages": [
+                          "ja/guides/artifacts/delete-artifacts",
+                          "ja/guides/artifacts/ttl",
+                          "ja/guides/artifacts/storage"
+                        ]
+                      },
+                      "ja/guides/artifacts/explore-and-traverse-an-artifact-graph",
+                      "ja/guides/artifacts/data-privacy-and-compliance",
+                      "ja/guides/artifacts/artifacts-walkthrough"
+                    ]
+                  },
+                  {
+                    "group": "Registry",
+                    "pages": [
+                      "ja/guides/registry/registry_types",
+                      "ja/guides/registry/create_registry",
+                      "ja/guides/registry/configure_registry",
+                      "ja/guides/registry/create_collection",
+                      "ja/guides/registry/link_version",
+                      "ja/guides/registry/download_use_artifact",
+                      "ja/guides/registry/search_registry",
+                      "ja/guides/registry/organize-with-tags",
+                      "ja/guides/registry/registry_cards",
+                      "ja/guides/registry/lineage",
+                      "ja/guides/registry/model_registry_eol",
+                      {
+                        "group": "Model registry",
+                        "pages": [
+                          "ja/guides/registry/model_registry/walkthrough",
+                          "ja/guides/registry/model_registry/model-management-concepts",
+                          "ja/guides/registry/model_registry/log-model-to-experiment",
+                          "ja/guides/registry/model_registry/create-registered-model",
+                          "ja/guides/registry/model_registry/link-model-version",
+                          "ja/guides/registry/model_registry/organize-models",
+                          "ja/guides/registry/model_registry/model-lineage",
+                          "ja/guides/registry/model_registry/create-model-cards",
+                          "ja/guides/registry/model_registry/consume-models",
+                          "ja/guides/registry/model_registry/notifications",
+                          "ja/guides/registry/model_registry/access_controls"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Reports",
+                    "pages": [
+                      "ja/guides/reports/create-a-report",
+                      "ja/guides/reports/edit-a-report",
+                      "ja/guides/reports/collaborate-on-reports",
+                      "ja/guides/reports/clone-and-export-reports",
+                      "ja/guides/reports/embed-reports",
+                      "ja/guides/reports/cross-project-reports",
+                      "ja/guides/reports/reports-gallery"
+                    ]
+                  },
+                  {
+                    "group": "Automations",
+                    "pages": [
+                      {
+                        "group": "Create an automation",
+                        "pages": [
+                          "ja/guides/automations/create-automations/slack",
+                          "ja/guides/automations/create-automations/webhook"
+                        ]
+                      },
+                      "ja/guides/automations/automation-events"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Reference",
+                "pages": [
+                  "/ja/ref/js/index",
+                  {
+                    "group": "Python ライブラリ",
+                    "pages": [
+                      "/ja/ref/python/init/",
+                      {
+                        "group": "launch-library",
+                        "pages": [
+                          "/ja/ref/python/launch-library/launch_add/",
+                          "/ja/ref/python/launch-library/launchagent/",
+                          "/ja/ref/python/launch-library/launch/"
+                        ]
+                      },
+                      "/ja/ref/python/run/",
+                      "/ja/ref/python/sweep/",
+                      {
+                        "group": "wandb_ワークスペース",
+                        "pages": [
+                          "/ja/ref/python/wandb_workspaces/workspaces/",
+                          "/ja/ref/python/wandb_workspaces/reports/"
+                        ]
+                      },
+                      "/ja/ref/python/watch/",
+                      "/ja/ref/python/artifact/",
+                      {
+                        "group": "インポート＆エクスポート API",
+                        "pages": [
+                          "/ja/ref/python/public-api/api/",
+                          "/ja/ref/python/public-api/queuedrun/",
+                          "/ja/ref/python/public-api/runs/",
+                          "/ja/ref/python/public-api/run/",
+                          "/ja/ref/python/public-api/runqueue/",
+                          "/ja/ref/python/public-api/sweep/",
+                          "/ja/ref/python/public-api/job/",
+                          "/ja/ref/python/public-api/files/",
+                          "/ja/ref/python/public-api/project/",
+                          "/ja/ref/python/public-api/projects/",
+                          "/ja/ref/python/public-api/file/"
+                        ]
+                      },
+                      {
+                        "group": "インテグレーション",
+                        "pages": [
+                          {
+                            "group": "keras",
+                            "pages": [
+                              "/ja/ref/python/integrations/keras/wandbcallback/",
+                              "/ja/ref/python/integrations/keras/wandbevalcallback/",
+                              "/ja/ref/python/integrations/keras/wandbmetricslogger/",
+                              "/ja/ref/python/integrations/keras/wandbmodelcheckpoint/"
+                            ]
+                          }
+                        ]
+                      },
+                      "/ja/ref/python/agent/",
+                      {
+                        "group": "データタイプ",
+                        "pages": [
+                          "/ja/ref/python/data-types/boundingboxes2d/",
+                          "/ja/ref/python/data-types/html/",
+                          "/ja/ref/python/data-types/imagemask/",
+                          "/ja/ref/python/data-types/molecule/",
+                          "/ja/ref/python/data-types/object3d/",
+                          "/ja/ref/python/data-types/plotly/",
+                          "/ja/ref/python/data-types/wbtracetree/",
+                          "/ja/ref/python/data-types/image/",
+                          "/ja/ref/python/data-types/table/",
+                          "/ja/ref/python/data-types/audio/",
+                          "/ja/ref/python/data-types/graph/",
+                          "/ja/ref/python/data-types/histogram/",
+                          "/ja/ref/python/data-types/video/"
+                        ]
+                      },
+                      "/ja/ref/python/controller/",
+                      "/ja/ref/python/log/",
+                      "/ja/ref/python/login/",
+                      "/ja/ref/python/finish/",
+                      "/ja/ref/python/save/"
+                    ]
+                  },
+                  {
+                    "group": "クエリ式言語",
+                    "pages": [
+                      "/ja/ref/query-panel/float/",
+                      "/ja/ref/query-panel/artifact-version/",
+                      "/ja/ref/query-panel/artifact-type/",
+                      "/ja/ref/query-panel/audio-file/",
+                      "/ja/ref/query-panel/bokeh-file/",
+                      "/ja/ref/query-panel/html-file/",
+                      "/ja/ref/query-panel/int/",
+                      "/ja/ref/query-panel/joined-table/",
+                      "/ja/ref/query-panel/molecule-file/",
+                      "/ja/ref/query-panel/object-3-d-file/",
+                      "/ja/ref/query-panel/pytorch-model-file/",
+                      "/ja/ref/query-panel/run/",
+                      "/ja/ref/query-panel/video-file/",
+                      "/ja/ref/query-panel/artifact/",
+                      "/ja/ref/query-panel/partitioned-table/",
+                      "/ja/ref/query-panel/boolean/",
+                      "/ja/ref/query-panel/user/",
+                      "/ja/ref/query-panel/entity/",
+                      "/ja/ref/query-panel/project/",
+                      "/ja/ref/query-panel/image-file/",
+                      "/ja/ref/query-panel/file/",
+                      "/ja/ref/query-panel/table/",
+                      "/ja/ref/query-panel/string/",
+                      "/ja/ref/query-panel/number/"
+                    ]
+                  },
+                  {
+                    "group": "コマンドライン インターフェース",
+                    "pages": [
+                      "/ja/ref/cli/wandb-disabled/",
+                      "/ja/ref/cli/wandb-docker/",
+                      "/ja/ref/cli/wandb-docker-run/",
+                      "/ja/ref/cli/wandb-init/",
+                      "/ja/ref/cli/wandb-offline/",
+                      "/ja/ref/cli/wandb-pull/",
+                      "/ja/ref/cli/wandb-restore/",
+                      "/ja/ref/cli/wandb-sweep/",
+                      "/ja/ref/cli/wandb-sync/",
+                      "/ja/ref/cli/wandb-verify/",
+                      {
+                        "group": "wandb アーティファクト",
+                        "pages": [
+                          {
+                            "group": "wandb アーティファクト cache",
+                            "pages": [
+                              "/ja/ref/cli/wandb-artifact/wandb-artifact-cache/wandb-artifact-cache-cleanup/"
+                            ]
+                          },
+                          "/ja/ref/cli/wandb-artifact/wandb-artifact-get/",
+                          "/ja/ref/cli/wandb-artifact/wandb-artifact-ls/",
+                          "/ja/ref/cli/wandb-artifact/wandb-artifact-put/"
+                        ]
+                      },
+                      {
+                        "group": "wandb サーバー",
+                        "pages": [
+                          "/ja/ref/cli/wandb-server/wandb-server-start/",
+                          "/ja/ref/cli/wandb-server/wandb-server-stop/"
+                        ]
+                      },
+                      "/ja/ref/cli/wandb-agent/",
+                      {
+                        "group": "wandb ベータ版",
+                        "pages": [
+                          "/ja/ref/cli/wandb-beta/wandb-beta-sync/"
+                        ]
+                      },
+                      "/ja/ref/cli/wandb-launch/",
+                      "/ja/ref/cli/wandb-launch-sweep/",
+                      "/ja/ref/cli/wandb-launch-agent/",
+                      "/ja/ref/cli/wandb-online/",
+                      "/ja/ref/cli/wandb-controller/",
+                      {
+                        "group": "wandb ジョブ",
+                        "pages": [
+                          "/ja/ref/cli/wandb-job/wandb-job-create/",
+                          "/ja/ref/cli/wandb-job/wandb-job-describe/",
+                          "/ja/ref/cli/wandb-job/wandb-job-list/"
+                        ]
+                      },
+                      "/ja/ref/cli/wandb-status/",
+                      "/ja/ref/cli/wandb-scheduler/",
+                      "/ja/ref/cli/wandb-login/",
+                      "/ja/ref/cli/wandb-enabled/"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Support",
+                "pages": [
+                  "ja/support",
+                  "ja/support/academic",
+                  "ja/support/administrator",
+                  "ja/support/alerts",
+                  "ja/support/anonymous",
+                  "ja/support/artifacts",
+                  "ja/support/aws",
+                  "ja/support/billing",
+                  "ja/support/charts",
+                  "ja/support/connectivity",
+                  "ja/support/crashing_and_hanging_runs",
+                  "ja/support/environment_variables",
+                  "ja/support/experiments",
+                  "ja/support/hyperparameter",
+                  "ja/support/inference",
+                  "ja/support/logs",
+                  "ja/support/metrics",
+                  "ja/support/notebooks",
+                  "ja/support/outage",
+                  "ja/support/privacy",
+                  "ja/support/projects",
+                  "ja/support/python",
+                  "ja/support/reports",
+                  "ja/support/resuming",
+                  "ja/support/runs",
+                  "ja/support/security",
+                  "ja/support/storage",
+                  "ja/support/sweeps",
+                  "ja/support/tables",
+                  "ja/support/team_management",
+                  "ja/support/tensorboard",
+                  "ja/support/user_management",
+                  "ja/support/workspaces",
+                  "ja/support/wysiwyg"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
