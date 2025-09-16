@@ -1,0 +1,1080 @@
+{
+  "theme": "palm",
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Weights & Biases",
+  "colors": {
+    "primary": "#ffb633",
+    "light": "#ffb633",
+    "dark": "#ffb633"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://wandb.ai/"
+  },
+  "favicon": "/favicon.png",
+  "background": {
+    "decoration": "gradient"
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude"
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Log in",
+        "href": "https://app.wandb.ai/login?_gl=1*8ninq0*_ga*MTE3ODEwNDkyLjE3MzQwMjk0NjA.*_ga_JH1SJHJQXJ*MTczNDA2Mzc4OS4yLjEuMTczNDA2MzkxMC42MC4wLjA.*_ga_GMYDGNGKDT*MTczNDA2Mzc4OS4zLjEuMTczNDA2Mzg2Ny4wLjAuMA..*_gcl_au*MTc0Mjk3ODgzMi4xNzM0MDI5NDYw"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Sign Up",
+      "href": "https://app.wandb.ai/login?signup=true&_gl=1*y15ckv*_ga*MTE3ODEwNDkyLjE3MzQwMjk0NjA.*_ga_JH1SJHJQXJ*MTczNDA2Mzc4OS4yLjEuMTczNDA2Mzk3MC42MC4wLjA.*_ga_GMYDGNGKDT*MTczNDA2Mzc4OS4zLjEuMTczNDA2Mzg2Ny4wLjAuMA..*_gcl_au*MTc0Mjk3ODgzMi4xNzM0MDI5NDYw"
+    }
+  },
+  "navigation": {
+    "global": {},
+    "languages": [
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Platform",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "tab": "W&B Models",
+            "dropdowns": [
+              {
+                "dropdown": "Guides",
+                "icon": "book",
+                "pages": [
+                  "quickstart",
+                  {
+                    "group": "W&B Models",
+                    "pages": [
+                      {
+                        "group": "Experiments",
+                        "pages": [
+                          "guides/track/create-an-experiment",
+                          "guides/track/config",
+                          "guides/track/project-page",
+                          "guides/track/workspaces",
+                          {
+                            "group": "What are runs?",
+                            "pages": [
+                              "guides/runs/tags",
+                              "guides/runs/multiple-runs-per-process",
+                              "guides/runs/run-colors",
+                              "guides/runs/filter-runs",
+                              "guides/runs/forking",
+                              "guides/runs/grouping",
+                              "guides/runs/manage-runs",
+                              "guides/runs/resuming",
+                              "guides/runs/rewind",
+                              "guides/runs/color-code-runs",
+                              "guides/runs/alert"
+                            ]
+                          },
+                          {
+                            "group": "Log objects and media",
+                            "pages": [
+                              "guides/track/log/plots",
+                              "guides/track/log/customize-logging-axes",
+                              "guides/track/log/distributed-training",
+                              "guides/track/log/media",
+                              "guides/track/log/log-models",
+                              "guides/track/log/log-summary",
+                              "guides/track/log/log-tables",
+                              "guides/track/log/working-with-csv"
+                            ]
+                          },
+                          "guides/track/jupyter",
+                          "guides/track/limits",
+                          "guides/track/reproduce_experiments",
+                          "guides/track/public-api-guide",
+                          "guides/track/environment-variables"
+                        ]
+                      },
+                      {
+                        "group": "Sweeps",
+                        "pages": [
+                          "guides/sweeps/walkthrough",
+                          "guides/sweeps/add-w-and-b-to-your-code",
+                          {
+                            "group": "Define a sweep configuration",
+                            "pages": [
+                              "guides/sweeps/sweep-config-keys"
+                            ]
+                          },
+                          "guides/sweeps/initialize-sweeps",
+                          "guides/sweeps/start-sweep-agents",
+                          "guides/sweeps/parallelize-agents",
+                          "guides/sweeps/visualize-sweep-results",
+                          "guides/sweeps/pause-resume-and-cancel-sweeps",
+                          "guides/sweeps/useful-resources",
+                          "guides/sweeps/local-controller",
+                          "guides/sweeps/troubleshoot-sweeps",
+                          "guides/sweeps/sweeps-ui",
+                          "guides/sweeps/existing-project"
+                        ]
+                      },
+                      {
+                        "group": "Tables",
+                        "pages": [
+                          "guides/tables/tables-walkthrough",
+                          "guides/tables/log_tables",
+                          "guides/tables/visualize-tables",
+                          "guides/tables/tables-gallery",
+                          "guides/tables/tables-download"
+                        ]
+                      },
+                      "guides/models/evaluate-models",
+                      {
+                        "group": "W&B App UI",
+                        "pages": [
+                          "guides/models/app/keyboard-shortcuts",
+                          {
+                            "group": "Panels",
+                            "pages": [
+                              {
+                                "group": "Line plots",
+                                "pages": [
+                                  "guides/app/features/panels/line-plot/reference",
+                                  "guides/app/features/panels/line-plot/sampling",
+                                  "guides/app/features/panels/line-plot/smoothing"
+                                ]
+                              },
+                              "guides/app/features/panels/bar-plot",
+                              "guides/app/features/panels/parallel-coordinates",
+                              "guides/app/features/panels/scatter-plot",
+                              "guides/app/features/panels/media",
+                              "guides/app/features/panels/code",
+                              "guides/app/features/panels/parameter-importance",
+                              "guides/app/features/panels/run-comparer",
+                              {
+                                "group": "Query panels",
+                                "pages": [
+                                  "guides/app/features/panels/query-panels/embedding-projector"
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "group": "Custom charts",
+                            "pages": [
+                              "guides/app/features/custom-charts/walkthrough"
+                            ]
+                          },
+                          {
+                            "group": "Settings",
+                            "pages": [
+                              "guides/models/app/settings-page/user-settings",
+                              "guides/models/app/settings-page/billing-settings",
+                              "guides/models/app/settings-page/team-settings",
+                              "guides/models/app/settings-page/emails",
+                              "guides/models/app/settings-page/teams",
+                              "guides/models/app/settings-page/storage",
+                              "guides/models/app/settings-page/anon"
+                            ]
+                          },
+                          "guides/app/console-logs",
+                          "guides/app/features/cascade-settings"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "W&B Weave",
+                    "pages": [
+                      "guides/weave/set-up-weave"
+                    ]
+                  },
+                  {
+                    "group": "W&B Core",
+                    "pages": [
+                      {
+                        "group": "Artifacts",
+                        "pages": [
+                          "guides/artifacts/construct-an-artifact",
+                          "guides/artifacts/download-and-use-an-artifact",
+                          "guides/artifacts/update-an-artifact",
+                          "guides/artifacts/create-a-custom-alias",
+                          "guides/artifacts/create-a-new-artifact-version",
+                          "guides/artifacts/track-external-files",
+                          {
+                            "group": "Manage data",
+                            "pages": [
+                              "guides/artifacts/delete-artifacts",
+                              "guides/artifacts/ttl",
+                              "guides/artifacts/storage"
+                            ]
+                          },
+                          "guides/artifacts/explore-and-traverse-an-artifact-graph",
+                          "guides/artifacts/data-privacy-and-compliance",
+                          "guides/artifacts/artifacts-walkthrough"
+                        ]
+                      },
+                      "guides/secrets",
+                      {
+                        "group": "Registry",
+                        "pages": [
+                          "guides/registry/registry_types",
+                          "guides/registry/create_registry",
+                          "guides/registry/configure_registry",
+                          "guides/registry/create_collection",
+                          "guides/registry/link_version",
+                          "guides/registry/aliases",
+                          "guides/registry/download_use_artifact",
+                          "guides/registry/search_registry",
+                          "guides/registry/organize-with-tags",
+                          "guides/registry/registry_cards",
+                          "guides/registry/lineage",
+                          "guides/registry/delete_registry",
+                          "guides/registry/model_registry_eol",
+                          {
+                            "group": "Model registry",
+                            "pages": [
+                              "guides/registry/model_registry/walkthrough",
+                              "guides/registry/model_registry/model-management-concepts",
+                              "guides/registry/model_registry/log-model-to-experiment",
+                              "guides/registry/model_registry/create-registered-model",
+                              "guides/registry/model_registry/link-model-version",
+                              "guides/registry/model_registry/organize-models",
+                              "guides/registry/model_registry/model-lineage",
+                              "guides/registry/model_registry/create-model-cards",
+                              "guides/registry/model_registry/consume-models",
+                              "guides/registry/model_registry/notifications",
+                              "guides/registry/model_registry/access_controls"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Reports",
+                        "pages": [
+                          "guides/reports/create-a-report",
+                          "guides/reports/edit-a-report",
+                          "guides/reports/collaborate-on-reports",
+                          "guides/reports/clone-and-export-reports",
+                          "guides/reports/embed-reports",
+                          "guides/reports/cross-project-reports",
+                          "guides/reports/reports-gallery"
+                        ]
+                      },
+                      {
+                        "group": "Automations",
+                        "pages": [
+                          {
+                            "group": "Create an automation",
+                            "pages": [
+                              "guides/automations/create-automations/slack",
+                              "guides/automations/create-automations/webhook"
+                            ]
+                          },
+                          "guides/automations/automation-events"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "W&B Platform",
+                    "pages": [
+                      {
+                        "group": "Deployment options",
+                        "pages": [
+                          "guides/hosting/hosting-options/saas_cloud",
+                          {
+                            "group": "Dedicated Cloud",
+                            "pages": [
+                              "guides/hosting/hosting-options/dedicated_regions",
+                              "guides/hosting/export-data-from-dedicated-cloud"
+                            ]
+                          },
+                          {
+                            "group": "Self-Managed",
+                            "pages": [
+                              "guides/hosting/self-managed/ref-arch",
+                              {
+                                "group": "Run W&B Server on Kubernetes",
+                                "pages": [
+                                  "guides/hosting/self-managed/operator-airgapped"
+                                ]
+                              },
+                              {
+                                "group": "Install on public cloud",
+                                "pages": [
+                                  "guides/hosting/self-managed/aws-tf",
+                                  "guides/hosting/self-managed/gcp-tf",
+                                  "guides/hosting/self-managed/azure-tf"
+                                ]
+                              },
+                              "guides/hosting/self-managed/bare-metal",
+                              "guides/hosting/server-upgrade-process",
+                              "guides/hosting/self-managed/disable-automatic-app-version-updates"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Identity and access management (IAM)",
+                        "pages": [
+                          {
+                            "group": "Authentication",
+                            "pages": [
+                              "guides/hosting/iam/ldap",
+                              "guides/hosting/iam/sso",
+                              "guides/hosting/iam/identity_federation",
+                              "guides/hosting/iam/service-accounts"
+                            ]
+                          },
+                          {
+                            "group": "Access management",
+                            "pages": [
+                              "guides/hosting/iam/access-management/manage-organization",
+                              "guides/hosting/iam/access-management/restricted-projects"
+                            ]
+                          },
+                          "guides/hosting/iam/automate_iam",
+                          "guides/hosting/iam/scim",
+                          "guides/hosting/iam/advanced_env_vars"
+                        ]
+                      },
+                      {
+                        "group": "Data security",
+                        "pages": [
+                          "guides/hosting/data-security/secure-storage-connector",
+                          "guides/hosting/data-security/presigned-urls",
+                          "guides/hosting/data-security/ip-allowlisting",
+                          "guides/hosting/data-security/private-connectivity",
+                          "guides/hosting/data-security/data-encryption"
+                        ]
+                      },
+                      "guides/hosting/privacy-settings",
+                      {
+                        "group": "Monitoring and usage",
+                        "pages": [
+                          "guides/hosting/monitoring-usage/audit-logging",
+                          "guides/hosting/monitoring-usage/prometheus-logging",
+                          "guides/hosting/monitoring-usage/slack-alerts",
+                          "guides/hosting/monitoring-usage/org_dashboard"
+                        ]
+                      },
+                      "guides/hosting/smtp",
+                      "guides/hosting/env-vars"
+                    ]
+                  },
+                  {
+                    "group": "Integrations",
+                    "pages": [
+                      "guides/integrations",
+                      "guides/integrations/add-wandb-to-any-library",
+                      "guides/integrations/azure-openai-fine-tuning",
+                      "guides/integrations/catalyst",
+                      "guides/integrations/cohere-fine-tuning",
+                      "guides/integrations/databricks",
+                      "guides/integrations/deepchecks",
+                      "guides/integrations/deepchem",
+                      "guides/integrations/docker",
+                      "guides/integrations/dspy",
+                      "guides/integrations/farama-gymnasium",
+                      {
+                        "group": "fastai",
+                        "pages": [
+                          "guides/integrations/fastai/v1"
+                        ]
+                      },
+                      "guides/integrations/huggingface",
+                      "guides/integrations/diffusers",
+                      "guides/integrations/autotrain",
+                      "guides/integrations/accelerate",
+                      "guides/integrations/hydra",
+                      "guides/integrations/keras",
+                      "guides/integrations/kubeflow-pipelines-kfp",
+                      "guides/integrations/lightgbm",
+                      "guides/integrations/metaflow",
+                      "guides/integrations/mmengine",
+                      "guides/integrations/mmf",
+                      "guides/integrations/composer",
+                      "guides/integrations/openai-api",
+                      "guides/integrations/openai-fine-tuning",
+                      "guides/integrations/openai-gym",
+                      "guides/integrations/paddledetection",
+                      "guides/integrations/paddleocr",
+                      "guides/integrations/prodigy",
+                      "guides/integrations/pytorch",
+                      "guides/integrations/pytorch-geometric",
+                      "guides/integrations/torchtune",
+                      "guides/integrations/ignite",
+                      "guides/integrations/lightning",
+                      "guides/integrations/ray-tune",
+                      "guides/integrations/sagemaker",
+                      "guides/integrations/scikit",
+                      "guides/integrations/simpletransformers",
+                      "guides/integrations/skorch",
+                      "guides/integrations/spacy",
+                      "guides/integrations/stable-baselines-3",
+                      "guides/integrations/tensorboard",
+                      "guides/integrations/tensorflow",
+                      "guides/integrations/w-and-b-for-julia",
+                      "guides/integrations/xgboost",
+                      "guides/integrations/yolov5",
+                      "guides/integrations/ultralytics",
+                      "guides/integrations/yolox"
+                    ]
+                  }
+                ]
+              },
+              {
+                "dropdown": "Tutorials",
+                "icon": "graduation-cap",
+                "pages": [
+                  "tutorials/experiments",
+                  "tutorials/tables",
+                  "tutorials/sweeps",
+                  "tutorials/artifacts",
+                  "tutorials/workspaces",
+                  {
+                    "group": "Integration tutorials",
+                    "pages": [
+                      "tutorials/pytorch",
+                      "tutorials/lightning",
+                      "tutorials/huggingface",
+                      "tutorials/tensorflow",
+                      "tutorials/tensorflow_sweeps",
+                      "tutorials/monai_3d_segmentation",
+                      "tutorials/keras",
+                      "tutorials/keras_models",
+                      "tutorials/keras_tables",
+                      "tutorials/xgboost_sweeps"
+                    ]
+                  },
+                  "tutorials/weave_models_registry"
+                ]
+              },
+              {
+                "dropdown": "Reference",
+                "icon": "code",
+                "pages": [
+                  {
+                    "group": "Python Library v(0.21.3)",
+                    "pages": [
+                      "ref/python/python_api_walkthrough",
+                      {
+                        "group": "SDK",
+                        "pages": [
+                          {
+                            "group": "Functions",
+                            "pages": [
+                              "ref/python/sdk/functions/agent",
+                              "ref/python/sdk/functions/controller",
+                              "ref/python/sdk/functions/finish",
+                              "ref/python/sdk/functions/init",
+                              "ref/python/sdk/functions/login",
+                              "ref/python/sdk/functions/restore",
+                              "ref/python/sdk/functions/setup",
+                              "ref/python/sdk/functions/sweep",
+                              "ref/python/sdk/functions/teardown"
+                            ]
+                          },
+                          {
+                            "group": "Classes",
+                            "pages": [
+                              "ref/python/sdk/classes/artifact",
+                              "ref/python/sdk/classes/run",
+                              "ref/python/sdk/classes/settings"
+                            ]
+                          },
+                          {
+                            "group": "Data Types",
+                            "pages": [
+                              "ref/python/sdk/data-types/audio",
+                              "ref/python/sdk/data-types/box3d",
+                              "ref/python/sdk/data-types/html",
+                              "ref/python/sdk/data-types/image",
+                              "ref/python/sdk/data-types/molecule",
+                              "ref/python/sdk/data-types/object3d",
+                              "ref/python/sdk/data-types/plotly",
+                              "ref/python/sdk/data-types/table",
+                              "ref/python/sdk/data-types/video"
+                            ]
+                          },
+                          {
+                            "group": "Custom Charts",
+                            "pages": [
+                              "ref/python/sdk/custom-charts/bar",
+                              "ref/python/sdk/custom-charts/confusion_matrix",
+                              "ref/python/sdk/custom-charts/histogram",
+                              "ref/python/sdk/custom-charts/line_series",
+                              "ref/python/sdk/custom-charts/line",
+                              "ref/python/sdk/custom-charts/plot_table",
+                              "ref/python/sdk/custom-charts/pr_curve",
+                              "ref/python/sdk/custom-charts/roc_curve",
+                              "ref/python/sdk/custom-charts/scatter"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Query API",
+                        "pages": [
+                          "ref/python/public-api/api",
+                          "ref/python/public-api/artifacts",
+                          "ref/python/public-api/automations",
+                          "ref/python/public-api/files",
+                          "ref/python/public-api/history",
+                          "ref/python/public-api/integrations",
+                          "ref/python/public-api/projects",
+                          "ref/python/public-api/reports",
+                          "ref/python/public-api/runs",
+                          "ref/python/public-api/sweeps",
+                          "ref/python/public-api/teams",
+                          "ref/python/public-api/users"
+                        ]
+                      },
+                      {
+                        "group": "Automations",
+                        "pages": [
+                          "ref/python/automations/automation",
+                          "ref/python/automations/donothing",
+                          "ref/python/automations/metricchangefilter",
+                          "ref/python/automations/metricthresholdfilter",
+                          "ref/python/automations/newautomation",
+                          "ref/python/automations/onaddartifactalias",
+                          "ref/python/automations/oncreateartifact",
+                          "ref/python/automations/onlinkartifact",
+                          "ref/python/automations/onrunmetric",
+                          "ref/python/automations/sendnotification",
+                          "ref/python/automations/sendwebhook"
+                        ]
+                      },
+                      {
+                        "group": "wandb_workspaces",
+                        "pages": [
+                          "ref/python/wandb_workspaces/reports",
+                          "ref/python/wandb_workspaces/workspaces"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Command Line Interface",
+                    "pages": [
+                      "ref/cli/wandb-agent",
+                      {
+                        "group": "wandb artifact",
+                        "pages": [
+                          {
+                            "group": "wandb artifact cache",
+                            "pages": [
+                              "ref/cli/wandb-artifact/wandb-artifact-cache/wandb-artifact-cache-cleanup"
+                            ]
+                          },
+                          "ref/cli/wandb-artifact/wandb-artifact-get",
+                          "ref/cli/wandb-artifact/wandb-artifact-ls",
+                          "ref/cli/wandb-artifact/wandb-artifact-put"
+                        ]
+                      },
+                      {
+                        "group": "wandb beta",
+                        "pages": [
+                          "ref/cli/wandb-beta/wandb-beta-sync"
+                        ]
+                      },
+                      "ref/cli/wandb-controller",
+                      "ref/cli/wandb-disabled",
+                      "ref/cli/wandb-docker",
+                      "ref/cli/wandb-docker-run",
+                      "ref/cli/wandb-enabled",
+                      "ref/cli/wandb-init",
+                      {
+                        "group": "wandb job",
+                        "pages": [
+                          "ref/cli/wandb-job/wandb-job-create",
+                          "ref/cli/wandb-job/wandb-job-describe",
+                          "ref/cli/wandb-job/wandb-job-list"
+                        ]
+                      },
+                      "ref/cli/wandb-launch",
+                      "ref/cli/wandb-launch-agent",
+                      "ref/cli/wandb-launch-sweep",
+                      "ref/cli/wandb-login",
+                      "ref/cli/wandb-offline",
+                      "ref/cli/wandb-online",
+                      "ref/cli/wandb-pull",
+                      "ref/cli/wandb-restore",
+                      "ref/cli/wandb-scheduler",
+                      {
+                        "group": "wandb server",
+                        "pages": [
+                          "ref/cli/wandb-server/wandb-server-start",
+                          "ref/cli/wandb-server/wandb-server-stop"
+                        ]
+                      },
+                      "ref/cli/wandb-status",
+                      "ref/cli/wandb-sweep",
+                      "ref/cli/wandb-sync",
+                      "ref/cli/wandb-verify"
+                    ]
+                  },
+                  {
+                    "group": "Query Expression Language",
+                    "pages": [
+                      "ref/query-panel/artifact",
+                      "ref/query-panel/artifact-type",
+                      "ref/query-panel/artifact-version",
+                      "ref/query-panel/audio-file",
+                      "ref/query-panel/bokeh-file",
+                      "ref/query-panel/boolean",
+                      "ref/query-panel/entity",
+                      "ref/query-panel/file",
+                      "ref/query-panel/float",
+                      "ref/query-panel/html-file",
+                      "ref/query-panel/image-file",
+                      "ref/query-panel/int",
+                      "ref/query-panel/joined-table",
+                      "ref/query-panel/molecule-file",
+                      "ref/query-panel/number",
+                      "ref/query-panel/object-3-d-file",
+                      "ref/query-panel/partitioned-table",
+                      "ref/query-panel/project",
+                      "ref/query-panel/pytorch-model-file",
+                      "ref/query-panel/run",
+                      "ref/query-panel/string",
+                      "ref/query-panel/table",
+                      "ref/query-panel/user",
+                      "ref/query-panel/video-file"
+                    ]
+                  },
+                  {
+                    "group": "Release Notes",
+                    "pages": [
+                      "ref/release-notes/0.73",
+                      "ref/release-notes/0.72",
+                      "ref/release-notes/0.71",
+                      "ref/release-notes/0.70",
+                      "ref/release-notes/0.69.0",
+                      "ref/release-notes/0.68.0",
+                      "ref/release-notes/0.67.0",
+                      "ref/release-notes/0.66.0",
+                      "ref/release-notes/0.65.0",
+                      "ref/release-notes/0.63.0",
+                      "ref/release-notes/0.61.0",
+                      "ref/release-notes/0.60.0",
+                      {
+                        "group": "Archived Releases",
+                        "pages": [
+                          "ref/release-notes/archived/0.58.1",
+                          "ref/release-notes/archived/0.57.2",
+                          "ref/release-notes/archived/0.56.0",
+                          "ref/release-notes/archived/0.54.0",
+                          "ref/release-notes/archived/0.52.2",
+                          "ref/release-notes/archived/0.51.0",
+                          "ref/release-notes/archived/0.50.2",
+                          "ref/release-notes/archived/0.49.0",
+                          "ref/release-notes/archived/0.48.0",
+                          "ref/release-notes/archived/0.47.3",
+                          "ref/release-notes/archived/0.47.2",
+                          "ref/release-notes/archived/0.46.0",
+                          "ref/release-notes/archived/0.45.0",
+                          "ref/release-notes/archived/0.44.1",
+                          "ref/release-notes/archived/0.43.0",
+                          "ref/release-notes/archived/0.42.0",
+                          "ref/release-notes/archived/0.41.0",
+                          "ref/release-notes/archived/0.40.0",
+                          "ref/release-notes/archived/0.39.0",
+                          "ref/release-notes/archived/0.38.0",
+                          "ref/release-notes/archived/0.36.0",
+                          "ref/release-notes/archived/0.35.0",
+                          "ref/release-notes/archived/0.34.0",
+                          "ref/release-notes/archived/0.33.0"
+                        ]
+                      },
+                      "ref/release-notes/release-policies"
+                    ]
+                  },
+                  "ref/system-metrics"
+                ]
+              },
+              {
+                "dropdown": "Support",
+                "icon": "bullhorn",
+                "pages": [
+                  "support/academic",
+                  "support/administrator",
+                  "support/alerts",
+                  "support/anonymous",
+                  "support/artifacts",
+                  "support/aws",
+                  "support/billing",
+                  "support/charts",
+                  "support/connectivity",
+                  "support/crashing_and_hanging_runs",
+                  "support/environment_variables",
+                  "support/experiments",
+                  "support/hyperparameter",
+                  "support/inference",
+                  "support/logs",
+                  "support/metrics",
+                  "support/notebooks",
+                  "support/outage",
+                  "support/privacy",
+                  "support/projects",
+                  "support/python",
+                  "support/reports",
+                  "support/resuming",
+                  "support/runs",
+                  "support/security",
+                  "support/storage",
+                  "support/sweeps",
+                  "support/tables",
+                  "support/team_management",
+                  "support/tensorboard",
+                  "support/user_management",
+                  "support/workspaces",
+                  "support/wysiwyg"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "W&B Weave",
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "weave/index",
+                  "weave/quickstart"
+                ]
+              },
+              {
+                "group": "Guides",
+                "pages": [
+                  {
+                    "group": "Iteration",
+                    "pages": [
+                      "weave/tutorial-tracing_2",
+                      {
+                        "group": "Tracing & Debugging",
+                        "pages": [
+                          "weave/guides/tracking/index",
+                          "weave/guides/tracking/tracing",
+                          "weave/guides/tracking/costs",
+                          "weave/guides/core-types/media",
+                          "weave/guides/tools/playground",
+                          "weave/guides/integrations/index",
+                          "weave/guides/tools/saved-views",
+                          "weave/guides/tools/comparison",
+                          "weave/guides/tracking/trace-tree",
+                          "weave/guides/tracking/otel",
+                          "weave/guides/tracking/video"
+                        ]
+                      },
+                      {
+                        "group": "Version Control for Models & Prompts",
+                        "pages": [
+                          "weave/tutorial-weave_models",
+                          "weave/guides/core-types/models",
+                          "weave/guides/core-types/prompts",
+                          "weave/guides/tracking/objects",
+                          "weave/guides/tracking/ops"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Evaluation",
+                    "pages": [
+                      "weave/tutorial-eval",
+                      "weave/tutorial-rag",
+                      {
+                        "group": "Evaluations",
+                        "pages": [
+                          "weave/guides/core-types/evaluations",
+                          "weave/guides/core-types/datasets",
+                          "weave/guides/evaluation/scorers",
+                          "weave/guides/evaluation/builtin_scorers",
+                          "weave/guides/evaluation/weave_local_scorers",
+                          "weave/guides/evaluation/evaluation_logger",
+                          "weave/guides/core-types/leaderboards"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Productionization",
+                    "pages": [
+                      {
+                        "group": "Collect Feedback & Examples",
+                        "pages": [
+                          "weave/guides/tracking/feedback",
+                          "weave/guides/tracking/redact-pii"
+                        ]
+                      },
+                      {
+                        "group": "Online Evaluation",
+                        "pages": [
+                          "weave/guides/evaluation/guardrails_and_monitors"
+                        ]
+                      },
+                      {
+                        "group": "Tools & Utilities",
+                        "pages": [
+                          "weave/guides/tools/index",
+                          "weave/guides/tools/serve",
+                          "weave/guides/tools/deploy",
+                          "guides/tracking/otel"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Integrations",
+                    "pages": [
+                      "guides/integrations/index",
+                      {
+                        "group": "LLM Providers",
+                        "pages": [
+                          "weave/guides/integrations/inference",
+                          "weave/guides/integrations/bedrock",
+                          "weave/guides/integrations/anthropic",
+                          "weave/guides/integrations/cerebras",
+                          "weave/guides/integrations/cohere",
+                          "weave/guides/integrations/google",
+                          "weave/guides/integrations/groq",
+                          "weave/guides/integrations/huggingface",
+                          "weave/guides/integrations/litellm",
+                          "weave/guides/integrations/azure",
+                          "weave/guides/integrations/mistral",
+                          "weave/guides/integrations/nvidia_nim",
+                          "weave/guides/integrations/openai",
+                          "weave/guides/integrations/openrouter",
+                          "weave/guides/integrations/together_ai"
+                        ]
+                      },
+                      "weave/guides/integrations/local_models",
+                      {
+                        "group": "Frameworks",
+                        "pages": [
+                          "weave/guides/integrations/openai_agents",
+                          "weave/guides/integrations/langchain",
+                          "weave/guides/integrations/llamaindex",
+                          "weave/guides/integrations/dspy",
+                          "weave/guides/integrations/instructor",
+                          "weave/guides/integrations/crewai",
+                          "weave/guides/integrations/smolagents",
+                          "weave/guides/integrations/pydantic_ai",
+                          "weave/guides/integrations/google_adk",
+                          "weave/guides/integrations/autogen",
+                          "weave/guides/integrations/verdict",
+                          "weave/guides/integrations/js"
+                        ]
+                      },
+                      {
+                        "group": "Protocols",
+                        "pages": [
+                          "weave/guides/integrations/mcp"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Enterprise",
+                    "pages": [
+                      "weave/guides/platform/index",
+                      "weave/guides/platform/weave-self-managed"
+                    ]
+                  },
+                  {
+                    "group": "Tools & Resources",
+                    "pages": [
+                      "weave/guides/core-types/env-vars",
+                      "weave/guides/troubleshooting",
+                      "weave/guides/tracking/faqs"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Cookbooks",
+                "pages": [
+                  "weave/cookbooks/index",
+                  {
+                    "group": "Getting Started",
+                    "pages": [
+                      "weave/cookbooks/Intro_to_Weave_Hello_Trace",
+                      "weave/cookbooks/Intro_to_Weave_Hello_Eval"
+                    ]
+                  },
+                  {
+                    "group": "Evaluations & Datasets",
+                    "pages": [
+                      "weave/cookbooks/leaderboard_quickstart",
+                      "weave/cookbooks/hf_dataset_evals",
+                      "weave/cookbooks/import_from_csv"
+                    ]
+                  },
+                  {
+                    "group": "Models & Prompts",
+                    "pages": [
+                      "weave/cookbooks/Models_and_Weave_Integration_Demo",
+                      "weave/cookbooks/chain_of_density",
+                      "weave/cookbooks/dspy_prompt_optimization",
+                      "weave/cookbooks/notdiamond_custom_routing"
+                    ]
+                  },
+                  {
+                    "group": "Advanced Topics",
+                    "pages": [
+                      "weave/cookbooks/multi-agent-structured-output",
+                      "weave/cookbooks/codegen",
+                      "weave/cookbooks/ocr-pipeline",
+                      "weave/cookbooks/audio_with_weave"
+                    ]
+                  },
+                  {
+                    "group": "Production & Monitoring",
+                    "pages": [
+                      "weave/cookbooks/online_monitoring",
+                      "weave/cookbooks/feedback_prod",
+                      "weave/cookbooks/scorers_as_guardrails",
+                      "weave/cookbooks/custom_model_cost",
+                      "weave/cookbooks/pii"
+                    ]
+                  },
+                  {
+                    "group": "API & Integration",
+                    "pages": [
+                      "weave/cookbooks/weave_via_service_api"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Reference",
+                "pages": [
+                  "weave/reference/index",
+                  {
+                    "group": "Python SDK",
+                    "pages": [
+                      "weave/reference/python-sdk/weave/index",
+                      {
+                        "group": "Core",
+                        "pages": [
+                          "weave/reference/python-sdk/weave/trace/weave_client",
+                          "weave/reference/python-sdk/weave/trace/op",
+                          "weave/reference/python-sdk/weave/trace/util"
+                        ]
+                      },
+                      {
+                        "group": "Trace Server",
+                        "pages": [
+                          "weave/reference/python-sdk/weave/trace_server/trace_server_interface"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "TypeScript SDK",
+                    "pages": [
+                      "weave/reference/typescript-sdk/weave/index",
+                      {
+                        "group": "Classes",
+                        "pages": [
+                          "weave/reference/typescript-sdk/weave/classes/Dataset",
+                          "weave/reference/typescript-sdk/weave/classes/Evaluation",
+                          "weave/reference/typescript-sdk/weave/classes/WeaveClient",
+                          "weave/reference/typescript-sdk/weave/classes/WeaveObject"
+                        ]
+                      },
+                      {
+                        "group": "Functions",
+                        "pages": [
+                          "weave/reference/typescript-sdk/weave/functions/init",
+                          "weave/reference/typescript-sdk/weave/functions/login",
+                          "weave/reference/typescript-sdk/weave/functions/op",
+                          "weave/reference/typescript-sdk/weave/functions/weaveAudio",
+                          "weave/reference/typescript-sdk/weave/functions/weaveImage",
+                          "weave/reference/typescript-sdk/weave/functions/weavePython",
+                          "weave/reference/typescript-sdk/weave/functions/weaveVideo",
+                          "weave/reference/typescript-sdk/weave/functions/withWeaveClient"
+                        ]
+                      },
+                      {
+                        "group": "Interfaces",
+                        "pages": [
+                          "weave/reference/typescript-sdk/weave/interfaces/CallSchema",
+                          "weave/reference/typescript-sdk/weave/interfaces/CallsFilter"
+                        ]
+                      },
+                      {
+                        "group": "Type Aliases",
+                        "pages": [
+                          "weave/reference/typescript-sdk/weave/type-aliases/Op"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Service API",
+                    "openapi": "openapi.json"
+                  }
+                ]
+              },
+              {
+                "group": "Open Source",
+                "pages": [
+                  "weave/open-source"
+                ]
+              },
+              {
+                "group": "Community",
+                "pages": [
+                  "weave/community"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "W&B Inference",
+            "pages": [
+              "inference/prerequisites",
+              "inference/models",
+              "inference/usage-limits",
+              "inference/api-reference",
+              "inference/examples",
+              "inference/ui-guide",
+              "inference/support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/wandb/docs",
+      "discord": "https://discord.com/invite/RgB8CPk2ce",
+      "x": "https://x.com/weights_biases?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "youtube": "https://www.youtube.com/c/WeightsBiases",
+      "linkedin": "https://www.linkedin.com/company/wandb/"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Source Serif 4",
+      "weight": 600,
+      "format": "woff2"
+    }
+  }
+}
