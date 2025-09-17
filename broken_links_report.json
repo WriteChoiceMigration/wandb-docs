@@ -1,0 +1,5668 @@
+{
+  "metadata": {
+    "generated_at": "2025-09-17 19:49:48",
+    "base_url": "https://docs.wandb.ai",
+    "total_pages": 180,
+    "total_links_processed": 647,
+    "max_instances": 15,
+    "processing_time_seconds": 482.2459075450897,
+    "script_version": "3.0_parallel"
+  },
+  "results": [
+    {
+      "page": "guides/artifacts/delete-artifacts.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/registry/model_registry/access_controls",
+          "fix": "/guides/registry/model_registry/access_controls/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 0.3508622646331787,
+      "worker_id": 15
+    },
+    {
+      "page": "guides/app/features/panels/media.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/media",
+          "fix": "/guides/track/log/media/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.9709713459014893,
+      "worker_id": 6
+    },
+    {
+      "page": "guides/app/features/panels/run-comparer.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/filter-runs",
+          "fix": "/guides/runs/filter-runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.158813714981079,
+      "worker_id": 10
+    },
+    {
+      "page": "guides/artifacts/artifacts-walkthrough.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.0606157779693604,
+      "worker_id": 13
+    },
+    {
+      "page": "guides/app/features/panels/query-panels.mdx",
+      "links": [
+        {
+          "broken": "../../../../track/public-api-guide.md#understanding-the-different-attributes",
+          "fix": "/guides/track/public-api-guide/#understanding-the-different-attributes",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.028202533721924,
+      "worker_id": 9
+    },
+    {
+      "page": "guides/artifacts/create-a-new-artifact-version.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.3917222023010254,
+      "worker_id": 14
+    },
+    {
+      "page": "guides/app/features/panels/parameter-importance.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/config/",
+          "fix": "/guides/track/config/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.0100016593933105,
+      "worker_id": 8
+    },
+    {
+      "page": "guides/app/features/panels/line-plot/reference.mdx",
+      "links": [
+        {
+          "broken": "/support/kb-articles/formula_smoothing_algorithm",
+          "fix": "/support/formula_smoothing_algorithm/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.464188575744629,
+      "worker_id": 4
+    },
+    {
+      "page": "guides/app/features/custom-charts.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/config",
+          "fix": "/guides/track/config/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.220698356628418,
+      "worker_id": 3
+    },
+    {
+      "page": "guides/artifacts/download-and-use-an-artifact.mdx",
+      "links": [
+        {
+          "broken": "/ref/python/public-api/index",
+          "fix": "/ref/python/public-api/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/track-external-files",
+          "fix": "/guides/artifacts/track-external-files/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/construct-an-artifact",
+          "fix": "/guides/artifacts/construct-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.9568047523498535,
+      "worker_id": 16
+    },
+    {
+      "page": "guides/automations/create-automations/slack.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/create-automations/webhook",
+          "fix": "/guides/automations/create-automations/webhook/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events",
+          "fix": "/guides/automations/automation-events/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events",
+          "fix": "/guides/automations/automation-events/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events#run-events",
+          "fix": "/guides/automations/automation-events/#run-events",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events",
+          "fix": "/guides/automations/automation-events/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 1.190382480621338,
+      "worker_id": 23
+    },
+    {
+      "page": "guides/app/features/panels.mdx",
+      "links": [
+        {
+          "broken": "line-plot/#all-line-plots-in-a-workspace",
+          "fix": "/guides/app/features/panels/line-plot/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "line-plot/",
+          "fix": "/guides/app/features/panels/line-plot/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "bar-plot",
+          "fix": "/guides/app/features/panels/bar-plot/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 10.931944370269775,
+      "worker_id": 11
+    },
+    {
+      "page": "guides/artifacts/track-external-files.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/artifacts-walkthrough",
+          "fix": "/guides/artifacts/artifacts-walkthrough/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/explore-and-traverse-an-artifact-graph",
+          "fix": "/guides/artifacts/explore-and-traverse-an-artifact-graph/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.222315788269043,
+      "worker_id": 19
+    },
+    {
+      "page": "guides/artifacts/explore-and-traverse-an-artifact-graph.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/artifacts-walkthrough",
+          "fix": "/guides/artifacts/artifacts-walkthrough/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/manage-data/delete-artifacts",
+          "fix": "/guides/artifacts/delete-artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.930210113525391,
+      "worker_id": 17
+    },
+    {
+      "page": "guides/app.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/",
+          "fix": "/guides/track/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "settings-page/",
+          "fix": "/guides/app/settings-page/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "features/cascade-settings",
+          "fix": "/guides/app/features/cascade-settings/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/",
+          "fix": "/guides/app/features/panels/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/custom-charts/",
+          "fix": "/guides/app/features/custom-charts/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/reports/",
+          "fix": "/guides/reports/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 12.397323608398438,
+      "worker_id": 12
+    },
+    {
+      "page": "guides/app/features/panels/line-plot.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/automations",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events#run-events",
+          "fix": "/guides/automations/automation-events/#run-events",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/_index",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#customize-how-runs-are-displayed",
+          "fix": "/guides/runs/#customize-how-runs-are-displayed",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 12.51732325553894,
+      "worker_id": 5
+    },
+    {
+      "page": "guides/artifacts/storage.mdx",
+      "links": [
+        {
+          "broken": "../track-external-files",
+          "fix": "/guides/artifacts/track-external-files/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.711203575134277,
+      "worker_id": 18
+    },
+    {
+      "page": "guides/artifacts/ttl.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/explore-and-traverse-an-artifact-graph",
+          "fix": "/guides/artifacts/explore-and-traverse-an-artifact-graph/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../construct-an-artifact",
+          "fix": "/guides/artifacts/construct-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../construct-an-artifact",
+          "fix": "/guides/artifacts/construct-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../construct-an-artifact.md#add-files-to-an-artifact",
+          "fix": "/guides/artifacts/construct-an-artifact/#add-files-to-an-artifact",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../construct-an-artifact.md#3-save-your-artifact-to-the-wb-server",
+          "fix": "/guides/artifacts/construct-an-artifact/#3-save-your-artifact-to-the-wb-server",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../download-and-use-an-artifact",
+          "fix": "/guides/artifacts/download-and-use-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../download-and-use-an-artifact",
+          "fix": "/guides/artifacts/download-and-use-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 14.952691793441772,
+      "worker_id": 20
+    },
+    {
+      "page": "guides/hosting/env-vars.mdx",
+      "links": [
+        {
+          "broken": "/support/kb-articles/difference_team_entity_user_entity_mean_me",
+          "fix": "/support/difference_team_entity_user_entity_mean_me/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/iam/authentication/identity_federation",
+          "fix": "/guides/hosting/iam/identity_federation/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.136859655380249,
+      "worker_id": 29
+    },
+    {
+      "page": "guides/automations/create-automations/webhook.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/create-automations/slack",
+          "fix": "/guides/automations/create-automations/slack/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/secrets",
+          "fix": "/guides/secrets/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events",
+          "fix": "/guides/automations/automation-events/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/secrets#add-a-secret",
+          "fix": "/guides/secrets/#add-a-secret",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/secrets",
+          "fix": "/guides/secrets/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events",
+          "fix": "/guides/automations/automation-events/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events#run-events",
+          "fix": "/guides/automations/automation-events/#run-events",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events",
+          "fix": "/guides/automations/automation-events/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/download-and-use-an-artifact",
+          "fix": "/guides/artifacts/download-and-use-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 11.071108102798462,
+      "worker_id": 24
+    },
+    {
+      "page": "guides/automations/create-automations.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/create-automations/slack",
+          "fix": "/guides/automations/create-automations/slack/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/create-automations/webhook",
+          "fix": "/guides/automations/create-automations/webhook/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/configure_registry#registry-roles",
+          "fix": "/guides/registry/configure_registry/#registry-roles",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/secrets",
+          "fix": "/guides/secrets/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events#run-events",
+          "fix": "/guides/automations/automation-events/#run-events",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "slack",
+          "fix": "/guides/automations/create-automations/slack/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "webhook",
+          "fix": "/guides/automations/create-automations/webhook/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events",
+          "fix": "/guides/automations/automation-events/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "slack",
+          "fix": "/guides/automations/create-automations/slack/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "webhook",
+          "fix": "/guides/automations/create-automations/webhook/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/secrets",
+          "fix": "/guides/secrets/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 13.042768478393555,
+      "worker_id": 25
+    },
+    {
+      "page": "guides/core.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/reports/",
+          "fix": "/guides/reports/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/query-panels/",
+          "fix": "/guides/app/features/panels/query-panels/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/secrets",
+          "fix": "/guides/secrets/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 7.423285484313965,
+      "worker_id": 27
+    },
+    {
+      "page": "guides/artifacts.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./track-external-files",
+          "fix": "/guides/artifacts/track-external-files/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./download-and-use-an-artifact",
+          "fix": "/guides/artifacts/download-and-use-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./create-a-new-artifact-version",
+          "fix": "/guides/artifacts/create-a-new-artifact-version/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./update-an-artifact",
+          "fix": "/guides/artifacts/update-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 17.57049584388733,
+      "worker_id": 21
+    },
+    {
+      "page": "guides/hosting/iam/access-management/manage-organization.mdx",
+      "links": [
+        {
+          "broken": "../authentication/sso",
+          "fix": "/guides/hosting/iam/sso/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../authentication/ldap",
+          "fix": "/guides/hosting/iam/ldap/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/iam/authentication/service-accounts",
+          "fix": "/guides/hosting/iam/service-accounts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.2335145473480225,
+      "worker_id": 34
+    },
+    {
+      "page": "guides/hosting/export-data-from-dedicated-cloud.mdx",
+      "links": [
+        {
+          "broken": "/ref/python/public-api/index",
+          "fix": "/ref/python/public-api/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/reports/clone-and-export-reports/",
+          "fix": "/guides/reports/clone-and-export-reports/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/explore-and-traverse-an-artifact-graph",
+          "fix": "/guides/artifacts/explore-and-traverse-an-artifact-graph/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/download-and-use-an-artifact/#download-and-use-an-artifact-stored-on-wb",
+          "fix": "/guides/artifacts/download-and-use-an-artifact/#download-and-use-an-artifact-stored-on-wb",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.34409236907959,
+      "worker_id": 30
+    },
+    {
+      "page": "guides/hosting/hosting-options/dedicated_cloud.mdx",
+      "links": [
+        {
+          "broken": "/guides/hosting/iam/authentication/sso",
+          "fix": "/guides/hosting/iam/sso/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/iam/authentication/ldap",
+          "fix": "/guides/hosting/iam/ldap/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/iam/authentication/identity_federation",
+          "fix": "/guides/hosting/iam/identity_federation/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/hosting-options/self-managed/server-upgrade-process",
+          "fix": "/guides/hosting/server-upgrade-process/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../saas_cloud",
+          "fix": "/guides/hosting/hosting-options/saas_cloud/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 9.739770889282227,
+      "worker_id": 31
+    },
+    {
+      "page": "guides/hosting/hosting-options/self-managed.mdx",
+      "links": [
+        {
+          "broken": "../saas_cloud",
+          "fix": "/guides/hosting/hosting-options/saas_cloud/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/hosting-options/self-managed/install-on-public-cloud/aws-tf",
+          "fix": "/guides/hosting/self-managed/aws-tf/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/hosting-options/self-managed/install-on-public-cloud/gcp-tf",
+          "fix": "/guides/hosting/self-managed/gcp-tf/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/hosting-options/self-managed/install-on-public-cloud/azure-tf",
+          "fix": "/guides/hosting/self-managed/azure-tf/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/hosting-options/self-managed/bare-metal",
+          "fix": "/guides/hosting/self-managed/bare-metal/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 11.588979244232178,
+      "worker_id": 32
+    },
+    {
+      "page": "guides/hosting/iam/advanced_env_vars.mdx",
+      "links": [
+        {
+          "broken": "/support/kb-articles/difference_team_entity_user_entity_mean_me",
+          "fix": "/support/difference_team_entity_user_entity_mean_me/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/iam/authentication/identity_federation",
+          "fix": "/guides/hosting/iam/identity_federation/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.315639972686768,
+      "worker_id": 36
+    },
+    {
+      "page": "guides/hosting/iam/automate_iam.mdx",
+      "links": [
+        {
+          "broken": "access-management/manage-organization.md#remove-a-user",
+          "fix": "/guides/hosting/iam/access-management/manage-organization/#remove-a-user",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.6852598190307617,
+      "worker_id": 37
+    },
+    {
+      "page": "guides/hosting/iam/sso.mdx",
+      "links": [
+        {
+          "broken": "../advanced_env_vars",
+          "fix": "/guides/hosting/iam/advanced_env_vars/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.677340507507324,
+      "worker_id": 41
+    },
+    {
+      "page": "guides/hosting/iam/access-management-intro.mdx",
+      "links": [
+        {
+          "broken": "./manage-organization#add-and-manage-users",
+          "fix": "/guides/hosting/iam/access-management/manage-organization/#add-and-manage-users",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./manage-organization#add-and-manage-teams",
+          "fix": "/guides/hosting/iam/access-management/manage-organization/#add-and-manage-teams",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./restricted-projects",
+          "fix": "/guides/hosting/iam/access-management/restricted-projects/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.386082887649536,
+      "worker_id": 35
+    },
+    {
+      "page": "guides/hosting/iam/org_team_struct.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/reports/",
+          "fix": "/guides/reports/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 7.686884880065918,
+      "worker_id": 38
+    },
+    {
+      "page": "guides/hosting/iam/scim.mdx",
+      "links": [
+        {
+          "broken": "/guides/hosting/iam/authentication/sso",
+          "fix": "/guides/hosting/iam/sso/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/iam/authentication/service-accounts.md/#organization-scoped-service-accounts",
+          "fix": "/guides/hosting/iam/service-accounts/#organization-scoped-service-accounts",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 7.0290069580078125,
+      "worker_id": 39
+    },
+    {
+      "page": "guides/hosting/iam/service-accounts.mdx",
+      "links": [
+        {
+          "broken": "../access-management/restricted-projects.md#visibility-scopes",
+          "fix": "/guides/hosting/iam/access-management/restricted-projects/#visibility-scopes",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../access-management/restricted-projects.md#visibility-scopes",
+          "fix": "/guides/hosting/iam/access-management/restricted-projects/#visibility-scopes",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../access-management/restricted-projects.md#visibility-scopes",
+          "fix": "/guides/hosting/iam/access-management/restricted-projects/#visibility-scopes",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.720662355422974,
+      "worker_id": 40
+    },
+    {
+      "page": "guides/hosting/self-managed/bare-metal.mdx",
+      "links": [
+        {
+          "broken": "ref-arch.md#infrastructure-requirements",
+          "fix": "/guides/hosting/self-managed/ref-arch/#infrastructure-requirements",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.757037878036499,
+      "worker_id": 43
+    },
+    {
+      "page": "guides/hosting.mdx",
+      "links": [
+        {
+          "broken": "./hosting-options/saas_cloud",
+          "fix": "/guides/hosting/#wb-multi-tenant-cloud",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.3768656253814697,
+      "worker_id": 45
+    },
+    {
+      "page": "guides/automations.mdx",
+      "links": [
+        {
+          "broken": "create-automations/",
+          "fix": "/guides/automations/create-automations/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "automation-events",
+          "fix": "/guides/automations/automation-events/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/project-page",
+          "fix": "/guides/track/project-page/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "automation-events",
+          "fix": "/guides/automations/automation-events/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "create-automations/",
+          "fix": "/guides/automations/create-automations/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/secrets",
+          "fix": "/guides/secrets/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "automation-events.md#run-metrics-events",
+          "fix": "/guides/automations/automation-events/#run-metrics-events",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "create-automations/",
+          "fix": "/guides/automations/create-automations/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "automation-events",
+          "fix": "/guides/automations/automation-events/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/secrets",
+          "fix": "/guides/secrets/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 22.305108785629272,
+      "worker_id": 26
+    },
+    {
+      "page": "guides/hosting/self-managed/ref-arch.mdx",
+      "links": [
+        {
+          "broken": "kubernetes-operator/",
+          "fix": "/guides/hosting/operator/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "kubernetes-operator/operator-airgapped",
+          "fix": "/guides/hosting/self-managed/operator-airgapped/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.6660449504852295,
+      "worker_id": 44
+    },
+    {
+      "page": "guides/integrations/deepchem.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.178534984588623,
+      "worker_id": 49
+    },
+    {
+      "page": "guides/hosting/operator.mdx",
+      "links": [
+        {
+          "broken": "../ref-arch.md#infrastructure-requirements",
+          "fix": "/guides/hosting/self-managed/ref-arch/#infrastructure-requirements",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../bare-metal",
+          "fix": "/guides/hosting/self-managed/bare-metal/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "operator-airgapped",
+          "fix": "/guides/hosting/self-managed/operator-airgapped/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../install-on-public-cloud/aws-tf.md#migrate-to-operator-based-aws-terraform-modules",
+          "fix": "/modules/wandb/wandb/helm/latest",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 9.694061994552612,
+      "worker_id": 42
+    },
+    {
+      "page": "guides/integrations/farama-gymnasium.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/media",
+          "fix": "/guides/track/log/media/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.018035411834717,
+      "worker_id": 52
+    },
+    {
+      "page": "guides/integrations/diffusers.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log/media",
+          "fix": "/guides/track/log/media/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.779192686080933,
+      "worker_id": 50
+    },
+    {
+      "page": "guides/integrations/dspy.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/quickstart",
+          "fix": "/quickstart/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../models/tables/visualize-tables.md",
+          "fix": "/guides/tables/visualize-tables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 8.974012851715088,
+      "worker_id": 51
+    },
+    {
+      "page": "guides/integrations/hydra.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/distributed-training",
+          "fix": "/guides/track/log/distributed-training/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.49817967414856,
+      "worker_id": 55
+    },
+    {
+      "page": "guides/integrations/dagster.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/support/kb-articles/service_account_useful",
+          "fix": "/support/service_account_useful/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/resuming",
+          "fix": "/guides/runs/resuming/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 13.133877754211426,
+      "worker_id": 48
+    },
+    {
+      "page": "guides/integrations/fastai.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "v1",
+          "fix": "/guides/integrations/fastai/v1/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.125514030456543,
+      "worker_id": 53
+    },
+    {
+      "page": "guides/integrations/lightgbm.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.537804365158081,
+      "worker_id": 58
+    },
+    {
+      "page": "guides/integrations/openai-fine-tuning.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 0.13215088844299316,
+      "worker_id": 63
+    },
+    {
+      "page": "guides/integrations/keras.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track",
+          "fix": "/guides/track/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/explore-and-traverse-an-artifact-graph",
+          "fix": "/guides/artifacts/explore-and-traverse-an-artifact-graph/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 7.171437740325928,
+      "worker_id": 56
+    },
+    {
+      "page": "guides/integrations/nim.mdx",
+      "links": [
+        {
+          "broken": "../create-and-deploy-jobs/add-job-to-queue",
+          "fix": "/guides/launch/add-job-to-queue/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.525662660598755,
+      "worker_id": 61
+    },
+    {
+      "page": "guides/integrations/huggingface.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/quickstart",
+          "fix": "/quickstart/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 12.891015768051147,
+      "worker_id": 54
+    },
+    {
+      "page": "guides/automations/automation-events.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "create-automations/",
+          "fix": "/guides/automations/create-automations/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "create-automations/",
+          "fix": "/guides/automations/create-automations/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/project-page",
+          "fix": "/guides/track/project-page/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "create-automations/",
+          "fix": "/guides/automations/create-automations/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#run-states",
+          "fix": "/guides/models/#run-states",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log/#what-data-is-logged-with-specific-wb-api-calls",
+          "fix": "/guides/track/log/#what-data-is-logged-with-specific-wb-api-calls",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/_index#run-states",
+          "fix": "/guides/runs/#run-states",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "create-automations/slack",
+          "fix": "/guides/automations/create-automations/slack/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "create-automations/webhook",
+          "fix": "/guides/automations/create-automations/webhook/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 50.66377830505371,
+      "worker_id": 22
+    },
+    {
+      "page": "guides/integrations/openai-api.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.3769001960754395,
+      "worker_id": 62
+    },
+    {
+      "page": "guides/integrations/openai-gym.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/media",
+          "fix": "/guides/track/log/media/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.7217936515808105,
+      "worker_id": 64
+    },
+    {
+      "page": "guides/integrations/prodigy.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/tables/tables-walkthrough",
+          "fix": "/guides/tables/tables-walkthrough/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 0.5725631713867188,
+      "worker_id": 67
+    },
+    {
+      "page": "guides/integrations/paddledetection.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.8567917346954346,
+      "worker_id": 65
+    },
+    {
+      "page": "guides/integrations/lightning.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log/customize-logging-axes",
+          "fix": "/guides/track/log/customize-logging-axes/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/code",
+          "fix": "/guides/app/features/panels/code/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 12.387537240982056,
+      "worker_id": 59
+    },
+    {
+      "page": "guides/integrations/paddleocr.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.879450798034668,
+      "worker_id": 66
+    },
+    {
+      "page": "guides/integrations/pytorch-geometric.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.876340389251709,
+      "worker_id": 68
+    },
+    {
+      "page": "guides/integrations/pytorch.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/media",
+          "fix": "/guides/track/log/media/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.4231112003326416,
+      "worker_id": 69
+    },
+    {
+      "page": "guides/integrations/scikit.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.836120367050171,
+      "worker_id": 70
+    },
+    {
+      "page": "guides/app/features/panels/parallel-coordinates.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/config",
+          "fix": "/guides/models/evaluate-models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log/",
+          "fix": "/guides/models/evaluate-models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 67.11866211891174,
+      "worker_id": 7
+    },
+    {
+      "page": "guides/integrations/torchtune.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.3445615768432617,
+      "worker_id": 72
+    },
+    {
+      "page": "guides/integrations/xgboost.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.864173412322998,
+      "worker_id": 74
+    },
+    {
+      "page": "guides/integrations/spacy.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 8.180583477020264,
+      "worker_id": 71
+    },
+    {
+      "page": "guides/integrations/yolox.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.9586589336395264,
+      "worker_id": 76
+    },
+    {
+      "page": "guides/integrations/yolov5.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/",
+          "fix": "/guides/track/log/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.293333292007446,
+      "worker_id": 75
+    },
+    {
+      "page": "guides/launch/job-inputs.mdx",
+      "links": [
+        {
+          "broken": "../sweeps-on-launch",
+          "fix": "/guides/launch/sweeps-on-launch/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.3492517471313477,
+      "worker_id": 79
+    },
+    {
+      "page": "guides/launch/setup-agent-advanced.mdx",
+      "links": [
+        {
+          "broken": "../create-and-deploy-jobs/create-launch-job",
+          "fix": "/guides/launch/create-launch-job/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.0898420810699463,
+      "worker_id": 81
+    },
+    {
+      "page": "guides/integrations.mdx",
+      "links": [
+        {
+          "broken": "pytorch",
+          "fix": "/guides/integrations/pytorch/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "huggingface",
+          "fix": "/guides/integrations/huggingface/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "sagemaker",
+          "fix": "/guides/integrations/sagemaker/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 9.63666296005249,
+      "worker_id": 77
+    },
+    {
+      "page": "guides/models/app/settings-page/billing-settings.mdx",
+      "links": [
+        {
+          "broken": "storage",
+          "fix": "/guides/app/settings-page/storage/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.279204845428467,
+      "worker_id": 84
+    },
+    {
+      "page": "guides/launch/walkthrough.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./create-and-deploy-jobs/create-launch-job",
+          "fix": "/guides/launch/launch-terminology/#launch-job",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/launch/set-up-launch/setup-queue-advanced",
+          "fix": "/guides/launch/setup-queue-advanced/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.14503288269043,
+      "worker_id": 83
+    },
+    {
+      "page": "guides/models/app/settings-page/storage.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/track-external-files",
+          "fix": "/guides/artifacts/track-external-files/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "teams",
+          "fix": "/guides/app/settings-page/teams/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/manage-data/ttl",
+          "fix": "/guides/artifacts/ttl/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.127086162567139,
+      "worker_id": 85
+    },
+    {
+      "page": "guides/launch/launch-terminology.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/launch/set-up-launch/setup-launch-docker",
+          "fix": "/guides/launch/setup-launch-docker/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/launch/set-up-launch/setup-launch-kubernetes",
+          "fix": "/guides/launch/setup-launch-kubernetes/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/launch/set-up-launch/setup-launch-sagemaker",
+          "fix": "/guides/launch/setup-launch-sagemaker/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/launch/set-up-launch/setup-vertex",
+          "fix": "/guides/launch/setup-vertex/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 10.497042179107666,
+      "worker_id": 80
+    },
+    {
+      "page": "guides/models/app/settings-page/user-settings.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/app/features/panels/code",
+          "fix": "/guides/app/features/panels/code/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/alert",
+          "fix": "/guides/runs/alert/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/alert",
+          "fix": "/guides/runs/alert/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.107577085494995,
+      "worker_id": 88
+    },
+    {
+      "page": "guides/models/app/settings-page/teams.mdx",
+      "links": [
+        {
+          "broken": "team-settings.md#privacy",
+          "fix": "/guides/app/settings-page/team-settings/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "team-settings.md#privacy",
+          "fix": "/guides/app/settings-page/team-settings/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/iam/authentication/service-accounts",
+          "fix": "/guides/hosting/iam/service-accounts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ref/python/public-api/index",
+          "fix": "/ref/python/public-api/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.250493049621582,
+      "worker_id": 87
+    },
+    {
+      "page": "guides/models/app/settings-page.mdx",
+      "links": [
+        {
+          "broken": "./user-settings",
+          "fix": "/guides/app/settings-page/user-settings/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./team-settings",
+          "fix": "/guides/app/settings-page/team-settings/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.4464170932769775,
+      "worker_id": 89
+    },
+    {
+      "page": "guides/registry/delete_registry.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/registry/registry_types#core-registry",
+          "fix": "/guides/registry/registry_types/#core-registry",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 0.34950995445251465,
+      "worker_id": 94
+    },
+    {
+      "page": "guides/models.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/",
+          "fix": "/guides/track/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.188463449478149,
+      "worker_id": 90
+    },
+    {
+      "page": "guides/launch/add-job-to-queue.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/create-a-new-artifact-version",
+          "fix": "/guides/artifacts/create-a-new-artifact-version/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../walkthrough",
+          "fix": "/guides/launch/walkthrough/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 30.392207860946655,
+      "worker_id": 78
+    },
+    {
+      "page": "guides/registry/create_registry.mdx",
+      "links": [
+        {
+          "broken": "registry_types.md#summary",
+          "fix": "/guides/registry/registry_types/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.328674554824829,
+      "worker_id": 93
+    },
+    {
+      "page": "guides/registry/model_registry/consume-models.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 0.13012337684631348,
+      "worker_id": 98
+    },
+    {
+      "page": "guides/registry/download_use_artifact.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.2038307189941406,
+      "worker_id": 95
+    },
+    {
+      "page": "guides/registry/lineage.mdx",
+      "links": [
+        {
+          "broken": "guides/core/artifacts/construct-an-artifact",
+          "fix": "/guides/artifacts/construct-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.868072509765625,
+      "worker_id": 96
+    },
+    {
+      "page": "guides/registry/link_version.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/construct-an-artifact",
+          "fix": "/guides/artifacts/construct-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.646793842315674,
+      "worker_id": 97
+    },
+    {
+      "page": "guides/registry/configure_registry.mdx",
+      "links": [
+        {
+          "broken": "configure_registry.md#configure-registry-roles",
+          "fix": "/guides/registry/configure_registry/#configure-registry-roles",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "configure_registry.md#add-a-user-or-a-team-to-a-registry",
+          "fix": "/guides/registry/configure_registry/#add-a-user-or-a-team-to-a-registry",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "configure_registry.md#remove-a-user-or-team-from-a-registry",
+          "fix": "/guides/registry/configure_registry/#remove-a-user-or-team-from-a-registry",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "configure_registry.md#configure-registry-roles",
+          "fix": "/guides/registry/configure_registry/#configure-registry-roles",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "configure_registry.md#registry-role-permissions",
+          "fix": "/guides/registry/configure_registry/#registry-role-permissions",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "configure_registry.md#configure-registry-roles",
+          "fix": "/guides/registry/configure_registry/#configure-registry-roles",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 12.368462324142456,
+      "worker_id": 92
+    },
+    {
+      "page": "guides/registry/aliases.mdx",
+      "links": [
+        {
+          "broken": "guides/core/artifacts/create-a-new-artifact-version",
+          "fix": "/guides/artifacts/create-a-new-artifact-version/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "aliases#default-aliases",
+          "fix": "/guides/registry/aliases/#default-aliases",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "aliases#custom-aliases",
+          "fix": "/guides/registry/aliases/#custom-aliases",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "aliases#protected-aliases",
+          "fix": "/guides/registry/aliases/#protected-aliases",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/automation-events/#registry",
+          "fix": "/guides/automations/automation-events/#registry",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "guides/core/registry/configure_registry/#registry-roles",
+          "fix": "/guides/registry/configure_registry/#registry-roles",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "guides/core/registry/configure_registry/#registry-roles",
+          "fix": "/guides/registry/configure_registry/#registry-roles",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "aliases/#protected-aliases",
+          "fix": "/guides/registry/aliases/#protected-aliases",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "aliases/#protected-aliases",
+          "fix": "/guides/registry/aliases/#protected-aliases",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/configure_registry/#registry-roles",
+          "fix": "/guides/registry/configure_registry/#registry-roles",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/support/kb-articles/service_account_useful",
+          "fix": "/support/service_account_useful/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/configure_registry",
+          "fix": "/guides/registry/configure_registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/search_registry/#search-for-registry-items",
+          "fix": "/guides/registry/search_registry/#search-for-registry-items",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 15.685310363769531,
+      "worker_id": 91
+    },
+    {
+      "page": "guides/registry/model_registry/create-registered-model.mdx",
+      "links": [
+        {
+          "broken": "link-model-version#programmatically-link-a-model",
+          "fix": "/guides/registry/model_registry/link-model-version/#programmatically-link-a-model",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.875959634780884,
+      "worker_id": 99
+    },
+    {
+      "page": "guides/launch/sweeps-on-launch.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./create-and-deploy-jobs/create-launch-job",
+          "fix": "/guides/launch/create-launch-job/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/define-sweep-configuration",
+          "fix": "/guides/launch/sweeps-on-launch/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 32.90349745750427,
+      "worker_id": 82
+    },
+    {
+      "page": "guides/registry/model_registry_eol.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/registry/create_registry/#visibility-types",
+          "fix": "/guides/registry/create_registry/#visibility-types",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/configure_registry/",
+          "fix": "/guides/registry/configure_registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/lineage/",
+          "fix": "/guides/registry/lineage/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 0.6112353801727295,
+      "worker_id": 104
+    },
+    {
+      "page": "guides/registry/model_registry/log-model-to-experiment.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/track-external-files#amazon-s3--gcs--azure-blob-storage-references",
+          "fix": "/guides/artifacts/track-external-files/#amazon-s3--gcs--azure-blob-storage-references",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.1567790508270264,
+      "worker_id": 100
+    },
+    {
+      "page": "guides/registry/model_registry/model-lineage.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/registry/model_registry/",
+          "fix": "/guides/registry/model_registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 0.27740025520324707,
+      "worker_id": 101
+    },
+    {
+      "page": "guides/registry/model_registry/walkthrough.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.821260690689087,
+      "worker_id": 102
+    },
+    {
+      "page": "guides/reports/embed-reports.mdx",
+      "links": [
+        {
+          "broken": "//images/reports/embed_iframe_confluence.gif",
+          "fix": "//images/reports/embed_iframe_confluence.gif",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "validation"
+        },
+        {
+          "broken": "//images/reports/embed_iframe_notion.gif",
+          "fix": "//images/reports/embed_iframe_notion.gif",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "validation"
+        }
+      ],
+      "processing_time": 1.0350492000579834,
+      "worker_id": 109
+    },
+    {
+      "page": "guides/models/app/settings-page/team-settings.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/alert",
+          "fix": "/guides/models/evaluate-models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/create-automations/slack",
+          "fix": "/guides/automations/create-automations/slack/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/create-automations/slack",
+          "fix": "/guides/automations/create-automations/slack/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "teams.md#secure-storage-connector",
+          "fix": "/guides/app/settings-page/teams/#secure-storage-connector",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 35.0339994430542,
+      "worker_id": 86
+    },
+    {
+      "page": "guides/registry/model_registry.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/model_registry_eol",
+          "fix": "/guides/registry/model_registry_eol/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./link-model-version",
+          "fix": "/guides/registry/model_registry/link-model-version/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./walkthrough",
+          "fix": "/guides/registry/model_registry/walkthrough/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./access_controls",
+          "fix": "/guides/registry/model_registry/access_controls/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./notifications",
+          "fix": "/guides/registry/model_registry/notifications/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 11.545201301574707,
+      "worker_id": 103
+    },
+    {
+      "page": "guides/reports/edit-a-report.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/#rename-a-run",
+          "fix": "/guides/runs/#rename-a-run",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.696451663970947,
+      "worker_id": 108
+    },
+    {
+      "page": "guides/reports/create-a-report.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/reports/edit-a-report",
+          "fix": "/guides/reports/edit-a-report/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.519863128662109,
+      "worker_id": 107
+    },
+    {
+      "page": "guides/reports.mdx",
+      "links": [
+        {
+          "broken": "./create-a-report",
+          "fix": "/guides/reports/create-a-report/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./reports-gallery",
+          "fix": "/guides/reports/reports-gallery/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.07051157951355,
+      "worker_id": 110
+    },
+    {
+      "page": "guides/runs/alert.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/create-automations/",
+          "fix": "/guides/automations/create-automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.2025511264801025,
+      "worker_id": 111
+    },
+    {
+      "page": "guides/runs/filter-runs.mdx",
+      "links": [
+        {
+          "broken": "guides/models/track/runs/run-colors",
+          "fix": "/guides/runs/run-colors/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "tags",
+          "fix": "/guides/runs/filter-runs/#filter-runs-with-tags",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.936207056045532,
+      "worker_id": 113
+    },
+    {
+      "page": "guides/runs/color-code-runs.mdx",
+      "links": [
+        {
+          "broken": "guides/models/track/runs/color-code-runs/#custom-metrics",
+          "fix": "/guides/runs/color-code-runs/#custom-metrics",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "guides/models/track/runs/color-code-runs/#default-metrics",
+          "fix": "/guides/runs/color-code-runs/#default-metrics",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.9590466022491455,
+      "worker_id": 112
+    },
+    {
+      "page": "guides/runs/manage-runs.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/project-page#runs-tab",
+          "fix": "/guides/track/project-page/#runs-tab",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "grouping.md#set-a-group-in-the-ui",
+          "fix": "/guides/runs/grouping/#set-a-group-in-the-ui",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.94575309753418,
+      "worker_id": 116
+    },
+    {
+      "page": "guides/integrations/metaflow.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/config",
+          "fix": "/guides/models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#overview-tab",
+          "fix": "/guides/runs/#overview-tab",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#artifacts-tab",
+          "fix": "/guides/runs/#artifacts-tab",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log/",
+          "fix": "/guides/models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/public-api-guide",
+          "fix": "/guides/track/public-api-guide/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 85.66620135307312,
+      "worker_id": 60
+    },
+    {
+      "page": "guides/runs/multiple-runs-per-process.mdx",
+      "links": [
+        {
+          "broken": "multiple-runs-per-process/#example-multiple-runs-in-one-process",
+          "fix": "/guides/runs/multiple-runs-per-process/#example-multiple-runs-in-one-process",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.0030975341796875,
+      "worker_id": 117
+    },
+    {
+      "page": "guides/runs/resuming.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/distributed-training",
+          "fix": "/guides/track/log/distributed-training/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.499958753585815,
+      "worker_id": 118
+    },
+    {
+      "page": "guides/secrets.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/create-automations/webhook",
+          "fix": "/guides/automations/create-automations/webhook/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 0.31157422065734863,
+      "worker_id": 122
+    },
+    {
+      "page": "guides/sweeps/initialize-sweeps.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/sweeps/define-sweep-configuration",
+          "fix": "/guides/sweeps/define-sweep-configuration/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.8378989696502686,
+      "worker_id": 124
+    },
+    {
+      "page": "guides/integrations/kubeflow-pipelines-kfp.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ref/python/public-api/index",
+          "fix": "/ref/python/public-api/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/config",
+          "fix": "/guides/models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#overview-tab",
+          "fix": "/guides/runs/#overview-tab",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log",
+          "fix": "/guides/models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#overview-tab",
+          "fix": "/guides/runs/#overview-tab",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#artifacts-tab",
+          "fix": "/guides/runs/#artifacts-tab",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#artifacts-tab",
+          "fix": "/guides/runs/#artifacts-tab",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 105.39516878128052,
+      "worker_id": 57
+    },
+    {
+      "page": "guides/sweeps/add-w-and-b-to-your-code.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/sweeps/define-sweep-configuration/",
+          "fix": "/guides/sweeps/define-sweep-configuration/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/define-sweep-configuration/",
+          "fix": "/guides/sweeps/define-sweep-configuration/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.262429714202881,
+      "worker_id": 123
+    },
+    {
+      "page": "guides/sweeps/start-sweep-agents.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/sweeps/define-sweep-configuration/",
+          "fix": "/guides/sweeps/define-sweep-configuration/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.0001296997070312,
+      "worker_id": 126
+    },
+    {
+      "page": "guides/registry/search_registry.mdx",
+      "links": [
+        {
+          "broken": "/ref/python/_index",
+          "fix": "/ref/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ref/python/sdk/classes/artifact/_index",
+          "fix": "/ref/python/sdk/classes/artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 39.81335377693176,
+      "worker_id": 105
+    },
+    {
+      "page": "guides/sweeps/local-controller.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/sweeps/define-sweep-configuration/",
+          "fix": "/guides/sweeps/define-sweep-configuration/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/start-sweep-agents",
+          "fix": "/guides/sweeps/start-sweep-agents/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.075387716293335,
+      "worker_id": 125
+    },
+    {
+      "page": "guides/sweeps/sweep-config-keys.mdx",
+      "links": [
+        {
+          "broken": "../sweeps-ui",
+          "fix": "/guides/sweeps/sweeps-ui/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../sweeps-ui",
+          "fix": "/guides/sweeps/sweeps-ui/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.403587579727173,
+      "worker_id": 127
+    },
+    {
+      "page": "guides/sweeps/troubleshoot-sweeps.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/sweeps/define-sweep-configuration/",
+          "fix": "/guides/sweeps/define-sweep-configuration/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.6058595180511475,
+      "worker_id": 128
+    },
+    {
+      "page": "guides/runs/forking.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/rewind",
+          "fix": "/guides/runs/rewind/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 36.94418787956238,
+      "worker_id": 114
+    },
+    {
+      "page": "guides/sweeps/visualize-sweep-results.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/parallel-coordinates",
+          "fix": "/guides/app/features/panels/parallel-coordinates/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/scatter-plot",
+          "fix": "/guides/app/features/panels/scatter-plot/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/parameter-importance",
+          "fix": "/guides/app/features/panels/parameter-importance/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/",
+          "fix": "/guides/app/features/panels/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.086214780807495,
+      "worker_id": 129
+    },
+    {
+      "page": "guides/sweeps/walkthrough.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/sweeps/define-sweep-configuration/",
+          "fix": "/guides/sweeps/define-sweep-configuration/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/parallel-coordinates",
+          "fix": "/guides/app/features/panels/parallel-coordinates/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/parameter-importance",
+          "fix": "/guides/app/features/panels/parameter-importance/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/",
+          "fix": "/guides/app/features/panels/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.7925946712493896,
+      "worker_id": 130
+    },
+    {
+      "page": "guides/tables/tables-walkthrough.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.968008041381836,
+      "worker_id": 134
+    },
+    {
+      "page": "guides/tables/tables-download.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/construct-an-artifact",
+          "fix": "/guides/artifacts/construct-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/tables-walkthrough",
+          "fix": "/guides/tables/tables-walkthrough/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.027804374694824,
+      "worker_id": 133
+    },
+    {
+      "page": "guides/runs/grouping.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "grouping",
+          "fix": "/guides/runs/grouping/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 45.5090012550354,
+      "worker_id": 115
+    },
+    {
+      "page": "guides/runs/tags.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/public-api-guide",
+          "fix": "/guides/track/public-api-guide/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 38.82144808769226,
+      "worker_id": 120
+    },
+    {
+      "page": "guides/tables/log_tables.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.989537239074707,
+      "worker_id": 132
+    },
+    {
+      "page": "guides/integrations/ultralytics.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/media#image-overlays-in-tables",
+          "fix": "/guides/track/log/media/#image-overlays-in-tables",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "//imgur.com/a/TB76U9O",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "//imgur.com/a/kU5h7W4",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log/media#image-overlays-in-tables",
+          "fix": "/guides/track/log/media/#image-overlays-in-tables",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "//imgur.com/a/UTSiufs",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "/guides/models/track/log/media#image-overlays",
+          "fix": "/guides/track/log/media/#image-overlays",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 113.4456114768982,
+      "worker_id": 73
+    },
+    {
+      "page": "guides/runs/rewind.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/forking",
+          "fix": "/guides/runs/forking/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 37.835787773132324,
+      "worker_id": 119
+    },
+    {
+      "page": "guides/integrations/add-wandb-to-any-library.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track",
+          "fix": "/guides/track/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/environment-variables",
+          "fix": "/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/config",
+          "fix": "/guides/track/config/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log",
+          "fix": "/guides/models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log",
+          "fix": "/guides/models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log",
+          "fix": "/guides/models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log/distributed-training",
+          "fix": "/guides/track/log/distributed-training/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/create-a-custom-alias/",
+          "fix": "/guides/artifacts/create-a-custom-alias/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ref/python/public-api/index",
+          "fix": "/ref/python/public-api/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/download-and-use-an-artifact",
+          "fix": "/guides/artifacts/download-and-use-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 145.35159587860107,
+      "worker_id": 46
+    },
+    {
+      "page": "guides/track/config.mdx",
+      "links": [
+        {
+          "broken": "/ref/python/public-api/index",
+          "fix": "/ref/python/public-api/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.0893125534057617,
+      "worker_id": 136
+    },
+    {
+      "page": "guides/sweeps.mdx",
+      "links": [
+        {
+          "broken": "./walkthrough",
+          "fix": "/guides/sweeps/walkthrough/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./walkthrough",
+          "fix": "/guides/sweeps/walkthrough/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./add-w-and-b-to-your-code",
+          "fix": "/guides/sweeps/add-w-and-b-to-your-code/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/define-sweep-configuration/",
+          "fix": "/guides/sweeps/define-sweep-configuration/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./initialize-sweeps",
+          "fix": "/guides/sweeps/initialize-sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./start-sweep-agents",
+          "fix": "/guides/sweeps/start-sweep-agents/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./visualize-sweep-results",
+          "fix": "/guides/sweeps/visualize-sweep-results/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./useful-resources",
+          "fix": "/guides/sweeps/useful-resources/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 16.17005181312561,
+      "worker_id": 131
+    },
+    {
+      "page": "guides/tables.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./tables-walkthrough",
+          "fix": "/guides/tables/tables-walkthrough/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./tables-gallery",
+          "fix": "/guides/tables/tables-gallery/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 6.333219289779663,
+      "worker_id": 135
+    },
+    {
+      "page": "guides/track/jupyter.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/",
+          "fix": "/guides/track/log/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.261737823486328,
+      "worker_id": 139
+    },
+    {
+      "page": "guides/integrations/autotrain.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.8351218700408936,
+      "worker_id": 47
+    },
+    {
+      "page": "guides/track/environment-variables.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/grouping",
+          "fix": "/guides/runs/grouping/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/grouping",
+          "fix": "/guides/runs/grouping/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.055246591567993,
+      "worker_id": 138
+    },
+    {
+      "page": "guides/track/log/log-tables.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables//visualize-tables",
+          "fix": "/guides/tables/visualize-tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.1503899097442627,
+      "worker_id": 143
+    },
+    {
+      "page": "guides/track/limits.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/#metric-naming-constraints",
+          "fix": "/guides/track/log/#metric-naming-constraints",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/manage-runs",
+          "fix": "/guides/runs/manage-runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/#quick-add",
+          "fix": "/guides/app/features/panels/#quick-add",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/",
+          "fix": "/guides/app/features/panels/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/#workspace-modes",
+          "fix": "/guides/app/features/panels/#workspace-modes",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/",
+          "fix": "/guides/app/features/panels/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.69896125793457,
+      "worker_id": 140
+    },
+    {
+      "page": "guides/track/create-an-experiment.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/log/",
+          "fix": "/guides/track/log/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/parallel-coordinates",
+          "fix": "/guides/app/features/panels/parallel-coordinates/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/parameter-importance",
+          "fix": "/guides/app/features/panels/parameter-importance/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/",
+          "fix": "/guides/app/features/panels/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 7.760623455047607,
+      "worker_id": 137
+    },
+    {
+      "page": "guides/track/log/plots.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/app/features/custom-charts/walkthrough",
+          "fix": "/guides/app/features/custom-charts/walkthrough/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/custom-charts/walkthrough",
+          "fix": "/guides/app/features/custom-charts/walkthrough/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/custom-charts/walkthrough",
+          "fix": "/guides/app/features/custom-charts/walkthrough/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 0.5649750232696533,
+      "worker_id": 145
+    },
+    {
+      "page": "index.mdx",
+      "links": [
+        {
+          "broken": "/guides/inference/",
+          "fix": "/guides/inference/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "validation"
+        }
+      ],
+      "processing_time": 0.23459768295288086,
+      "worker_id": 153
+    },
+    {
+      "page": "guides/track/workspaces.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/app/features/panels/",
+          "fix": "/guides/app/features/panels/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/line-plot/#all-line-plots-in-a-workspace",
+          "fix": "/guides/app/features/panels/line-plot/#all-line-plots-in-a-workspace",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/line-plot/#all-line-plots-in-a-workspace",
+          "fix": "/guides/app/features/panels/line-plot/#all-line-plots-in-a-workspace",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 0.5366761684417725,
+      "worker_id": 150
+    },
+    {
+      "page": "guides/track/log/log-models.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/explore-and-traverse-an-artifact-graph",
+          "fix": "/guides/artifacts/explore-and-traverse-an-artifact-graph/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/update-an-artifact",
+          "fix": "/guides/artifacts/update-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/explore-and-traverse-an-artifact-graph",
+          "fix": "/guides/artifacts/explore-and-traverse-an-artifact-graph/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/track-external-files#amazon-s3--gcs--azure-blob-storage-references",
+          "fix": "/guides/artifacts/track-external-files/#amazon-s3--gcs--azure-blob-storage-references",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/link_version",
+          "fix": "/guides/registry/link_version/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/model_registry/",
+          "fix": "/guides/registry/model_registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/model_registry/",
+          "fix": "/guides/registry/model_registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/model_registry/",
+          "fix": "/guides/registry/model_registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 15.121856927871704,
+      "worker_id": 142
+    },
+    {
+      "page": "guides/track/log.mdx",
+      "links": [
+        {
+          "broken": "./customize-logging-axes",
+          "fix": "/guides/track/log/customize-logging-axes/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./plots",
+          "fix": "/guides/track/log/plots/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./log-tables",
+          "fix": "/guides/track/log/log-tables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./media",
+          "fix": "/guides/track/log/media/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./log-tables",
+          "fix": "/guides/track/log/log-tables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/custom-charts/",
+          "fix": "/guides/app/features/custom-charts/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 12.218018531799316,
+      "worker_id": 147
+    },
+    {
+      "page": "guides/track/log/working-with-csv.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#add-a-note-to-a-run",
+          "fix": "/guides/runs/#add-a-note-to-a-run",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/tags",
+          "fix": "/guides/runs/tags/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 14.3440580368042,
+      "worker_id": 146
+    },
+    {
+      "page": "guides/track/project-page.mdx",
+      "links": [
+        {
+          "broken": "project-page.md#overview-tab",
+          "fix": "/guides/track/project-page/#overview-tab",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "project-page.md#workspace-tab",
+          "fix": "/guides/track/project-page/#workspace-tab",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "project-page.md#sweeps-tab",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "project-page.md#reports-tab",
+          "fix": "/guides/track/project-page/#reports-tab",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/tables-walkthrough",
+          "fix": "/guides/tables/tables-walkthrough/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables//tables-walkthrough",
+          "fix": "/guides/tables/tables-walkthrough/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables//visualize-tables",
+          "fix": "/guides/tables/visualize-tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 14.040517330169678,
+      "worker_id": 148
+    },
+    {
+      "page": "guides/registry.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./configure_registry",
+          "fix": "/guides/registry/configure_registry/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./download_use_artifact",
+          "fix": "/guides/registry/download_use_artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./link_version",
+          "fix": "/guides/registry/link_version/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./link_version",
+          "fix": "/guides/registry/link_version/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./organize-with-tags",
+          "fix": "/guides/registry/organize-with-tags/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/lineage",
+          "fix": "/guides/registry/lineage/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/automations/",
+          "fix": "/guides/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./configure_registry",
+          "fix": "/guides/registry/configure_registry/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./registry_types",
+          "fix": "/guides/registry/registry_types/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./configure_registry",
+          "fix": "/guides/registry/configure_registry/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./create_collection",
+          "fix": "/guides/registry/create_collection/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/create-a-new-artifact-version",
+          "fix": "/guides/artifacts/create-a-new-artifact-version/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./registry_types",
+          "fix": "/guides/registry/registry_types/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "link_version.md#view-linked-artifacts-in-a-registry",
+          "fix": "/guides/registry/link_version/#view-linked-artifacts-in-a-registry",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./model_registry_eol",
+          "fix": "/guides/registry/model_registry_eol/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 98.21876764297485,
+      "worker_id": 106
+    },
+    {
+      "page": "guides.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/",
+          "fix": "/guides/track/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/reports/",
+          "fix": "/guides/reports/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/inference/",
+          "fix": "/guides/inference/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "validation"
+        },
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/",
+          "fix": "/guides/track/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/registry/",
+          "fix": "/guides/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/tables/",
+          "fix": "/guides/tables/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/reports/",
+          "fix": "/guides/reports/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/quickstart/",
+          "fix": "/quickstart/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 24.48019790649414,
+      "worker_id": 152
+    },
+    {
+      "page": "guides/track/log/distributed-training.mdx",
+      "links": [
+        {
+          "broken": "distributed-training/#track-each-process-separately",
+          "fix": "/guides/track/log/distributed-training/#track-each-process-separately",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "distributed-training/#track-all-processes-to-a-single-run",
+          "fix": "/guides/track/log/distributed-training/#track-all-processes-to-a-single-run",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/grouping",
+          "fix": "/guides/runs/grouping/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#run-states",
+          "fix": "/guides/models/evaluate-models/#run-states",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/console-logs/",
+          "fix": "/guides/app/console-logs/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/line-plot/",
+          "fix": "/guides/app/features/panels/line-plot/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 41.315758228302,
+      "worker_id": 141
+    },
+    {
+      "page": "guides/track/public-api-guide.mdx",
+      "links": [
+        {
+          "broken": "/guides/quickstart",
+          "fix": "/quickstart/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/#overview-tab",
+          "fix": "/guides/track/public-api-guide/#overview-tab",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/tags",
+          "fix": "/guides/runs/tags/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 39.425861120224,
+      "worker_id": 149
+    },
+    {
+      "page": "ja/guides/app/features/cascade-settings.mdx",
+      "links": [
+        {
+          "broken": "/ja/panels/",
+          "fix": "/ja/guides/app/features/panels/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/models/app/features/panels/line-plot/smoothing",
+          "fix": "/ja/guides/app/features/panels/line-plot/smoothing/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/models/app/features/panels/line-plot/sampling",
+          "fix": "/ja/guides/app/features/panels/line-plot/sampling/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/models/app/features/panels/line-plot/#edit-line-panel-settings",
+          "fix": "/ja/guides/app/features/panels/line-plot/#edit-line-panel-settings",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/models/app/features/panels/line-plot/#edit-line-panel-settings",
+          "fix": "/ja/guides/app/features/panels/line-plot/#edit-line-panel-settings",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 9.33393406867981,
+      "worker_id": 161
+    },
+    {
+      "page": "ja/guides/app/features/custom-charts/walkthrough.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/models/track/config",
+          "fix": "/ja/guides/track/config/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/models/track/log/",
+          "fix": "/ja/guides/track/log/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.159866094589233,
+      "worker_id": 162
+    },
+    {
+      "page": "guides/hosting/hosting-options.mdx",
+      "links": [
+        {
+          "broken": "saas_cloud",
+          "fix": "/guides/hosting/#wb-multi-tenant-cloud",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "saas_cloud",
+          "fix": "/guides/hosting/#wb-multi-tenant-cloud",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "dedicated_cloud/",
+          "fix": "/guides/hosting/#wb-dedicated-cloud",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "self-managed/server-upgrade-process",
+          "fix": "/guides/hosting/hosting-options/self-managed/",
+          "confidence": "high",
+          "fix_method": "navigation",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "dedicated_cloud/",
+          "fix": "/guides/hosting/#wb-dedicated-cloud",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "self-managed/",
+          "fix": "/guides/hosting/hosting-options/self-managed/",
+          "confidence": "high",
+          "fix_method": "navigation",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "self-managed/",
+          "fix": "/guides/hosting/hosting-options/self-managed/",
+          "confidence": "high",
+          "fix_method": "navigation",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "self-managed/ref-arch",
+          "fix": "/guides/hosting/self-managed/ref-arch/",
+          "confidence": "high",
+          "fix_method": "navigation",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 221.19418001174927,
+      "worker_id": 33
+    },
+    {
+      "page": "ja/guides/app/features/custom-charts.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/models/track/config",
+          "fix": "/ja/guides/track/config/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.3700242042541504,
+      "worker_id": 163
+    },
+    {
+      "page": "ja/guides/app/features/panels/line-plot/reference.mdx",
+      "links": [
+        {
+          "broken": "/ja/support/kb-articles/formula_smoothing_algorithm",
+          "fix": "/ja/support/formula_smoothing_algorithm/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/sampling#random-sampling",
+          "fix": "/ja/guides/app/features/panels/line-plot/sampling/#random-sampling",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/sampling#full-fidelity",
+          "fix": "/ja/guides/app/features/panels/line-plot/sampling/#full-fidelity",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 5.515127658843994,
+      "worker_id": 164
+    },
+    {
+      "page": "ja/guides/app/features/panels/line-plot.mdx",
+      "links": [
+        {
+          "broken": "/ja/sampling",
+          "fix": "/ja/guides/app/features/panels/line-plot/sampling/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/../#configure-section-layout",
+          "fix": "/#configure-section-layout",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/../#configure-workspace-layout",
+          "fix": "/#configure-workspace-layout",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.013108253479004,
+      "worker_id": 166
+    },
+    {
+      "page": "ja/guides/app/features/panels/line-plot/smoothing.mdx",
+      "links": [
+        {
+          "broken": "/ja/smoothing#exponential-moving-average-default",
+          "fix": "/ja/guides/app/features/panels/line-plot/smoothing/#exponential-moving-average-default",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/smoothing#gaussian-smoothing",
+          "fix": "/ja/guides/app/features/panels/line-plot/smoothing/#%E3%82%AC%E3%82%A6%E3%82%B9%E5%B9%B3%E6%BB%91%E5%8C%96",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/smoothing#running-average",
+          "fix": "/ja/guides/app/features/panels/line-plot/smoothing/#%E7%A7%BB%E5%8B%95%E5%B9%B3%E5%9D%87",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/smoothing#exponential-moving-average-deprecated",
+          "fix": "/ja/guides/app/features/panels/line-plot/smoothing/#exponential-moving-average-deprecated",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 7.384232759475708,
+      "worker_id": 165
+    },
+    {
+      "page": "inference/usage-limits.mdx",
+      "links": [
+        {
+          "broken": "prerequisites",
+          "fix": null,
+          "confidence": "none"
+        }
+      ],
+      "processing_time": 32.97462296485901,
+      "worker_id": 159
+    },
+    {
+      "page": "ja/guides/app/features/panels/parameter-importance.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/models/track/config/",
+          "fix": "/ja/guides/track/config/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.7768495082855225,
+      "worker_id": 168
+    },
+    {
+      "page": "ja/guides/app/features/panels/query-panels.mdx",
+      "links": [
+        {
+          "broken": "/ja/../../../../track/public-api-guide#understanding-the-different-attributes",
+          "fix": "/ja/guides/track/public-api-guide/#understanding-the-different-attributes",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.6035056114196777,
+      "worker_id": 169
+    },
+    {
+      "page": "ja/guides/app/features/panels.mdx",
+      "links": [
+        {
+          "broken": "/ja/line-plot/#all-line-plots-in-a-workspace",
+          "fix": "/ja/guides/app/features/panels/line-plot/#all-line-plots-in-a-workspace",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/line-plot/",
+          "fix": "/ja/guides/app/features/panels/line-plot/#all-line-plots-in-a-workspace",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/bar-plot",
+          "fix": "/ja/guides/app/features/panels/bar-plot/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/core/automations/",
+          "fix": "/ja/guides/core/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "validation"
+        }
+      ],
+      "processing_time": 6.688448429107666,
+      "worker_id": 170
+    },
+    {
+      "page": "ja/guides/artifacts/create-a-new-artifact-version.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/models/track/runs/",
+          "fix": "/ja/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 2.630129814147949,
+      "worker_id": 174
+    },
+    {
+      "page": "ja/guides/artifacts/artifacts-walkthrough.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/models/track/runs/",
+          "fix": "/ja/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./construct-an-artifact",
+          "fix": "/ja/guides/artifacts/construct-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./create-a-custom-alias",
+          "fix": "/ja/guides/artifacts/create-a-custom-alias/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./create-a-new-artifact-version",
+          "fix": "/ja/guides/artifacts/create-a-new-artifact-version/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./track-external-files",
+          "fix": "/ja/guides/artifacts/track-external-files/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 8.76853346824646,
+      "worker_id": 172
+    },
+    {
+      "page": "guides/track.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/workspaces",
+          "fix": "/guides/track/workspaces/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ref/python/public-api/index",
+          "fix": "/ref/python/public-api/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "./config",
+          "fix": "/guides/track/config/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log/",
+          "fix": "/guides/track/log/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/quickstart",
+          "fix": "/quickstart/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ref/python/index",
+          "fix": "/ref/python/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 67.89520692825317,
+      "worker_id": 151
+    },
+    {
+      "page": "ja/guides/artifacts/construct-an-artifact.mdx",
+      "links": [
+        {
+          "broken": "/ja/./track-external-files",
+          "fix": "/ja/guides/artifacts/track-external-files/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./explore-and-traverse-an-artifact-graph",
+          "fix": "/ja/guides/artifacts/explore-and-traverse-an-artifact-graph/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./update-an-artifact",
+          "fix": "/ja/guides/artifacts/update-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./track-external-files",
+          "fix": "/ja/guides/artifacts/track-external-files/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 7.7796032428741455,
+      "worker_id": 173
+    },
+    {
+      "page": "guides/runs.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/download-and-use-an-artifact",
+          "fix": "/guides/artifacts/download-and-use-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/project-page",
+          "fix": "/guides/track/project-page/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/sweeps/",
+          "fix": "/guides/sweeps/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "grouping",
+          "fix": "/guides/runs/grouping/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/reports/edit-a-report",
+          "fix": "/guides/reports/edit-a-report/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/config",
+          "fix": "/guides/track/config/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log/",
+          "fix": "/guides/track/log/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "grouping",
+          "fix": "/guides/runs/grouping/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/",
+          "fix": "/guides/artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/core/artifacts/explore-and-traverse-an-artifact-graph",
+          "fix": "/guides/artifacts/explore-and-traverse-an-artifact-graph/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 119.87193703651428,
+      "worker_id": 121
+    },
+    {
+      "page": "ja/guides/artifacts/delete-artifacts.mdx",
+      "links": [
+        {
+          "broken": "/ja/./ttl",
+          "fix": "/ja/guides/artifacts/ttl/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 3.205514907836914,
+      "worker_id": 175
+    },
+    {
+      "page": "ja/guides/artifacts/explore-and-traverse-an-artifact-graph.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/core/artifacts/artifacts-walkthrough",
+          "fix": "/ja/guides/artifacts/artifacts-walkthrough/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/core/artifacts/manage-data/delete-artifacts",
+          "fix": "/ja/guides/artifacts/delete-artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.5932981967926025,
+      "worker_id": 177
+    },
+    {
+      "page": "ja/guides/artifacts/download-and-use-an-artifact.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/core/artifacts/track-external-files",
+          "fix": "/ja/guides/artifacts/track-external-files/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/core/artifacts/construct-an-artifact",
+          "fix": "/ja/guides/artifacts/construct-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.705324411392212,
+      "worker_id": 176
+    },
+    {
+      "page": "ja/guides/artifacts/storage.mdx",
+      "links": [
+        {
+          "broken": "/ja/../track-external-files",
+          "fix": "/ja/guides/artifacts/track-external-files/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/models/track/environment-variables",
+          "fix": "/ja/guides/track/environment-variables/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.5919106006622314,
+      "worker_id": 178
+    },
+    {
+      "page": "ja/guides/artifacts/track-external-files.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/core/artifacts/download-and-use-an-artifact",
+          "fix": "/ja/guides/artifacts/download-and-use-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/core/artifacts/artifacts-walkthrough",
+          "fix": "/ja/guides/artifacts/artifacts-walkthrough/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.769843816757202,
+      "worker_id": 179
+    },
+    {
+      "page": "ja/guides/artifacts/ttl.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/core/artifacts/explore-and-traverse-an-artifact-graph",
+          "fix": "/ja/guides/hosting/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../construct-an-artifact.md",
+          "fix": "/ja/guides/artifacts/construct-an-artifact.md",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../construct-an-artifact.md",
+          "fix": "/ja/guides/artifacts/construct-an-artifact.md",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../construct-an-artifact.md#add-files-to-an-artifact",
+          "fix": "/ja/guides/artifacts/construct-an-artifact/#add-files-to-an-artifact",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "../construct-an-artifact.md#3-save-your-artifact-to-the-wb-server",
+          "fix": "/ja/guides/artifacts/construct-an-artifact/#3-save-your-artifact-to-the-wb-server",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/../download-and-use-an-artifact",
+          "fix": "/ja/guides/artifacts/download-and-use-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/../download-and-use-an-artifact",
+          "fix": "/ja/guides/artifacts/download-and-use-an-artifact/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 11.65611720085144,
+      "worker_id": 180
+    },
+    {
+      "page": "ja/guides/app/features/panels/parallel-coordinates.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/models/track/config",
+          "fix": "/ja/guides/models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/models/track/log/",
+          "fix": "/ja/guides/models/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 54.955711364746094,
+      "worker_id": 167
+    },
+    {
+      "page": "inference/models.mdx",
+      "links": [
+        {
+          "broken": "usage-limits",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "api-reference",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "ui-guide",
+          "fix": null,
+          "confidence": "none"
+        }
+      ],
+      "processing_time": 98.4196355342865,
+      "worker_id": 156
+    },
+    {
+      "page": "inference/ui-guide.mdx",
+      "links": [
+        {
+          "broken": "prerequisites",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "api-reference",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "examples",
+          "fix": null,
+          "confidence": "none"
+        }
+      ],
+      "processing_time": 97.40229678153992,
+      "worker_id": 158
+    },
+    {
+      "page": "guides/hosting/data-security/secure-storage-connector.mdx",
+      "links": [
+        {
+          "broken": "/guides/core/artifacts/manage-data/delete-artifacts",
+          "fix": "/guides/artifacts/delete-artifacts/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/hosting/hosting-options/self-managed/install-on-public-cloud/aws-tf",
+          "fix": "/guides/hosting/hosting-options/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 311.1798598766327,
+      "worker_id": 28
+    },
+    {
+      "page": "inference/examples.mdx",
+      "links": [
+        {
+          "broken": "prerequisites",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "prerequisites",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "api-reference",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "ui-guide",
+          "fix": null,
+          "confidence": "none"
+        }
+      ],
+      "processing_time": 130.95264959335327,
+      "worker_id": 155
+    },
+    {
+      "page": "inference/prerequisites.mdx",
+      "links": [
+        {
+          "broken": "usage-limits",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "examples",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "api-reference",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "examples",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "ui-guide",
+          "fix": null,
+          "confidence": "none"
+        }
+      ],
+      "processing_time": 162.8132836818695,
+      "worker_id": 157
+    },
+    {
+      "page": "guides/track/log/media.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ref/python/sdk/data-types/Object3D/#from_point_cloud",
+          "fix": "/ref/python/sdk/data-types/#from_point_cloud",
+          "confidence": "high",
+          "fix_method": "navigation",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ref/python/sdk/data-types/Object3D/#from_file",
+          "fix": "/ref/python/sdk/data-types/#from_file",
+          "confidence": "high",
+          "fix_method": "navigation",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ref/python/sdk/data-types/Object3D/#from_numpy",
+          "fix": "/ref/python/sdk/data-types/#from_numpy",
+          "confidence": "high",
+          "fix_method": "navigation",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ref/python/sdk/data-types/Video",
+          "fix": "/ref/python/sdk/data-types/video/",
+          "confidence": "high",
+          "fix_method": "navigation",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/runs/",
+          "fix": "/guides/runs/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/project-page",
+          "fix": "/guides/track/project-page/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 180.05545687675476,
+      "worker_id": 144
+    },
+    {
+      "page": "inference/api-reference.mdx",
+      "links": [
+        {
+          "broken": "usage-limits#geographic-restrictions",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "usage-limits",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "usage-limits",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "usage-limits#personal-entities-unsupported",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "examples",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "ui-guide",
+          "fix": null,
+          "confidence": "none"
+        }
+      ],
+      "processing_time": 195.44389414787292,
+      "worker_id": 154
+    },
+    {
+      "page": "inference.mdx",
+      "links": [
+        {
+          "broken": "usage-limits",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "prerequisites",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "api-reference",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "ui-guide",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "examples",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "usage-limits#account-tiers-and-default-usage-caps",
+          "fix": null,
+          "confidence": "none"
+        },
+        {
+          "broken": "usage-limits#account-tiers-and-default-usage-caps",
+          "fix": null,
+          "confidence": "none"
+        }
+      ],
+      "processing_time": 227.68454837799072,
+      "worker_id": 160
+    },
+    {
+      "page": "ja/guides/artifacts/_index.mdx",
+      "links": [
+        {
+          "broken": "/ja/guides/models/track/runs/",
+          "fix": "/ja/guides/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/models/track/runs/",
+          "fix": "/ja/guides/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/models/track/runs/",
+          "fix": "/ja/guides/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./track-external-files",
+          "fix": "/ja/ref/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./download-and-use-an-artifact",
+          "fix": "/ja/support/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./create-a-new-artifact-version",
+          "fix": "/ja/ref/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/./update-an-artifact",
+          "fix": "/ja/support/",
+          "confidence": "high",
+          "fix_method": "content_matching",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/ja/guides/core/automations/",
+          "fix": "/ja/guides/core/automations/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "validation"
+        },
+        {
+          "broken": "/ja/guides/core/registry/",
+          "fix": "/ja/guides/core/registry/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "validation"
+        }
+      ],
+      "processing_time": 224.8694944381714,
+      "worker_id": 171
+    }
+  ]
+}

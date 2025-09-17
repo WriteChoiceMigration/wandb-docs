@@ -77,8 +77,8 @@ def apply_link_fix(file_path, broken_link, fixed_link, dry_run=False):
 
         # Create regex pattern to find markdown links with the broken URL
         # Pattern: [text](broken_link) or just (broken_link) if it's a standalone link
-        pattern = rf'\]\({re.escape(broken_link)}\)'
-        replacement = f']({fixed_link})'
+        pattern = rf"\]\({re.escape(broken_link)}\)"
+        replacement = f"]({fixed_link})"
 
         # Find all matches
         matches = list(re.finditer(pattern, content))
@@ -93,7 +93,7 @@ def apply_link_fix(file_path, broken_link, fixed_link, dry_run=False):
                 # Get some context around the match
                 start = max(0, match.start() - 30)
                 end = min(len(content), match.end() + 30)
-                context = content[start:end].replace('\n', '\\n')
+                context = content[start:end].replace("\n", "\\n")
                 print(f"      Match {i}: ...{context}...")
             return True
 
@@ -102,13 +102,15 @@ def apply_link_fix(file_path, broken_link, fixed_link, dry_run=False):
 
         if new_content != content:
             # Create backup before making changes
-            backup_path = backup_file(file_path)
+            # backup_path = backup_file(file_path)
 
             # Write the updated content
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(new_content)
 
-            print(f"    [SUCCESS] Replaced {len(matches)} occurrence(s) of {broken_link} -> {fixed_link}")
+            print(
+                f"    [SUCCESS] Replaced {len(matches)} occurrence(s) of {broken_link} -> {fixed_link}"
+            )
             return True
         else:
             print(f"    No changes made to {file_path}")
@@ -132,7 +134,7 @@ def apply_fixes_to_page(page_path, links, dry_run=False):
         tuple: (total_fixes, successful_fixes)
     """
     # Convert relative path to absolute path
-    if not page_path.startswith('/'):
+    if not page_path.startswith("/"):
         full_path = f"D:/writechoice/wandb-docs/{page_path}"
     else:
         full_path = f"D:/writechoice/wandb-docs{page_path}"
@@ -158,7 +160,9 @@ def apply_fixes_to_page(page_path, links, dry_run=False):
             print(f"  Skipping {broken_link}: No fix available")
             continue
 
-        print(f"  Fixing: {broken_link} -> {fixed_link} (method: {fix_method}, confidence: {confidence})")
+        print(
+            f"  Fixing: {broken_link} -> {fixed_link} (method: {fix_method}, confidence: {confidence})"
+        )
 
         total_fixes += 1
         if apply_link_fix(full_path, broken_link, fixed_link, dry_run):
@@ -218,7 +222,11 @@ def main():
     print(f"  Pages processed: {total_pages}")
     print(f"  Total fixes attempted: {total_fixes}")
     print(f"  Successful fixes: {total_successful}")
-    print(f"  Success rate: {total_successful/total_fixes*100:.1f}%" if total_fixes > 0 else "  Success rate: N/A")
+    print(
+        f"  Success rate: {total_successful/total_fixes*100:.1f}%"
+        if total_fixes > 0
+        else "  Success rate: N/A"
+    )
 
     if dry_run:
         print(f"\nThis was a DRY RUN. No files were modified.")
@@ -227,7 +235,9 @@ def main():
         print(f"\nFixes have been applied! Backup files created for safety.")
 
     if total_successful > 0:
-        print(f"\nRecommendation: Test the fixed links and commit the changes if they work correctly.")
+        print(
+            f"\nRecommendation: Test the fixed links and commit the changes if they work correctly."
+        )
 
     return total_successful, total_fixes
 
