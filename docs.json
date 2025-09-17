@@ -1027,33 +1027,30 @@
                   "ja/guides/models/app/settings-page/anon",
                   "ja/guides/secrets",
                   {
-                    "group": "Deployment Options",
+                    "group": "デプロイメントオプション",
                     "pages": [
                       "ja/guides/hosting",
                       {
-                        "group": "Deployment Options",
+                        "group": "デプロイメントオプション",
                         "pages": [
+                          "ja/guides/hosting/hosting-options",
                           "ja/guides/hosting/hosting-options/saas_cloud",
                           {
-                            "group": "Dedicated Cloud",
+                            "group": "自己管理",
                             "pages": [
-                              "ja/guides/hosting/hosting-options/dedicated_regions",
-                              "ja/guides/hosting/export-data-from-dedicated-cloud"
-                            ]
-                          },
-                          {
-                            "group": "Self-Managed",
-                            "pages": [
+                              "ja/guides/hosting/hosting-options/self-managed",
                               "ja/guides/hosting/self-managed/ref-arch",
                               {
-                                "group": "Run W&B Server on Kubernetes",
+                                "group": "W&B サーバーを Kubernetes で実行する",
                                 "pages": [
+                                  "ja/guides/hosting/operator",
                                   "ja/guides/hosting/self-managed/operator-airgapped"
                                 ]
                               },
                               {
-                                "group": "Install on public cloud",
+                                "group": "パブリック クラウドにインストールする",
                                 "pages": [
+                                  "ja/guides/hosting/self-managed/install-on-public-cloud",
                                   "ja/guides/hosting/self-managed/aws-tf",
                                   "ja/guides/hosting/self-managed/gcp-tf",
                                   "ja/guides/hosting/self-managed/azure-tf"
@@ -1062,15 +1059,25 @@
                               "ja/guides/hosting/self-managed/bare-metal",
                               "ja/guides/hosting/server-upgrade-process"
                             ]
+                          },
+                          {
+                            "group": "専用クラウド",
+                            "pages": [
+                              "ja/guides/hosting/hosting-options/dedicated_cloud",
+                              "ja/guides/hosting/hosting-options/dedicated_regions",
+                              "ja/guides/hosting/export-data-from-dedicated-cloud"
+                            ]
                           }
                         ]
                       },
                       {
-                        "group": "Identity and access management (IAM)",
+                        "group": "アイデンティティとアクセス管理 (IAM)",
                         "pages": [
+                          "ja/guides/hosting/iam/org_team_struct",
                           {
-                            "group": "Authentication",
+                            "group": "認証",
                             "pages": [
+                              "ja/guides/hosting/iam/authentication",
                               "ja/guides/hosting/iam/ldap",
                               "ja/guides/hosting/iam/sso",
                               "ja/guides/hosting/iam/identity_federation",
@@ -1078,8 +1085,9 @@
                             ]
                           },
                           {
-                            "group": "Access management",
+                            "group": "アクセス管理",
                             "pages": [
+                              "ja/guides/hosting/iam/access-management-intro",
                               "ja/guides/hosting/iam/access-management/manage-organization",
                               "ja/guides/hosting/iam/access-management/restricted-projects"
                             ]
@@ -1090,8 +1098,9 @@
                         ]
                       },
                       {
-                        "group": "Data security",
+                        "group": "データセキュリティ",
                         "pages": [
+                          "ja/guides/hosting/data-security",
                           "ja/guides/hosting/data-security/secure-storage-connector",
                           "ja/guides/hosting/data-security/presigned-urls",
                           "ja/guides/hosting/data-security/ip-allowlisting",
@@ -1101,8 +1110,9 @@
                       },
                       "ja/guides/hosting/privacy-settings",
                       {
-                        "group": "Monitoring and usage",
+                        "group": "監視と利用状況",
                         "pages": [
+                          "ja/guides/hosting/monitoring-usage",
                           "ja/guides/hosting/monitoring-usage/audit-logging",
                           "ja/guides/hosting/monitoring-usage/prometheus-logging",
                           "ja/guides/hosting/monitoring-usage/slack-alerts",
@@ -1121,20 +1131,22 @@
             "tab": "W&B Models",
             "pages": [
               {
-                "group": "W&B Models",
+                "group": "W&B モデル",
                 "pages": [
-                  "ja/guides/models/index",
+                  "ja/guides/models",
                   "ja/quickstart",
                   {
-                    "group": "Experiments",
+                    "group": "実験管理",
                     "pages": [
+                      "ja/guides/track",
                       "ja/guides/track/create-an-experiment",
                       "ja/guides/track/config",
                       "ja/guides/track/project-page",
                       "ja/guides/track/workspaces",
                       {
-                        "group": "What are runs?",
+                        "group": "runs とは何ですか？",
                         "pages": [
+                          "ja/guides/runs",
                           "ja/guides/runs/tags",
                           "ja/guides/runs/filter-runs",
                           "ja/guides/runs/forking",
@@ -1145,9 +1157,11 @@
                           "ja/guides/runs/alert"
                         ]
                       },
+                      "ja/guides/track/jupyter",
                       {
-                        "group": "Log objects and media",
+                        "group": "ログ オブジェクト と メディア",
                         "pages": [
+                          "ja/guides/track/log",
                           "ja/guides/track/log/plots",
                           "ja/guides/track/log/customize-logging-axes",
                           "ja/guides/track/log/distributed-training",
@@ -1158,21 +1172,32 @@
                           "ja/guides/track/log/working-with-csv"
                         ]
                       },
-                      "ja/guides/track/jupyter",
-                      "ja/guides/track/limits",
                       "ja/guides/track/reproduce_experiments",
+                      "ja/guides/track/limits",
                       "ja/guides/track/public-api-guide",
                       "ja/guides/track/environment-variables"
                     ]
                   },
                   {
-                    "group": "Sweeps",
+                    "group": "テーブル",
                     "pages": [
+                      "ja/guides/models/tables",
+                      "ja/guides/models/tables/tables-walkthrough",
+                      "ja/guides/models/tables/visualize-tables",
+                      "ja/guides/models/tables/tables-download",
+                      "ja/guides/models/tables/tables-gallery"
+                    ]
+                  },
+                  {
+                    "group": "スイープ",
+                    "pages": [
+                      "ja/guides/sweeps",
                       "ja/guides/sweeps/walkthrough",
                       "ja/guides/sweeps/add-w-and-b-to-your-code",
                       {
-                        "group": "Define a sweep configuration",
+                        "group": "sweep configuration を定義する",
                         "pages": [
+                          "ja/guides/sweeps/define-sweep-configuration",
                           "ja/guides/sweeps/sweep-config-keys"
                         ]
                       },
@@ -1189,23 +1214,17 @@
                     ]
                   },
                   {
-                    "group": "Tables",
-                    "pages": [
-                      "ja/guides/tables/tables-walkthrough",
-                      "ja/guides/tables/visualize-tables",
-                      "ja/guides/tables/tables-gallery",
-                      "ja/guides/tables/tables-download"
-                    ]
-                  },
-                  {
                     "group": "W&B App UI",
                     "pages": [
+                      "ja/guides/app",
                       {
-                        "group": "Panels",
+                        "group": "パネル",
                         "pages": [
+                          "ja/guides/app/features/panels",
                           {
-                            "group": "Line plots",
+                            "group": "折れ線グラフ",
                             "pages": [
+                              "ja/guides/app/features/panels/line-plot",
                               "ja/guides/app/features/panels/line-plot/reference",
                               "ja/guides/app/features/panels/line-plot/sampling",
                               "ja/guides/app/features/panels/line-plot/smoothing"
@@ -1218,16 +1237,18 @@
                           "ja/guides/app/features/panels/parameter-importance",
                           "ja/guides/app/features/panels/run-comparer",
                           {
-                            "group": "Query panels",
+                            "group": "クエリパネル",
                             "pages": [
+                              "ja/guides/app/features/panels/query-panels",
                               "ja/guides/app/features/panels/query-panels/embedding-projector"
                             ]
                           }
                         ]
                       },
                       {
-                        "group": "Custom charts",
+                        "group": "カスタムチャート",
                         "pages": [
+                          "ja/guides/app/features/custom-charts/",
                           "ja/guides/app/features/custom-charts/walkthrough"
                         ]
                       },
@@ -1237,12 +1258,13 @@
                 ]
               },
               {
-                "group": "W&B Core",
+                "group": "W&B コア",
                 "pages": [
                   "ja/guides/core",
                   {
-                    "group": "Artifacts",
+                    "group": "データを管理する",
                     "pages": [
+                      "ja/guides/artifacts",
                       "ja/guides/artifacts/construct-an-artifact",
                       "ja/guides/artifacts/download-and-use-an-artifact",
                       "ja/guides/artifacts/update-an-artifact",
@@ -1263,8 +1285,22 @@
                     ]
                   },
                   {
-                    "group": "Registry",
+                    "group": "レポート",
                     "pages": [
+                      "ja/guides/reports",
+                      "ja/guides/reports/create-a-report",
+                      "ja/guides/reports/edit-a-report",
+                      "ja/guides/reports/collaborate-on-reports",
+                      "ja/guides/reports/clone-and-export-reports",
+                      "ja/guides/reports/embed-reports",
+                      "ja/guides/reports/cross-project-reports",
+                      "ja/guides/reports/reports-gallery"
+                    ]
+                  },
+                  {
+                    "group": "レジストリ",
+                    "pages": [
+                      "ja/guides/registry",
                       "ja/guides/registry/registry_types",
                       "ja/guides/registry/create_registry",
                       "ja/guides/registry/configure_registry",
@@ -1277,8 +1313,9 @@
                       "ja/guides/registry/lineage",
                       "ja/guides/registry/model_registry_eol",
                       {
-                        "group": "Model registry",
+                        "group": "モデルレジストリ",
                         "pages": [
+                          "ja/guides/registry/model_registry",
                           "ja/guides/registry/model_registry/walkthrough",
                           "ja/guides/registry/model_registry/model-management-concepts",
                           "ja/guides/registry/model_registry/log-model-to-experiment",
@@ -1295,23 +1332,13 @@
                     ]
                   },
                   {
-                    "group": "Reports",
+                    "group": "オートメーション",
                     "pages": [
-                      "ja/guides/reports/create-a-report",
-                      "ja/guides/reports/edit-a-report",
-                      "ja/guides/reports/collaborate-on-reports",
-                      "ja/guides/reports/clone-and-export-reports",
-                      "ja/guides/reports/embed-reports",
-                      "ja/guides/reports/cross-project-reports",
-                      "ja/guides/reports/reports-gallery"
-                    ]
-                  },
-                  {
-                    "group": "Automations",
-                    "pages": [
+                      "ja/guides/automations",
                       {
-                        "group": "Create an automation",
+                        "group": "自動化の作成",
                         "pages": [
+                          "ja/guides/automations/create-automations",
                           "ja/guides/automations/create-automations/slack",
                           "ja/guides/automations/create-automations/webhook"
                         ]
@@ -1322,9 +1349,9 @@
                 ]
               },
               {
-                "group": "Reference",
+                "group": "参照",
                 "pages": [
-                  "ja/ref/js/index",
+                  "ja/ref/js",
                   {
                     "group": "Python ライブラリ",
                     "pages": [
