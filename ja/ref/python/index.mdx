@@ -17,32 +17,128 @@ wandb を使用して機械学習の作業を追跡します。
 
 ## クラス
 
-[`class Artifact`](./artifact.md): データセットおよびモデルのバージョン管理のための柔軟で軽量な構成要素。
+[`class Artifact`](./artifact): データセットおよびモデルのバージョン管理のための柔軟で軽量な構成要素。
 
-[`class Run`](./run.md): wandb によってログされる計算の単位。通常、これは機械学習の実験です。
+[`class Run`](./run): wandb によってログされる計算の単位。通常、これは機械学習の実験です。
 
 ## 関数
 
-[`agent(...)`](./agent.md): 一つ以上の sweep agent を開始します。
+[`agent(...)`](./agent): 一つ以上の sweep agent を開始します。
 
-[`controller(...)`](./controller.md): パブリックな sweep コントローラのコンストラクタです。
+[`controller(...)`](./controller): パブリックな sweep コントローラのコンストラクタです。
 
-[`finish(...)`](./finish.md): run を終了し、残りのデータをアップロードします。
+[`finish(...)`](./finish): run を終了し、残りのデータをアップロードします。
 
-[`init(...)`](./init.md): 新しい run を開始して W&B へ追跡しログします。
+[`init(...)`](./init): 新しい run を開始して W&B へ追跡しログします。
 
-[`log(...)`](./log.md): run のデータをアップロードします。
+[`log(...)`](./log): run のデータをアップロードします。
 
-[`login(...)`](./login.md): W&B ログイン資格情報を設定します。
+[`login(...)`](./login): W&B ログイン資格情報を設定します。
 
-[`save(...)`](./save.md): 一つ以上のファイルを W&B に同期します。
+[`save(...)`](./save): 一つ以上のファイルを W&B に同期します。
 
-[`sweep(...)`](./sweep.md): ハイパーパラメーター探索を初期化します。
+[`sweep(...)`](./sweep): ハイパーパラメーター探索を初期化します。
 
-[`watch(...)`](./watch.md): 指定された PyTorch のモデルにフックし、勾配とモデルの計算グラフを監視します。
+[`watch(...)`](./watch): 指定された PyTorch のモデルにフックし、勾配とモデルの計算グラフを監視します。
 
 | その他のメンバー |  |
 | :--- | :--- |
-|  `__version__`<a id="__version__"></a> |  `'0.19.8'` |
-|  `config`<a id="config"></a> |   |
-|  `summary`<a id="summary"></a> |   |
+|  `__version__` |  `'0.19.8'` |
+|  `config` |   |
+|  `summary` |   |
+
+<Card
+  title="init"
+  href="/ja/ref/python/init/"
+  arrow
+/>
+
+<Card
+  title="launch-library"
+  href="/ja/ref/python/launch-library/"
+  arrow
+/>
+
+<Card
+  title="run"
+  href="/ja/ref/python/run/"
+  arrow
+/>
+
+<Card
+  title="sweep"
+  href="/ja/ref/python/sweep/"
+  arrow
+/>
+
+<Card
+  title="wandb_ワークスペース"
+  href="/ja/ref/python/wandb_workspaces/"
+  arrow
+/>
+
+<Card
+  title="watch"
+  href="/ja/ref/python/watch/"
+  arrow
+/>
+
+<Card
+  title="アーティファクト"
+  href="/ja/ref/python/artifact/"
+  arrow
+/>
+
+<Card
+  title="インポート＆エクスポート API"
+  href="/ja/ref/python/public-api/"
+  arrow
+/>
+
+<Card
+  title="インテグレーション"
+  href="/ja/ref/python/integrations/"
+  arrow
+/>
+
+<Card
+  title="エージェント"
+  href="/ja/ref/python/agent/"
+  arrow
+/>
+
+<Card
+  title="データタイプ"
+  href="/ja/ref/python/data-types/"
+  arrow
+/>
+
+<Card
+  title="コントローラ"
+  href="/ja/ref/python/controller/"
+  arrow
+/>
+
+<Card
+  title="ログ"
+  href="/ja/ref/python/log/"
+  arrow
+/>
+
+<Card
+  title="ログイン"
+  href="/ja/ref/python/login/"
+  arrow
+/>
+
+<Card
+  title="申し訳ありませんが、提供されたテキストが空白であるため、翻訳が必要なコンテンツが表示されません。それを解決していただければ、翻訳を提供いたします。"
+  href="/ja/ref/python/finish/"
+  arrow
+/>
+
+<Card
+  title="保存"
+  href="/ja/ref/python/save/"
+  arrow
+/>

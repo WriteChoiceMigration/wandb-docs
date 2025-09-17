@@ -1355,10 +1355,12 @@
                   {
                     "group": "Python ライブラリ",
                     "pages": [
+                      "ja/ref/python",
                       "ja/ref/python/init/",
                       {
                         "group": "launch-library",
                         "pages": [
+                          "ja/ref/python/launch-library",
                           "ja/ref/python/launch-library/launch_add/",
                           "ja/ref/python/launch-library/launchagent/",
                           "ja/ref/python/launch-library/launch/"
@@ -1369,6 +1371,7 @@
                       {
                         "group": "wandb_ワークスペース",
                         "pages": [
+                          "ja/ref/python/wandb_workspaces",
                           "ja/ref/python/wandb_workspaces/workspaces/",
                           "ja/ref/python/wandb_workspaces/reports/"
                         ]
@@ -1378,6 +1381,7 @@
                       {
                         "group": "インポート＆エクスポート API",
                         "pages": [
+                          "ja/ref/python/public-api",
                           "ja/ref/python/public-api/api/",
                           "ja/ref/python/public-api/queuedrun/",
                           "ja/ref/python/public-api/runs/",
@@ -1409,6 +1413,7 @@
                       {
                         "group": "データタイプ",
                         "pages": [
+                          "ja/ref/python/data-types",
                           "ja/ref/python/data-types/boundingboxes2d/",
                           "ja/ref/python/data-types/html/",
                           "ja/ref/python/data-types/imagemask/",
@@ -1434,6 +1439,7 @@
                   {
                     "group": "クエリ式言語",
                     "pages": [
+                      "ja/ref/query-panel",
                       "ja/ref/query-panel/float/",
                       "ja/ref/query-panel/artifact-version/",
                       "ja/ref/query-panel/artifact-type/",
@@ -1463,6 +1469,7 @@
                   {
                     "group": "コマンドライン インターフェース",
                     "pages": [
+                      "ja/ref/cli",
                       "ja/ref/cli/wandb-disabled/",
                       "ja/ref/cli/wandb-docker/",
                       "ja/ref/cli/wandb-docker-run/",
@@ -1476,9 +1483,11 @@
                       {
                         "group": "wandb アーティファクト",
                         "pages": [
+                          "ja/ref/cli/wandb-artifact",
                           {
                             "group": "wandb アーティファクト cache",
                             "pages": [
+                              "ja/ref/cli/wandb-artifact/wandb-artifact-cache",
                               "ja/ref/cli/wandb-artifact/wandb-artifact-cache/wandb-artifact-cache-cleanup/"
                             ]
                           },
@@ -1490,6 +1499,7 @@
                       {
                         "group": "wandb サーバー",
                         "pages": [
+                          "ja/ref/cli/wandb-server",
                           "ja/ref/cli/wandb-server/wandb-server-start/",
                           "ja/ref/cli/wandb-server/wandb-server-stop/"
                         ]
@@ -1498,6 +1508,7 @@
                       {
                         "group": "wandb ベータ版",
                         "pages": [
+                          "ja/ref/cli/wandb-beta",
                           "ja/ref/cli/wandb-beta/wandb-beta-sync/"
                         ]
                       },
@@ -1509,6 +1520,7 @@
                       {
                         "group": "wandb ジョブ",
                         "pages": [
+                          "ja/ref/cli/wandb-job",
                           "ja/ref/cli/wandb-job/wandb-job-create/",
                           "ja/ref/cli/wandb-job/wandb-job-describe/",
                           "ja/ref/cli/wandb-job/wandb-job-list/"
@@ -1523,7 +1535,7 @@
                 ]
               },
               {
-                "group": "Support",
+                "group": "サポート",
                 "pages": [
                   "ja/support",
                   "ja/support/academic",
