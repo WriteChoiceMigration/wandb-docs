@@ -1357,6 +1357,7 @@
               {
                 "group": "参照",
                 "pages": [
+                  "ja/ref",
                   "ja/ref/js",
                   {
                     "group": "Python ライブラリ",
@@ -1932,9 +1933,11 @@
               {
                 "group": "Reference",
                 "pages": [
+                  "ko/ref",
                   {
                     "group": "Command Line Interface",
                     "pages": [
+                      "ko/ref/cli",
                       "ko/ref/cli/wandb-agent/",
                       {
                         "group": "wandb artifact",
