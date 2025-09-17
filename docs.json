@@ -1942,9 +1942,11 @@
                       {
                         "group": "wandb artifact",
                         "pages": [
+                          "ko/ref/cli/wandb-artifact",
                           {
                             "group": "wandb artifact cache",
                             "pages": [
+                              "ko/ref/cli/wandb-artifact/wandb-artifact-cache",
                               "ko/ref/cli/wandb-artifact/wandb-artifact-cache/wandb-artifact-cache-cleanup/"
                             ]
                           },
@@ -1956,6 +1958,7 @@
                       {
                         "group": "wandb beta",
                         "pages": [
+                          "ko/ref/cli/wandb-beta",
                           "ko/ref/cli/wandb-beta/wandb-beta-sync/"
                         ]
                       },
@@ -1968,6 +1971,7 @@
                       {
                         "group": "wandb job",
                         "pages": [
+                          "ko/ref/cli/wandb-job",
                           "ko/ref/cli/wandb-job/wandb-job-create/",
                           "ko/ref/cli/wandb-job/wandb-job-describe/",
                           "ko/ref/cli/wandb-job/wandb-job-list/"
@@ -1985,6 +1989,7 @@
                       {
                         "group": "wandb server",
                         "pages": [
+                          "ko/ref/cli/wandb-server",
                           "ko/ref/cli/wandb-server/wandb-server-start/",
                           "ko/ref/cli/wandb-server/wandb-server-stop/"
                         ]
@@ -1999,12 +2004,14 @@
                   {
                     "group": "Python Library",
                     "pages": [
+                      "ko/ref/python",
                       "ko/ref/python/agent/",
                       "ko/ref/python/artifact/",
                       "ko/ref/python/controller/",
                       {
                         "group": "Data Types",
                         "pages": [
+                          "ko/ref/python/data-types",
                           "ko/ref/python/data-types/audio/",
                           "ko/ref/python/data-types/boundingboxes2d/",
                           "ko/ref/python/data-types/graph/",
@@ -2024,6 +2031,7 @@
                       {
                         "group": "Import & Export API",
                         "pages": [
+                          "ko/ref/python/public-api",
                           "ko/ref/python/public-api/api/",
                           "ko/ref/python/public-api/file/",
                           "ko/ref/python/public-api/files/",
@@ -2041,9 +2049,11 @@
                       {
                         "group": "Integrations",
                         "pages": [
+                          "ko/ref/python/integrations",
                           {
                             "group": "keras",
                             "pages": [
+                              "ko/ref/python/integrations/keras",
                               "ko/ref/python/integrations/keras/wandbcallback/",
                               "ko/ref/python/integrations/keras/wandbevalcallback/",
                               "ko/ref/python/integrations/keras/wandbmetricslogger/",
@@ -2055,6 +2065,7 @@
                       {
                         "group": "launch-library",
                         "pages": [
+                          "ko/ref/python/launch-library",
                           "ko/ref/python/launch-library/launch/",
                           "ko/ref/python/launch-library/launch_add/",
                           "ko/ref/python/launch-library/launchagent/"
@@ -2068,6 +2079,7 @@
                       {
                         "group": "wandb_workspaces",
                         "pages": [
+                          "ko/ref/python/wandb_workspaces",
                           "ko/ref/python/wandb_workspaces/reports/",
                           "ko/ref/python/wandb_workspaces/workspaces/"
                         ]
@@ -2078,6 +2090,7 @@
                   {
                     "group": "Query Expression Language",
                     "pages": [
+                      "ko/ref/query-panel",
                       "ko/ref/query-panel/artifact/",
                       "ko/ref/query-panel/artifact-type/",
                       "ko/ref/query-panel/artifact-version/",
