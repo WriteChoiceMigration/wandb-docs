@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "generated_at": "2025-09-17 18:08:06",
+    "base_url": "https://docs.wandb.ai",
+    "total_pages": 2,
+    "total_links_processed": 8,
+    "max_instances": 4,
+    "processing_time_seconds": 7.9584033489227295,
+    "script_version": "3.0_parallel"
+  },
+  "results": [
+    {
+      "page": "guides/app/features/custom-charts/walkthrough.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/config",
+          "fix": "/guides/track/config/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/track/log/",
+          "fix": "/guides/track/log/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.050881624221802,
+      "worker_id": 2
+    },
+    {
+      "page": "guides/app/features/cascade-settings.mdx",
+      "links": [
+        {
+          "broken": "/guides/models/track/workspaces#workspace-templates",
+          "fix": "/guides/track/workspaces/#workspace-templates",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "panels/",
+          "fix": "/guides/app/features/panels/",
+          "confidence": "high",
+          "fix_method": "text_href_match",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/line-plot/smoothing",
+          "fix": "/guides/app/features/panels/line-plot/smoothing/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/line-plot/sampling",
+          "fix": "/guides/app/features/panels/line-plot/sampling/",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/line-plot/#edit-line-panel-settings",
+          "fix": "/guides/app/features/panels/line-plot/#edit-line-panel-settings",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        },
+        {
+          "broken": "/guides/models/app/features/panels/line-plot/#edit-line-panel-settings",
+          "fix": "/guides/app/features/panels/line-plot/#edit-line-panel-settings",
+          "confidence": "high",
+          "fix_method": "http_redirect",
+          "fix_type": "redirect"
+        }
+      ],
+      "processing_time": 4.561884880065918,
+      "worker_id": 1
+    }
+  ]
+}
