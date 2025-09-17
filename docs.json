@@ -1013,6 +1013,12 @@
         "language": "ja",
         "tabs": [
           {
+            "tab": "Home",
+            "pages": [
+              "ja/index"
+            ]
+          },
+          {
             "tab": "Platform",
             "pages": [
               {
@@ -1214,7 +1220,7 @@
                     ]
                   },
                   {
-                    "group": "W&B App UI",
+                    "group": "W&B アプリ UI リファレンス",
                     "pages": [
                       "ja/guides/app",
                       {
@@ -1579,6 +1585,12 @@
       {
         "language": "ko",
         "tabs": [
+          {
+            "tab": "Home",
+            "pages": [
+              "ko/index"
+            ]
+          },
           {
             "tab": "Platform",
             "pages": [

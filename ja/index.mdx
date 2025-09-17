@@ -10,46 +10,46 @@ import {ProductCard} from "/snippets/ProductCard.jsx";
 
 <HomeWrapper>
 <br/>
-<Banner title="Weights & Biases Documentation" background="/images/support/support_banner.png">
-Choose the product for which you need documentation.
+<Banner title="Weights & Biases ドキュメント" background="/images/support/support_banner.png">
+ドキュメントが必要なプロダクトを選択してください。
 </Banner>
 <br/>
 <br/>
 
 <HomeWrapper padding="mint-px-24">
-<Columns cols={3}>
+<Columns cols={2}>
     <ProductCard
         title="W&B Models"
-        subtitle="Develop AI models"
-        href="/guides"
+        subtitle="AI モデルを開発する"
+        href="/ja/guides"
         icon="/icons/Name=Models,%20Mode=Dark.svg"
         links={[
-            { href: "/guides/", text: "Introduction" },
-            { href: "/quickstart/", text: "Quickstart" },
-            { href: "https://www.youtube.com/watch?v=tHAFujRhZLA", text: "YouTube Tutorial" },
-            { href: "https://wandb.ai/site/courses/101/", text: "Online Course" },
+            { href: "/ja/guides/", text: "イントロダクション" },
+            { href: "/ja/quickstart/", text: "クイックスタート" },
+            { href: "https://www.youtube.com/watch?v=tHAFujRhZLA", text: "YouTube チュートリアル" },
+            { href: "https://wandb.ai/site/courses/101/", text: "オンライン コース" },
         ]}
     >
-        Use [W&B Models](/guides) to manage AI model development. Features include training, fine-tuning, reporting, automating hyperparameter sweeps, and utilizing the model registry for versioning and reproducibility.
+        [W&B Models](/ja/guides) を使用して、AI モデルの開発を管理します。機能には、トレーニング、ファインチューニング、レポート作成、自動化されたハイパーパラメーター探索、モデルレジストリを使用したバージョン管理と再現性があります。
     </ProductCard>
 
     <ProductCard
         title="W&B Weave"
-        subtitle="Use AI models in your app"
+        subtitle="アプリで AI モデルを利用する"
         href="/weave"
         icon="/icons/Name=Weave,%20Mode=Dark.svg"
         links={[
-            { href: "/guides/", text: "Introduction" },
-            { href: "/weave/quickstart", text: "Quickstart" },
-            { href: "https://www.youtube.com/watch?v=IQcGGNLN3zo", text: "YouTube Demo" },
-            { href: "/weave/guides/tools/playground/", text: "Try the Playground" },
-            { href: "/guides/weave/set-up-weave", text: "Use Weave in your W&B runs" }
+            { href: "ja/weave/", text: "イントロダクション" },
+            { href: "/weave/quickstart", text: "クイックスタート" },
+            { href: "https://www.youtube.com/watch?v=IQcGGNLN3zo", text: "YouTube デモ" },
+            { href: "/weave/guides/tools/playground/", text: "プレイグラウンドを試す" },
+            { href: "https://wandb.ai/signup", text: "無料のサインアップが必要です" }
         ]}
     >
-        Use [W&B Weave](/weave/) to manage AI models in your code. Features include tracing, output evaluation, cost estimates, and a hosted inference service and playground for comparing different large language models (LLMs) and settings.
+        [W&B Weave](/weave/) を使用して、コード内で AI モデルを管理します。機能には、トレース、評価の出力、コスト見積もり、異なる大型言語モデル (LLM) や設定を比較するためのプレイグラウンドがあります。
     </ProductCard>
     
-    <ProductCard
+    {/* <ProductCard
     title="W&B Inference"
     subtitle="Access foundation models"
     href="/guides/inference/"
@@ -62,7 +62,7 @@ Choose the product for which you need documentation.
     ]}
     >
         Use <a href="/guides/inference/">W&B Inference</a> to access leading open-source foundation models through an OpenAI-compatible API. Features include multiple model options, usage tracking, and integration with Weave for tracing and evaluation.
-    </ProductCard>
+    </ProductCard> */}
 
 </Columns>
 </HomeWrapper>
