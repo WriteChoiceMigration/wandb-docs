@@ -11,8 +11,8 @@
     "eyebrows": "breadcrumbs"
   },
   "logo": {
-    "light": "logo/light.svg",
-    "dark": "logo/dark.svg",
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
     "href": "https://wandb.ai/"
   },
   "favicon": "favicon.png",
@@ -755,8 +755,7 @@
                         "pages": [
                           "weave/guides/tools/index",
                           "weave/guides/tools/serve",
-                          "weave/guides/tools/deploy",
-                          "guides/tracking/otel"
+                          "weave/guides/tools/deploy"
                         ]
                       }
                     ]
@@ -764,7 +763,7 @@
                   {
                     "group": "Integrations",
                     "pages": [
-                      "guides/integrations/index",
+                      "guides/integrations",
                       {
                         "group": "LLM Providers",
                         "pages": [
@@ -1563,8 +1562,7 @@
                                 ]
                               },
                               "ko/guides/hosting/self-managed/bare-metal",
-                              "ko/guides/hosting/server-upgrade-process",
-                              "ko/guides/hosting/self-managed/disable-automatic-app-version-updates"
+                              "ko/guides/hosting/server-upgrade-process"
                             ]
                           }
                         ]
@@ -1642,15 +1640,12 @@
                         "group": "What are runs?",
                         "pages": [
                           "ko/guides/runs/tags",
-                          "ko/guides/runs/multiple-runs-per-process",
-                          "ko/guides/runs/run-colors",
                           "ko/guides/runs/filter-runs",
                           "ko/guides/runs/forking",
                           "ko/guides/runs/grouping",
                           "ko/guides/runs/manage-runs",
                           "ko/guides/runs/resuming",
                           "ko/guides/runs/rewind",
-                          "ko/guides/runs/color-code-runs",
                           "ko/guides/runs/alert"
                         ]
                       },
@@ -1701,17 +1696,14 @@
                     "group": "Tables",
                     "pages": [
                       "ko/guides/tables/tables-walkthrough",
-                      "ko/guides/tables/log_tables",
                       "ko/guides/tables/visualize-tables",
                       "ko/guides/tables/tables-gallery",
                       "ko/guides/tables/tables-download"
                     ]
                   },
-                  "ko/guides/models/evaluate-models",
                   {
                     "group": "W&B App UI",
                     "pages": [
-                      "ko/guides/models/app/keyboard-shortcuts",
                       {
                         "group": "Panels",
                         "pages": [
@@ -1726,7 +1718,6 @@
                           "ko/guides/app/features/panels/bar-plot",
                           "ko/guides/app/features/panels/parallel-coordinates",
                           "ko/guides/app/features/panels/scatter-plot",
-                          "ko/guides/app/features/panels/media",
                           "ko/guides/app/features/panels/code",
                           "ko/guides/app/features/panels/parameter-importance",
                           "ko/guides/app/features/panels/run-comparer",
@@ -1744,7 +1735,6 @@
                           "ko/guides/app/features/custom-charts/walkthrough"
                         ]
                       },
-                      "ko/guides/app/console-logs",
                       "ko/guides/app/features/cascade-settings"
                     ]
                   }
@@ -1784,13 +1774,11 @@
                       "ko/guides/registry/configure_registry",
                       "ko/guides/registry/create_collection",
                       "ko/guides/registry/link_version",
-                      "ko/guides/registry/aliases",
                       "ko/guides/registry/download_use_artifact",
                       "ko/guides/registry/search_registry",
                       "ko/guides/registry/organize-with-tags",
                       "ko/guides/registry/registry_cards",
                       "ko/guides/registry/lineage",
-                      "ko/guides/registry/delete_registry",
                       "ko/guides/registry/model_registry_eol",
                       {
                         "group": "Model registry",
@@ -2028,7 +2016,6 @@
                   "ko/support/environment_variables",
                   "ko/support/experiments",
                   "ko/support/hyperparameter",
-                  "ko/support/inference",
                   "ko/support/logs",
                   "ko/support/metrics",
                   "ko/support/notebooks",
