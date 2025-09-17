@@ -1601,10 +1601,12 @@
                       {
                         "group": "Deployment Options",
                         "pages": [
+                          "ko/guides/hosting/hosting-options",
                           "ko/guides/hosting/hosting-options/saas_cloud",
                           {
                             "group": "Dedicated Cloud",
                             "pages": [
+                              "ko/guides/hosting/hosting-options/dedicated_cloud",
                               "ko/guides/hosting/hosting-options/dedicated_regions",
                               "ko/guides/hosting/export-data-from-dedicated-cloud"
                             ]
@@ -1612,16 +1614,19 @@
                           {
                             "group": "Self-Managed",
                             "pages": [
+                              "ko/guides/hosting/hosting-options/self-managed",
                               "ko/guides/hosting/self-managed/ref-arch",
                               {
                                 "group": "Run W&B Server on Kubernetes",
                                 "pages": [
+                                  "ko/guides/hosting/operator",
                                   "ko/guides/hosting/self-managed/operator-airgapped"
                                 ]
                               },
                               {
                                 "group": "Install on public cloud",
                                 "pages": [
+                                  "ko/guides/hosting/self-managed/install-on-public-cloud",
                                   "ko/guides/hosting/self-managed/aws-tf",
                                   "ko/guides/hosting/self-managed/gcp-tf",
                                   "ko/guides/hosting/self-managed/azure-tf"
@@ -1636,9 +1641,11 @@
                       {
                         "group": "Identity and access management (IAM)",
                         "pages": [
+                          "ko/guides/hosting/iam/org_team_struct",
                           {
                             "group": "Authentication",
                             "pages": [
+                              "ko/guides/hosting/iam/authentication",
                               "ko/guides/hosting/iam/ldap",
                               "ko/guides/hosting/iam/sso",
                               "ko/guides/hosting/iam/identity_federation",
@@ -1648,6 +1655,7 @@
                           {
                             "group": "Access management",
                             "pages": [
+                              "ko/guides/hosting/iam/access-management-intro",
                               "ko/guides/hosting/iam/access-management/manage-organization",
                               "ko/guides/hosting/iam/access-management/restricted-projects"
                             ]
@@ -1660,6 +1668,7 @@
                       {
                         "group": "Data security",
                         "pages": [
+                          "ko/guides/hosting/data-security",
                           "ko/guides/hosting/data-security/secure-storage-connector",
                           "ko/guides/hosting/data-security/presigned-urls",
                           "ko/guides/hosting/data-security/ip-allowlisting",
@@ -1671,6 +1680,7 @@
                       {
                         "group": "Monitoring and usage",
                         "pages": [
+                          "ko/guides/hosting/monitoring-usage",
                           "ko/guides/hosting/monitoring-usage/audit-logging",
                           "ko/guides/hosting/monitoring-usage/prometheus-logging",
                           "ko/guides/hosting/monitoring-usage/slack-alerts",
@@ -1694,7 +1704,7 @@
                 "group": "W&B Models",
                 "pages": [
                   "ko/guides/models",
-                  "quickstart",
+                  "ko/quickstart",
                   {
                     "group": "Experiments",
                     "pages": [
@@ -1706,6 +1716,7 @@
                       {
                         "group": "What are runs?",
                         "pages": [
+                          "ko/guides/runs",
                           "ko/guides/runs/tags",
                           "ko/guides/runs/filter-runs",
                           "ko/guides/runs/forking",
@@ -1719,6 +1730,7 @@
                       {
                         "group": "Log objects and media",
                         "pages": [
+                          "ko/guides/track/log",
                           "ko/guides/track/log/plots",
                           "ko/guides/track/log/customize-logging-axes",
                           "ko/guides/track/log/distributed-training",
@@ -1739,6 +1751,7 @@
                   {
                     "group": "Sweeps",
                     "pages": [
+                      "ko/guides/sweeps",
                       "ko/guides/sweeps/walkthrough",
                       "ko/guides/sweeps/add-w-and-b-to-your-code",
                       {
@@ -1762,21 +1775,25 @@
                   {
                     "group": "Tables",
                     "pages": [
-                      "ko/guides/tables/tables-walkthrough",
-                      "ko/guides/tables/visualize-tables",
-                      "ko/guides/tables/tables-gallery",
-                      "ko/guides/tables/tables-download"
+                      "ko/guides/models/tables",
+                      "ko/guides/models/tables/tables-walkthrough",
+                      "ko/guides/models/tables/visualize-tables",
+                      "ko/guides/models/tables/tables-gallery",
+                      "ko/guides/models/tables/tables-download"
                     ]
                   },
                   {
                     "group": "W&B App UI",
                     "pages": [
+                      "ko/guides/app",
                       {
                         "group": "Panels",
                         "pages": [
+                          "ko/guides/app/features/panels",
                           {
                             "group": "Line plots",
                             "pages": [
+                              "ko/guides/app/features/panels/line-plot",
                               "ko/guides/app/features/panels/line-plot/reference",
                               "ko/guides/app/features/panels/line-plot/sampling",
                               "ko/guides/app/features/panels/line-plot/smoothing"
@@ -1791,6 +1808,7 @@
                           {
                             "group": "Query panels",
                             "pages": [
+                              "ko/guides/app/features/panels/query-panels",
                               "ko/guides/app/features/panels/query-panels/embedding-projector"
                             ]
                           }
@@ -1799,6 +1817,7 @@
                       {
                         "group": "Custom charts",
                         "pages": [
+                          "ko/guides/app/features/custom-charts",
                           "ko/guides/app/features/custom-charts/walkthrough"
                         ]
                       },
@@ -1814,6 +1833,7 @@
                   {
                     "group": "Artifacts",
                     "pages": [
+                      "ko/guides/artifacts",
                       "ko/guides/artifacts/construct-an-artifact",
                       "ko/guides/artifacts/download-and-use-an-artifact",
                       "ko/guides/artifacts/update-an-artifact",
@@ -1823,6 +1843,7 @@
                       {
                         "group": "Manage data",
                         "pages": [
+                          "ko/guides/artifacts/manage-data",
                           "ko/guides/artifacts/delete-artifacts",
                           "ko/guides/artifacts/ttl",
                           "ko/guides/artifacts/storage"
@@ -1836,31 +1857,32 @@
                   {
                     "group": "Registry",
                     "pages": [
-                      "ko/guides/registry/registry_types",
-                      "ko/guides/registry/create_registry",
-                      "ko/guides/registry/configure_registry",
-                      "ko/guides/registry/create_collection",
-                      "ko/guides/registry/link_version",
-                      "ko/guides/registry/download_use_artifact",
-                      "ko/guides/registry/search_registry",
-                      "ko/guides/registry/organize-with-tags",
-                      "ko/guides/registry/registry_cards",
-                      "ko/guides/registry/lineage",
-                      "ko/guides/registry/model_registry_eol",
+                      "ko/guides/core/registry",
+                      "ko/guides/core/registry/registry_types",
+                      "ko/guides/core/registry/create_registry",
+                      "ko/guides/core/registry/configure_registry",
+                      "ko/guides/core/registry/create_collection",
+                      "ko/guides/core/registry/link_version",
+                      "ko/guides/core/registry/download_use_artifact",
+                      "ko/guides/core/registry/search_registry",
+                      "ko/guides/core/registry/organize-with-tags",
+                      "ko/guides/core/registry/registry_cards",
+                      "ko/guides/core/registry/lineage",
+                      "ko/guides/core/registry/model_registry_eol",
                       {
                         "group": "Model registry",
                         "pages": [
-                          "ko/guides/registry/model_registry/walkthrough",
-                          "ko/guides/registry/model_registry/model-management-concepts",
-                          "ko/guides/registry/model_registry/log-model-to-experiment",
-                          "ko/guides/registry/model_registry/create-registered-model",
-                          "ko/guides/registry/model_registry/link-model-version",
-                          "ko/guides/registry/model_registry/organize-models",
-                          "ko/guides/registry/model_registry/model-lineage",
-                          "ko/guides/registry/model_registry/create-model-cards",
-                          "ko/guides/registry/model_registry/consume-models",
-                          "ko/guides/registry/model_registry/notifications",
-                          "ko/guides/registry/model_registry/access_controls"
+                          "ko/guides/core/registry/model_registry/walkthrough",
+                          "ko/guides/core/registry/model_registry/model-management-concepts",
+                          "ko/guides/core/registry/model_registry/log-model-to-experiment",
+                          "ko/guides/core/registry/model_registry/create-registered-model",
+                          "ko/guides/core/registry/model_registry/link-model-version",
+                          "ko/guides/core/registry/model_registry/organize-models",
+                          "ko/guides/core/registry/model_registry/model-lineage",
+                          "ko/guides/core/registry/model_registry/create-model-cards",
+                          "ko/guides/core/registry/model_registry/consume-models",
+                          "ko/guides/core/registry/model_registry/notifications",
+                          "ko/guides/core/registry/model_registry/access_controls"
                         ]
                       }
                     ]
@@ -1868,6 +1890,7 @@
                   {
                     "group": "Reports",
                     "pages": [
+                      "ko/guides/reports",
                       "ko/guides/reports/create-a-report",
                       "ko/guides/reports/edit-a-report",
                       "ko/guides/reports/collaborate-on-reports",
@@ -1880,9 +1903,11 @@
                   {
                     "group": "Automations",
                     "pages": [
+                      "ko/guides/automations",
                       {
                         "group": "Create an automation",
                         "pages": [
+                          "ko/guides/automations/create-automations",
                           "ko/guides/automations/create-automations/slack",
                           "ko/guides/automations/create-automations/webhook"
                         ]
