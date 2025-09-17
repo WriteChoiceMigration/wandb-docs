@@ -105,7 +105,7 @@ sh run_experiment.sh akj172
 ## 中断可能なSweepsの実行を再開する
 中断されたスイープ実行を自動的に再キューします。これは、スイープエージェントを停止の対象となる計算環境（SLURMジョブの中断可能なキュー、EC2スポットインスタンス、Google Cloud中断可能VMなど）で実行する場合に特に役立ちます。
 
-[`mark_preempting`](/ja/ref/python/run.md#mark_preempting)関数を使用して、W&Bが中断されたスイープ実行を自動的に再キューできるようにします。以下のコードスニペットの例
+[`mark_preempting`](/ja/ref/python/run#mark_preempting)関数を使用して、W&Bが中断されたスイープ実行を自動的に再キューできるようにします。以下のコードスニペットの例
 
 ```python
 run = wandb.init()  # 実行を初期化

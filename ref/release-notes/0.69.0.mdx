@@ -23,7 +23,7 @@ The latest patch is **v0.69.1**.{/* more */} Refer to [Patches](#patches).
 <Text/>
 
 ## Upgrading
-To [upgrade](/guides/hosting/hosting-options/self-managed/server-upgrade-process.md#update-with-helm) to W&B v0.69.x, you must use v0.31.4+ of the `operator-wandb` Helm chart. Otherwise, after the upgrade, the `weave-cache-clear` container can fail to start. Ensure that your deployment uses these values:
+To [upgrade](/guides/hosting/hosting-options/self-managed/server-upgrade-process#update-with-helm) to W&B v0.69.x, you must use v0.31.4+ of the `operator-wandb` Helm chart. Otherwise, after the upgrade, the `weave-cache-clear` container can fail to start. Ensure that your deployment uses these values:
 
 ```yaml
 chart:

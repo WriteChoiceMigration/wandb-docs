@@ -71,7 +71,7 @@ runs.summary["cifar10_sample_table"]
 
 これを分解すると:
 
-* `runs` は、ワークスペースに Query Panel があるときに自動的に Query Panel Expressions に注入される変数です。その値は、その特定のワークスペースに表示される Runs のリストです。[Run内の利用可能な異なる属性についてはこちらをお読みください](/ja/../../../../track/public-api-guide.md#understanding-the-different-attributes)。
+* `runs` は、ワークスペースに Query Panel があるときに自動的に Query Panel Expressions に注入される変数です。その値は、その特定のワークスペースに表示される Runs のリストです。[Run内の利用可能な異なる属性についてはこちらをお読みください](/ja/../../../../track/public-api-guide#understanding-the-different-attributes)。
 * `summary` は、Run の Summary オブジェクトを返す操作です。Opsは _マップされる_ ため、この操作はリスト内の各 Run に適用され、その結果として Summary オブジェクトのリストが生成されます。
 * `["cifar10_sample_table"]` は Pick 操作（角括弧で示され）、`predictions` というパラメータを持ちます。Summary オブジェクトは辞書またはマップのように動作するため、この操作は各 Summary オブジェクトから `predictions` フィールドを選択します。
 

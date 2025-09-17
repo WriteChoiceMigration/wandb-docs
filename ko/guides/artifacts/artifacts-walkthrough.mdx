@@ -68,8 +68,8 @@ Artifact를 기록할 때 기본적으로 `'latest'` 에일리어스가 생성�
 다음 코드 예제는 W&B 서버에 기록하고 저장한 Artifact를 사용하는 단계를 보여줍니다.
 
 1. 먼저 **`wandb.init()`**으로 새 run 오브젝트를 초기화합니다.
-2. 둘째, run 오브젝트 [`use_artifact()`](/ko/ref/python/run.md#use_artifact) 메소드를 사용하여 사용할 Artifact를 W&B에 알립니다. 그러면 Artifact 오브젝트가 반환됩니다.
-3. 셋째, Artifact [`download()`](/ko/ref/python/artifact.md#download) 메소드를 사용하여 Artifact의 내용을 다운로드합니다.
+2. 둘째, run 오브젝트 [`use_artifact()`](/ko/ref/python/run#use_artifact) 메소드를 사용하여 사용할 Artifact를 W&B에 알립니다. 그러면 Artifact 오브젝트가 반환됩니다.
+3. 셋째, Artifact [`download()`](/ko/ref/python/artifact#download) 메소드를 사용하여 Artifact의 내용을 다운로드합니다.
 
 ```python
 # W&B Run을 만듭니다. 여기서는 'training'을 'type'으로 지정합니다.

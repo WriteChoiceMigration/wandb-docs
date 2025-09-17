@@ -81,7 +81,7 @@ with wandb.init() as run:
     run.log_artifact(artifact)
 ```
 
-Artifact 오브젝트의 [`logged_by`](/ko/ref/python/artifact.md#logged_by) 및 [`used_by`](/ko/ref/python/artifact.md#used_by) 메서드를 사용하여 Artifact에서 그래프를 탐색합니다.
+Artifact 오브젝트의 [`logged_by`](/ko/ref/python/artifact#logged_by) 및 [`used_by`](/ko/ref/python/artifact#used_by) 메서드를 사용하여 Artifact에서 그래프를 탐색합니다.
 
 ```python
 # Walk up and down the graph from an artifact:

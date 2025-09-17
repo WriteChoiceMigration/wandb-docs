@@ -15,7 +15,7 @@ W&B Dedicated Cloud is available in [multiple global regions for each cloud prov
 
 ## Data security 
 
-You can bring your own bucket (BYOB) using the [secure storage connector](/guides/hosting/data-security/secure-storage-connector) at the [instance and team levels](/guides/hosting/data-security/secure-storage-connector.md#configuration-options) to store your files such as models, datasets, and more.
+You can bring your own bucket (BYOB) using the [secure storage connector](/guides/hosting/data-security/secure-storage-connector) at the [instance and team levels](/guides/hosting/data-security/secure-storage-connector#configuration-options) to store your files such as models, datasets, and more.
 
 Similar to W&B Multi-tenant Cloud, you can configure a single bucket for multiple teams or you can use separate buckets for different teams. If you do not configure secure storage connector for a team, that data is stored in the instance level bucket.
 
@@ -34,7 +34,7 @@ You are responsible for ensuring that your deployment complies with your organiz
 Use the identity and access management capabilities for secure authentication and effective authorization in your W&B Organization. The following features are available for IAM in Dedicated Cloud instances:
 
 * Authenticate with [SSO using OpenID Connect (OIDC)](/guides/hosting/iam/authentication/sso) or with [LDAP](/guides/hosting/iam/authentication/ldap).
-* [Configure appropriate user roles](/guides/hosting/iam/access-management/manage-organization.md#assign-or-update-a-users-role) at the scope of the organization and within a team.
+* [Configure appropriate user roles](/guides/hosting/iam/access-management/manage-organization#assign-or-update-a-users-role) at the scope of the organization and within a team.
 * Define the scope of a W&B project to limit who can view, edit, and submit W&B runs to it with [restricted projects](/guides/hosting/iam/access-management/restricted-projects).
 * Leverage JSON Web Tokens with [identity federation](/guides/hosting/iam/authentication/identity_federation) to access W&B APIs.
 

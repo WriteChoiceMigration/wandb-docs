@@ -14,7 +14,7 @@ weight: 5
 言い換えれば、アーティファクトをレジストリコレクションにリンクすることによって、アーティファクトのバージョンはプライベートなプロジェクトレベルのスコープから、共有される組織レベルのスコープになります。
 
 <Note>
-「タイプ」という用語は、アーティファクトオブジェクトのタイプを指します。 アーティファクトオブジェクトを作成する際に ([`wandb.Artifact`](/ja/ref/python/artifact))、またはアーティファクトをログに記録する際に ([`wandb.init.log_artifact`](/ja/ref/python/run.md#log_artifact))、`type` パラメータにタイプを指定します。
+「タイプ」という用語は、アーティファクトオブジェクトのタイプを指します。 アーティファクトオブジェクトを作成する際に ([`wandb.Artifact`](/ja/ref/python/artifact))、またはアーティファクトをログに記録する際に ([`wandb.init.log_artifact`](/ja/ref/python/run#log_artifact))、`type` パラメータにタイプを指定します。
 </Note>
 
 ## アーティファクトをコレクションにリンクする
@@ -37,7 +37,7 @@ weight: 5
 バージョンのリンクを示す[ビデオを見る](https://www.youtube.com/watch?v=2i_n1ExgO0A)（8分）。
 </Note>
 
-プログラム的にアーティファクトバージョンをコレクションにリンクするには、[`wandb.init.Run.link_artifact()`](/ja/ref/python/run.md#link_artifact)を使用します。
+プログラム的にアーティファクトバージョンをコレクションにリンクするには、[`wandb.init.Run.link_artifact()`](/ja/ref/python/run#link_artifact)を使用します。
 
 <Note>
 アーティファクトをコレクションにリンクする前に、そのコレクションが所属するレジストリが既に存在することを確認してください。 レジストリが存在するかどうかを確認するには、W&B App UIのレジストリアプリにアクセスし、レジストリの名前を検索してください。

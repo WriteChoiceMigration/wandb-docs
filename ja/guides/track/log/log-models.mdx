@@ -22,11 +22,11 @@ W&B Artifacts や高度なバージョン管理ユースケースの詳細につ
 </Note>
 
 ## モデルを run にログする
-[`log_model`](/ja/ref/python/run.md#log_model) を使用して、指定したディレクトリ内にコンテンツを含むモデルアーティファクトをログします。 [`log_model`](/ja/ref/python/run.md#log_model) メソッドは、結果のモデルアーティファクトを W&B run の出力としてもマークします。
+[`log_model`](/ja/ref/python/run#log_model) を使用して、指定したディレクトリ内にコンテンツを含むモデルアーティファクトをログします。 [`log_model`](/ja/ref/python/run#log_model) メソッドは、結果のモデルアーティファクトを W&B run の出力としてもマークします。
 
 モデルを W&B run の入力または出力としてマークすると、モデルの依存関係とモデルの関連付けを追跡できます。W&B アプリ UI 内でモデルのリネージを確認します。詳細については、[Artifacts](/ja/guides/core/artifacts/) チャプターの [アーティファクトグラフを探索して移動する](/ja/guides/core/artifacts/explore-and-traverse-an-artifact-graph) ページを参照してください。
 
-モデルファイルが保存されているパスを `path` パラメータに指定します。パスには、ローカルファイル、ディレクトリ、または `s3://bucket/path` などの外部バケットへの [参照 URI](/ja/guides/core/artifacts/track-external-files.md#amazon-s3--gcs--azure-blob-storage-references) を指定できます。
+モデルファイルが保存されているパスを `path` パラメータに指定します。パスには、ローカルファイル、ディレクトリ、または `s3://bucket/path` などの外部バケットへの [参照 URI](/ja/guides/core/artifacts/track-external-files#amazon-s3--gcs--azure-blob-storage-references) を指定できます。
 
 `<>` 内に囲まれた値を自分のもので置き換えることを忘れないでください。
 
@@ -109,7 +109,7 @@ Find logs at: ./wandb/run-20231206_103511-wlby6fuw/logs
 </details>
 
 ## ログされたモデルをダウンロードして使用する
-以前に W&B run にログされたモデルファイルにアクセスしてダウンロードするには、[`use_model`](/ja/ref/python/run.md#use_model) 関数を使用します。
+以前に W&B run にログされたモデルファイルにアクセスしてダウンロードするには、[`use_model`](/ja/ref/python/run#use_model) 関数を使用します。
 
 取得したいモデルファイルが保存されているモデルアーティファクトの名前を指定します。提供した名前は、既存のログされたモデルアーティファクトの名前と一致している必要があります。
 
@@ -127,7 +127,7 @@ run = wandb.init(project="<your-project>", entity="<your-entity>")
 downloaded_model_path = run.use_model(name="<your-model-name>")
 ```
 
-[`use_model`](/ja/ref/python/run.md#use_model) 関数は、ダウンロードされたモデルファイルのパスを返します。このパスを追跡して、後でこのモデルにリンクしたい場合に備えてください。上記のコードスニペットでは、返されたパスが `downloaded_model_path` という変数に保存されています。
+[`use_model`](/ja/ref/python/run#use_model) 関数は、ダウンロードされたモデルファイルのパスを返します。このパスを追跡して、後でこのモデルにリンクしたい場合に備えてください。上記のコードスニペットでは、返されたパスが `downloaded_model_path` という変数に保存されています。
 
 <details>
 
@@ -150,15 +150,15 @@ downloaded_model_path = run.use_model(name = f"{model_artifact_name}:{alias}")
 ```
 </details>
 
-[`use_model`](/ja/ref/python/run.md#use_model) API リファレンスガイドでは、利用可能なパラメータや返り値の型についての詳細情報が記載されています。
+[`use_model`](/ja/ref/python/run#use_model) API リファレンスガイドでは、利用可能なパラメータや返り値の型についての詳細情報が記載されています。
 
 ## モデルを W&B モデルレジストリにログしリンクする
 
 <Note>
-[`link_model`](/ja/ref/python/run.md#link_model) メソッドは、現在のところレガシー W&B モデルレジストリとしか互換性がありませんが、これは間もなく廃止される予定です。モデルアーティファクトを新しいバージョンのモデルレジストリにリンクする方法については、レジストリの[ドキュメント](/ja/guides/core/registry/link_version)をご覧ください。
+[`link_model`](/ja/ref/python/run#link_model) メソッドは、現在のところレガシー W&B モデルレジストリとしか互換性がありませんが、これは間もなく廃止される予定です。モデルアーティファクトを新しいバージョンのモデルレジストリにリンクする方法については、レジストリの[ドキュメント](/ja/guides/core/registry/link_version)をご覧ください。
 </Note>
 
-[`link_model`](/ja/ref/python/run.md#link_model) メソッドを使用して、モデルファイルを W&B run にログし、それを [W&B モデルレジストリ](/ja/guides/core/registry/model_registry/) にリンクします。登録されたモデルが存在しない場合、W&B は `registered_model_name` パラメータにあなたが提供した名前で新しいものを作成します。
+[`link_model`](/ja/ref/python/run#link_model) メソッドを使用して、モデルファイルを W&B run にログし、それを [W&B モデルレジストリ](/ja/guides/core/registry/model_registry/) にリンクします。登録されたモデルが存在しない場合、W&B は `registered_model_name` パラメータにあなたが提供した名前で新しいものを作成します。
 
 モデルをリンクすることは、他のチームメンバーが視聴および利用できる中央集権的なチームのリポジトリにモデルを「ブックマーク」または「公開」することに類似しています。
 

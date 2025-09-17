@@ -41,7 +41,7 @@ PROJECT = "my-awesome-project"
 
 The following code simulates a basic machine learning workflow: training a model, logging metrics, and saving the model as an artifact.
 
-Use the W&B Python SDK (`wandb.sdk`) to interact with W&B during training. Log the loss using [`wandb.Run.log()`](/ref/python/sdk/classes/run/#method-runlog), then save the trained model as an artifact using [`wandb.Artifact`](/ref/python/sdk/classes/artifact) before finally adding the model file using [`Artifact.add_file`](/ref/python/sdk/classes/artifact.md#add_file).
+Use the W&B Python SDK (`wandb.sdk`) to interact with W&B during training. Log the loss using [`wandb.Run.log()`](/ref/python/sdk/classes/run/#method-runlog), then save the trained model as an artifact using [`wandb.Artifact`](/ref/python/sdk/classes/artifact) before finally adding the model file using [`Artifact.add_file`](/ref/python/sdk/classes/artifact#add_file).
 
 ```python
 import random # For simulating data
@@ -239,4 +239,4 @@ for art in artifacts:
     print(f"artifact created at: {art.created_at}\n")
 ```
 
-For more information on querying the registry, see the [Query registry items with MongoDB-style queries](/guides/core/registry/search_registry.md#query-registry-items-with-mongodb-style-queries).
+For more information on querying the registry, see the [Query registry items with MongoDB-style queries](/guides/core/registry/search_registry#query-registry-items-with-mongodb-style-queries).

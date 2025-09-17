@@ -163,7 +163,7 @@ run = wandb.init(
 run.log({key: val})
 ```
 
-また、run の結果を定義するために最終的なサマリーメトリクスをオプションでログすることもできます。これを実現するには、W&B [`define_metric`](/ja/ref/python/run.md#define_metric) API を使用します。この例では、`run.summary.update()` によりサマリーメトリクスを run に追加します:
+また、run の結果を定義するために最終的なサマリーメトリクスをオプションでログすることもできます。これを実現するには、W&B [`define_metric`](/ja/ref/python/run#define_metric) API を使用します。この例では、`run.summary.update()` によりサマリーメトリクスを run に追加します:
 
 ```python
 run.summary.update(summaries)

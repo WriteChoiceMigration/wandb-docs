@@ -67,8 +67,8 @@ A `'latest'` alias is created by default when you log an artifact. For more info
 The following code example demonstrates the steps you can take to use an artifact you have logged and saved to the W&B servers.
 
 1. First, initialize a new run object with **`wandb.init()`.**
-2. Second, use the run objects [`use_artifact()`](/ref/python/sdk/classes/run.md#use_artifact) method to tell W&B what artifact to use. This returns an artifact object.
-3. Third, use the artifacts [`download()`](/ref/python/sdk/classes/artifact.md#download) method to download the contents of the artifact.
+2. Second, use the run objects [`use_artifact()`](/ref/python/sdk/classes/run#use_artifact) method to tell W&B what artifact to use. This returns an artifact object.
+3. Third, use the artifacts [`download()`](/ref/python/sdk/classes/artifact#download) method to download the contents of the artifact.
 
 ```python
 # Create a W&B Run. Here we specify 'training' for 'type'

@@ -24,7 +24,7 @@ The following guide describes how to format your sweep configuration. See [Sweep
 
 Both sweep configuration format options (YAML and Python dictionary) utilize key-value pairs and nested structures. 
 
-Use top-level keys within your sweep configuration to define qualities of your sweep search such as the name of the sweep ([`name`](./sweep-config-keys) key), the parameters to search through ([`parameters`](./sweep-config-keys.md#parameters) key), the methodology to search the parameter space ([`method`](./sweep-config-keys.md#method) key), and more. 
+Use top-level keys within your sweep configuration to define qualities of your sweep search such as the name of the sweep ([`name`](./sweep-config-keys) key), the parameters to search through ([`parameters`](./sweep-config-keys#parameters) key), the methodology to search the parameter space ([`method`](./sweep-config-keys#method) key), and more. 
 
 
 For example, the proceeding code snippets show the same sweep configuration defined within a YAML file and within a Python dictionary. Within the sweep configuration there are five top level keys specified: `program`, `name`, `method`, `metric` and `parameters`. 
@@ -75,7 +75,7 @@ sweep_configuration = {
 </Tabs>
 
 
-Within the top level `parameters` key, the following keys are nested: `learning_rate`, `batch_size`, `epoch`, and `optimizer`. For each of the nested keys you specify, you can provide one or more values, a distribution, a probability, and more. For more information, see the [parameters](./sweep-config-keys.md#parameters) section in [Sweep configuration options](./sweep-config-keys). 
+Within the top level `parameters` key, the following keys are nested: `learning_rate`, `batch_size`, `epoch`, and `optimizer`. For each of the nested keys you specify, you can provide one or more values, a distribution, a probability, and more. For more information, see the [parameters](./sweep-config-keys#parameters) section in [Sweep configuration options](./sweep-config-keys). 
 
 
 ## Double nested parameters
@@ -283,7 +283,7 @@ early_terminate:
 
 ### Macro and custom command arguments example
 
-For more complex command line arguments, you can use macros to pass environment variables, the Python interpreter, and additional arguments. [W&B supports pre defined macros](./sweep-config-keys.md#command-macros) and custom command line arguments that you can specify in your sweep configuration.
+For more complex command line arguments, you can use macros to pass environment variables, the Python interpreter, and additional arguments. [W&B supports pre defined macros](./sweep-config-keys#command-macros) and custom command line arguments that you can specify in your sweep configuration.
 
 For example, the following sweep configuration (`sweep.yaml`) defines a command that runs a Python script (`run.py`) with the `${env}`, `${interpreter}`, and `${program}` macros replaced with the appropriate values when the sweep runs.
 
@@ -324,7 +324,7 @@ with wandb.init('test-project') as run:
     run.log({'validation_loss':1})
 ```
 
-See the [Command macros](./sweep-config-keys.md#command-macros) section in [Sweep configuration options](./sweep-config-keys) for a list of pre-defined macros you can use in your sweep configuration. 
+See the [Command macros](./sweep-config-keys#command-macros) section in [Sweep configuration options](./sweep-config-keys) for a list of pre-defined macros you can use in your sweep configuration. 
 
 #### Boolean arguments
 

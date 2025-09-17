@@ -19,15 +19,15 @@ W&B Launch를 사용하면 데스크톱에서 Amazon SageMaker, Kubernetes 등�
 
 Launch는 **launch jobs**, **queues**, **agents**의 세 가지 기본 구성 요소로 구성됩니다.
 
-[*launch job*](/ko/./launch-terminology.md#launch-job)은 머신러닝 워크플로우에서 작업을 구성하고 실행하기 위한 청사진입니다. launch job이 있으면 [*launch queue*](/ko/./launch-terminology.md#launch-queue)에 추가할 수 있습니다. launch queue는 Amazon SageMaker 또는 Kubernetes 클러스터와 같은 특정 컴퓨팅 대상 리소스에 작업을 구성하고 제출할 수 있는 선입선출 (FIFO) queue입니다.
+[*launch job*](/ko/./launch-terminology#launch-job)은 머신러닝 워크플로우에서 작업을 구성하고 실행하기 위한 청사진입니다. launch job이 있으면 [*launch queue*](/ko/./launch-terminology#launch-queue)에 추가할 수 있습니다. launch queue는 Amazon SageMaker 또는 Kubernetes 클러스터와 같은 특정 컴퓨팅 대상 리소스에 작업을 구성하고 제출할 수 있는 선입선출 (FIFO) queue입니다.
 
-작업이 queue에 추가되면 [*launch agents*](/ko/./launch-terminology.md#launch-agent)가 해당 queue를 폴링하고 queue가 대상으로 하는 시스템에서 작업을 실행합니다.
+작업이 queue에 추가되면 [*launch agents*](/ko/./launch-terminology#launch-agent)가 해당 queue를 폴링하고 queue가 대상으로 하는 시스템에서 작업을 실행합니다.
 
 <Frame>
     <img src="/images/launch/launch_overview.png"  />
 </Frame>
 
-유스 케이스에 따라 귀하 (또는 팀의 누군가)는 선택한 [컴퓨팅 리소스 대상](/ko/./launch-terminology.md#target-resources) (예: Amazon SageMaker)에 따라 launch queue를 구성하고 인프라에 launch agent를 배포합니다.
+유스 케이스에 따라 귀하 (또는 팀의 누군가)는 선택한 [컴퓨팅 리소스 대상](/ko/./launch-terminology#target-resources) (예: Amazon SageMaker)에 따라 launch queue를 구성하고 인프라에 launch agent를 배포합니다.
 
 launch jobs, queue 작동 방식, launch agents 및 W&B Launch 작동 방식에 대한 추가 정보는 [용어 및 개념](/ko/./launch-terminology) 페이지를 참조하십시오.
 
@@ -79,7 +79,7 @@ pip install wandb>=0.17.1
 </Tabs>
 
 ## launch job 만들기
-다음 세 가지 방법 중 하나로 [launch job](/ko/./launch-terminology.md#launch-job)을 만듭니다. Docker 이미지, git 리포지토리 또는 로컬 소스 코드를 사용합니다.
+다음 세 가지 방법 중 하나로 [launch job](/ko/./launch-terminology#launch-job)을 만듭니다. Docker 이미지, git 리포지토리 또는 로컬 소스 코드를 사용합니다.
 
 <Tabs>
 <Tab title="Tab">

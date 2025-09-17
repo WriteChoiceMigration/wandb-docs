@@ -209,7 +209,7 @@ model.save(path)
 </details>
 
 ## 모델을 Model Registry에 로깅하고 연결
-[`link_model`](/ko/ref/python/run.md#link_model) API를 사용하여 하나 이상의 모델 파일을 W&B run에 로깅하고 [W&B Model Registry](/ko/./)에 연결합니다.
+[`link_model`](/ko/ref/python/run#link_model) API를 사용하여 하나 이상의 모델 파일을 W&B run에 로깅하고 [W&B Model Registry](/ko/./)에 연결합니다.
 
 ```python
 path = "./model.h5"
@@ -221,7 +221,7 @@ run.finish()
 
 `registered-model-name`에 대해 지정한 이름이 아직 존재하지 않으면 W&B가 registered model을 생성합니다.
 
-선택적 파라미터에 대한 자세한 내용은 API Reference 가이드의 [`link_model`](/ko/ref/python/run.md#link_model)을 참조하세요.
+선택적 파라미터에 대한 자세한 내용은 API Reference 가이드의 [`link_model`](/ko/ref/python/run#link_model)을 참조하세요.
 
 ## 모델 성능 평가
 하나 이상의 모델의 성능을 평가하는 것이 일반적인 방법입니다.
@@ -248,7 +248,7 @@ x_eval = eval_table.get_column("x_eval", convert_to="numpy")
 y_eval = eval_table.get_column("y_eval", convert_to="numpy")
 ```
 
-평가할 W&B의 [model version](/ko/./model-management-concepts.md#model-version)을 다운로드합니다. `use_model` API를 사용하여 모델에 엑세스하고 다운로드합니다.
+평가할 W&B의 [model version](/ko/./model-management-concepts#model-version)을 다운로드합니다. `use_model` API를 사용하여 모델에 엑세스하고 다운로드합니다.
 
 ```python
 alias = "latest"  # 에일리어스
@@ -276,7 +276,7 @@ run.log(data={"loss": (loss, _)})
 ```
 
 ## 모델 버전 승격
-[*model alias*](/ko/./model-management-concepts.md#model-alias)를 사용하여 기계 학습 워크플로우의 다음 단계를 위해 모델 버전을 준비 완료로 표시합니다. 각 registered model에는 하나 이상의 model alias가 있을 수 있습니다. model alias는 한 번에 하나의 model version에만 속할 수 있습니다.
+[*model alias*](/ko/./model-management-concepts#model-alias)를 사용하여 기계 학습 워크플로우의 다음 단계를 위해 모델 버전을 준비 완료로 표시합니다. 각 registered model에는 하나 이상의 model alias가 있을 수 있습니다. model alias는 한 번에 하나의 model version에만 속할 수 있습니다.
 
 예를 들어, 모델의 성능을 평가한 후 모델이 프로덕션 준비가 되었다고 확신한다고 가정합니다. 해당 모델 버전을 승격하려면 해당 특정 model version에 `production` 에일리어스를 추가합니다.
 

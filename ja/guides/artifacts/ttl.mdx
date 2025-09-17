@@ -9,7 +9,7 @@ menu:
 
 <Card title="Try in Colab" href="https://colab.research.google.com/github/wandb/examples/blob/kas-artifacts-ttl-colab/colabs/wandb-artifacts/WandB_Artifacts_Time_to_live_TTL_Walkthrough.ipynb" icon="python"/>
 
-W&B の Artifacts のタイム・トゥ・リブ（TTL）ポリシーを使用して、Artifacts が W&B から削除されるスケジュールを設定します。Artifact を削除すると、W&B はそのアーティファクトを *ソフト削除* としてマークします。つまり、アーティファクトは削除対象としてマークされますが、ファイルはすぐにストレージから削除されるわけではありません。W&B がアーティファクトを削除する方法の詳細については、[アーティファクトを削除](./delete-artifacts.md)ページを参照してください。
+W&B の Artifacts のタイム・トゥ・リブ（TTL）ポリシーを使用して、Artifacts が W&B から削除されるスケジュールを設定します。Artifact を削除すると、W&B はそのアーティファクトを *ソフト削除* としてマークします。つまり、アーティファクトは削除対象としてマークされますが、ファイルはすぐにストレージから削除されるわけではありません。W&B がアーティファクトを削除する方法の詳細については、[アーティファクトを削除](./delete-artifacts)ページを参照してください。
 
 W&B アプリで Artifacts TTL を使って データ保持を管理する方法を学ぶには、[この](https://www.youtube.com/watch?v=hQ9J6BoVmnc) ビデオチュートリアルをご覧ください。
 
@@ -106,7 +106,7 @@ run.log_artifact(artifact)
 <Tab title="Python SDK">
 1. [あなたのアーティファクトを取得](/ja/../download-and-use-an-artifact)します。
 2. アーティファクトの `ttl` 属性に時間差を渡します。
-3. [`save`](/ja/ref/python/run.md#save) メソッドでアーティファクトを更新します。
+3. [`save`](/ja/ref/python/run#save) メソッドでアーティファクトを更新します。
 
 以下のコードスニペットは、アーティファクトに TTL ポリシーを設定する方法を示しています：
 ```python
@@ -180,7 +180,7 @@ W&B Python SDK または W&B アプリ UI を使用して、特定のアーテ�
 <Tab title="Python SDK">
 1. [あなたのアーティファクトを取得](/ja/../download-and-use-an-artifact)します。
 2. アーティファクトの `ttl` 属性を `None` に設定します。
-3. [`save`](/ja/ref/python/run.md#save) メソッドでアーティファクトを更新します。
+3. [`save`](/ja/ref/python/run#save) メソッドでアーティファクトを更新します。
 
 以下のコードスニペットは、アーティファクトに対する TTL ポリシーをオフにする方法を示しています：
 ```python

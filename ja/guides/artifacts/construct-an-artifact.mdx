@@ -48,17 +48,17 @@ artifact = wandb.Artifact(name="<replace>", type="<replace>")
 
 ### 2. アーティファクトに 1 つ以上のファイルを追加する
 
-ファイル、ディレクトリ、外部 URI リファレンス（例: Amazon S3）などをアーティファクトメソッドで追加します。たとえば、単一のテキストファイルを追加するには、[`add_file`](/ja/ref/python/artifact.md#add_file) メソッドを使用します。
+ファイル、ディレクトリ、外部 URI リファレンス（例: Amazon S3）などをアーティファクトメソッドで追加します。たとえば、単一のテキストファイルを追加するには、[`add_file`](/ja/ref/python/artifact#add_file) メソッドを使用します。
 
 ```python
 artifact.add_file(local_path="hello_world.txt", name="optional-name")
 ```
 
-また、複数のファイルを [`add_dir`](/ja/ref/python/artifact.md#add_dir) メソッドで追加することもできます。ファイルを追加する方法の詳細については、[アーティファクトの更新](/ja/./update-an-artifact)をご覧ください。
+また、複数のファイルを [`add_dir`](/ja/ref/python/artifact#add_dir) メソッドで追加することもできます。ファイルを追加する方法の詳細については、[アーティファクトの更新](/ja/./update-an-artifact)をご覧ください。
 
 ### 3. アーティファクトを W&B サーバーに保存する
 
-最後に、アーティファクトを W&B サーバーに保存します。Artifacts は run に関連付けられます。したがって、run オブジェクトの [`log_artifact()`](/ja/ref/python/run.md#log_artifact) メソッドを使用してアーティファクトを保存します。
+最後に、アーティファクトを W&B サーバーに保存します。Artifacts は run に関連付けられます。したがって、run オブジェクトの [`log_artifact()`](/ja/ref/python/run#log_artifact) メソッドを使用してアーティファクトを保存します。
 
 ```python
 # W&B Run を作成します。'job-type' を置き換えます。
@@ -164,7 +164,7 @@ artifact.add_dir(local_path="path/file.format", name="optional-prefix")
 
 アーティファクトは、URI が W&B ライブラリが扱えるスキームを持つ場合、再現性のためにチェックサムやその他の情報をトラッキングします。
 
-[`add_reference`](/ja/ref/python/artifact.md#add_reference) メソッドを使用して、アーティファクトに外部 URI リファレンスを追加します。 `'uri'` 文字列を自分の URI で置き換えてください。オプションで、アーティファクト内の `name` パラメータの希望するパスを渡して下さい。
+[`add_reference`](/ja/ref/python/artifact#add_reference) メソッドを使用して、アーティファクトに外部 URI リファレンスを追加します。 `'uri'` 文字列を自分の URI で置き換えてください。オプションで、アーティファクト内の `name` パラメータの希望するパスを渡して下さい。
 
 ```python
 # URI リファレンスを追加

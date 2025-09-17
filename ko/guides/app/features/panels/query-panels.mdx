@@ -71,7 +71,7 @@ runs.summary["cifar10_sample_table"]
 
 분해하면 다음과 같습니다:
 
-* `runs`는 쿼리 패널이 워크스페이스에 있을 때 쿼리 패널 표현식에 자동으로 삽입되는 변수입니다. "값"은 해당 특정 워크스페이스에 대해 보이는 run 목록입니다. [run 내에서 사용할 수 있는 다양한 속성에 대해 자세히 알아보려면 여기를 참조하세요.](/ko/../../../../track/public-api-guide.md#understanding-the-different-attributes)
+* `runs`는 쿼리 패널이 워크스페이스에 있을 때 쿼리 패널 표현식에 자동으로 삽입되는 변수입니다. "값"은 해당 특정 워크스페이스에 대해 보이는 run 목록입니다. [run 내에서 사용할 수 있는 다양한 속성에 대해 자세히 알아보려면 여기를 참조하세요.](/ko/../../../../track/public-api-guide#understanding-the-different-attributes)
 * `summary`는 Run에 대한 Summary 오브젝트를 반환하는 op입니다. Op는 _매핑_됩니다. 즉, 이 op는 목록의 각 Run에 적용되어 Summary 오브젝트 목록이 생성됩니다.
 * `["cifar10_sample_table"]`은 `predictions` 파라미터가 있는 Pick op(대괄호로 표시)입니다. Summary 오브젝트는 사전 또는 맵과 같이 작동하므로 이 작업은 각 Summary 오브젝트에서 `predictions` 필드를 선택합니다.
 

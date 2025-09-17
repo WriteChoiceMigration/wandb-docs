@@ -305,9 +305,9 @@ def create_datasets():
 * `type`: (str) Artifact의 유형으로, Artifact를 구성하고 구별하는 데 사용됩니다. 일반적인 유형에는 dataset 또는 model이 포함되지만 문자, 숫자, 밑줄, 하이픈 및 마침표를 포함하는 모든 문자열을 사용할 수 있습니다. 출력이 Artifact가 아닌 경우에 필요합니다.
 * `description`: (str) Artifact에 대한 설명을 제공하는 자유 텍스트입니다. 설명은 UI에서 markdown으로 렌더링되므로 테이블, 링크 등을 배치하기에 좋은 위치입니다.
 * `aliases`: (list[str]) Artifact에 적용하려는 하나 이상의 에일리어스를 포함하는 배열입니다. 통합은 설정 여부에 관계없이 "latest" 태그도 해당 목록에 추가합니다. 이는 모델 및 데이터셋의 버전 관리를 관리하는 효과적인 방법입니다.
-* [`add_dirs`](/ko/ref/python/artifact.md#add_dir): (list[dict[str, Any]]): Artifact에 포함할 각 로컬 디렉토리에 대한 구성을 포함하는 배열입니다. SDK에서 동종의 메소드와 동일한 인수를 지원합니다.
-* [`add_files`](/ko/ref/python/artifact.md#add_file): (list[dict[str, Any]]): Artifact에 포함할 각 로컬 파일에 대한 구성을 포함하는 배열입니다. SDK에서 동종의 메소드와 동일한 인수를 지원합니다.
-* [`add_references`](/ko/ref/python/artifact.md#add_reference): (list[dict[str, Any]]): Artifact에 포함할 각 외부 참조에 대한 구성을 포함하는 배열입니다. SDK에서 동종의 메소드와 동일한 인수를 지원합니다.
+* [`add_dirs`](/ko/ref/python/artifact#add_dir): (list[dict[str, Any]]): Artifact에 포함할 각 로컬 디렉토리에 대한 구성을 포함하는 배열입니다. SDK에서 동종의 메소드와 동일한 인수를 지원합니다.
+* [`add_files`](/ko/ref/python/artifact#add_file): (list[dict[str, Any]]): Artifact에 포함할 각 로컬 파일에 대한 구성을 포함하는 배열입니다. SDK에서 동종의 메소드와 동일한 인수를 지원합니다.
+* [`add_references`](/ko/ref/python/artifact#add_reference): (list[dict[str, Any]]): Artifact에 포함할 각 외부 참조에 대한 구성을 포함하는 배열입니다. SDK에서 동종의 메소드와 동일한 인수를 지원합니다.
 * `serialization_module`: (dict) 사용할 직렬화 모듈의 구성입니다. 자세한 내용은 직렬화 섹션을 참조하십시오.
     * `name`: (str) 직렬화 모듈의 이름입니다. 허용되는 값: `pickle`, `dill`, `cloudpickle`, `joblib`. 모듈은 로컬에서 사용할 수 있어야 합니다.
     * `parameters`: (dict[str, Any]) 직렬화 함수에 전달되는 선택적 인수입니다. 해당 모듈의 덤프 메소드와 동일한 파라미터를 허용합니다. 예를 들어 `{"compress": 3, "protocol": 4}`입니다.
@@ -936,7 +936,7 @@ def run_launch_job_example():
 ## 모범 사례
 
 1. IO Manager를 사용하여 Artifacts를 읽고 씁니다.
-[`Artifact.download()`](/ko/ref/python/artifact.md#download) 또는 [`Run.log_artifact()`](/ko/ref/python/run.md#log_artifact)를 직접 사용할 필요가 없습니다. 이러한 메소드는 통합에서 처리합니다. Artifact에 저장하려는 데이터를 반환하고 통합에서 나머지를 처리하도록 합니다. 이렇게 하면 W&B에서 Artifact에 대한 더 나은 계보가 제공됩니다.
+[`Artifact.download()`](/ko/ref/python/artifact#download) 또는 [`Run.log_artifact()`](/ko/ref/python/run#log_artifact)를 직접 사용할 필요가 없습니다. 이러한 메소드는 통합에서 처리합니다. Artifact에 저장하려는 데이터를 반환하고 통합에서 나머지를 처리하도록 합니다. 이렇게 하면 W&B에서 Artifact에 대한 더 나은 계보가 제공됩니다.
 
 2. 복잡한 유스 케이스에 대해서만 Artifact 오브젝트를 직접 빌드합니다.
 Python 오브젝트 및 W&B 오브젝트는 ops/assets에서 반환되어야 합니다. 통합은 Artifact 번들링을 처리합니다.

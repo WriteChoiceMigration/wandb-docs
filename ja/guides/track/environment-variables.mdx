@@ -43,7 +43,7 @@ os.environ["WANDB_SWEEP_ID"] = "b05fq58z"
 | **WANDB_BASE_URL** | [wandb/local](/ja/guides/hosting/)を使用している場合、この環境変数を `http://YOUR_IP:YOUR_PORT` に設定してください。 |
 | **WANDB_CACHE_DIR** | これはデフォルトで \~/.cache/wandb に設定されています。この環境変数を使用してこの場所を上書きすることができます。 |
 | **WANDB_CONFIG_DIR** | これはデフォルトで \~/.config/wandb に設定されています。この環境変数を使用してこの場所を上書きすることができます。 |
-| **WANDB_CONFIG_PATHS** | カンマで区切られたyamlファイルのリストをwandb.configにロードします。[config](/ja/./config.md#file-based-configs)を参照してください。 |
+| **WANDB_CONFIG_PATHS** | カンマで区切られたyamlファイルのリストをwandb.configにロードします。[config](/ja/./config#file-based-configs)を参照してください。 |
 | **WANDB_CONSOLE** | stdout / stderr ロギングを無効にする場合はこれを "off" に設定します。これが機能する環境では、デフォルトで "on" に設定されています。 |
 | **WANDB_DATA_DIR** | ステージングアーティファクトがアップロードされる場所。デフォルトの場所はプラットフォームに依存し、`platformdirs` Pythonパッケージからの `user_data_dir` の値を使用します。 |
 | **WANDB_DIR** | すべての生成されたファイルを _wandb_ ディレクトリーではなくここに保存するために絶対パスを設定します。_このディレクトリーが存在しており、プロセスが実行されるユーザーが書き込めることを確認してください_。この設定は、ダウンロードされたアーティファクトの場所には影響しません、それらの場所を設定するには代わりに _WANDB_ARTIFACT_DIR_ を使用してください。 |

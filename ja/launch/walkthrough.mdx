@@ -19,15 +19,15 @@ W&B Launch を使用して、トレーニング [Runs](/ja/guides/models/track/r
 
 Launch は、**launch jobs**、**queues**、**agents** の3つの基本的なコンポーネントで構成されています。
 
-[*launch job*](/ja/./launch-terminology.md#launch-job)は、ML ワークフローでタスクを設定および実行するためのブループリントです。Launch Job を作成したら、[*launch queue*](/ja/./launch-terminology.md#launch-queue) に追加できます。Launch Queue は、Amazon SageMaker や Kubernetes クラスターなどの特定のコンピュートターゲットリソースに Jobs を構成して送信できる先入れ先出し (FIFO) のキューです。
+[*launch job*](/ja/./launch-terminology#launch-job)は、ML ワークフローでタスクを設定および実行するためのブループリントです。Launch Job を作成したら、[*launch queue*](/ja/./launch-terminology#launch-queue) に追加できます。Launch Queue は、Amazon SageMaker や Kubernetes クラスターなどの特定のコンピュートターゲットリソースに Jobs を構成して送信できる先入れ先出し (FIFO) のキューです。
 
-ジョブがキューに追加されると、[*launch agents*](/ja/./launch-terminology.md#launch-agent) がそのキューをポーリングし、キューによってターゲットとされたシステムでジョブを実行します。
+ジョブがキューに追加されると、[*launch agents*](/ja/./launch-terminology#launch-agent) がそのキューをポーリングし、キューによってターゲットとされたシステムでジョブを実行します。
 
 <Frame>
     <img src="/images/launch/launch_overview.png"  />
 </Frame>
 
-ユースケースに基づいて、あなた自身またはチームの誰かが選択した [compute resource target](/ja/./launch-terminology.md#target-resources)（たとえば、Amazon SageMaker）に従って Launch Queue を設定し、独自のインフラストラクチャーに Launch エージェントをデプロイします。
+ユースケースに基づいて、あなた自身またはチームの誰かが選択した [compute resource target](/ja/./launch-terminology#target-resources)（たとえば、Amazon SageMaker）に従って Launch Queue を設定し、独自のインフラストラクチャーに Launch エージェントをデプロイします。
 
 Launch Jobs、キューの仕組み、Launch エージェント、および W&B Launch の動作に関する追加情報については、[Terms and Concepts](/ja/./launch-terminology) ページを参照してください。
 
@@ -79,7 +79,7 @@ pip install wandb>=0.17.1
 </Tabs>
 
 ## Create a launch job
-Docker イメージ、git リポジトリから、またはローカルソースコードから3つの方法のいずれかで [Launch Job](/ja/./launch-terminology.md#launch-job) を作成します。
+Docker イメージ、git リポジトリから、またはローカルソースコードから3つの方法のいずれかで [Launch Job](/ja/./launch-terminology#launch-job) を作成します。
 
 <Tabs>
 <Tab title="Tab">

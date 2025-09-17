@@ -14,7 +14,7 @@ W&B 전용 클라우드는 [각 클라우드 공급자에 대해 여러 글로�
 
 ## 데이터 보안
 
-[보안 스토리지 커넥터](/ko/guides/hosting/data-security/secure-storage-connector)를 사용하여 모델, 데이터셋 등과 같은 파일을 저장하기 위해 [인스턴스 및 Teams 수준](/ko/guides/hosting/data-security/secure-storage-connector.md#configuration-options)에서 자체 버킷(BYOB)을 가져올 수 있습니다.
+[보안 스토리지 커넥터](/ko/guides/hosting/data-security/secure-storage-connector)를 사용하여 모델, 데이터셋 등과 같은 파일을 저장하기 위해 [인스턴스 및 Teams 수준](/ko/guides/hosting/data-security/secure-storage-connector#configuration-options)에서 자체 버킷(BYOB)을 가져올 수 있습니다.
 
 W&B 멀티 테넌트 클라우드와 유사하게 여러 Teams에 대해 단일 버킷을 구성하거나 다른 Teams에 대해 별도의 버킷을 사용할 수 있습니다. Team에 대해 보안 스토리지 커넥터를 구성하지 않으면 해당 데이터는 인스턴스 수준 버킷에 저장됩니다.
 
@@ -31,7 +31,7 @@ W&B 멀티 테넌트 클라우드와 유사하게 여러 Teams에 대해 단일 
 W&B Organization에서 보안 인증 및 효과적인 권한 부여를 위해 ID 및 엑세스 관리 기능을 사용하십시오. 전용 클라우드 인스턴스의 IAM에 사용할 수 있는 기능은 다음과 같습니다.
 
 * [OpenID Connect (OIDC)를 사용하는 SSO](/ko/guides/hosting/iam/authentication/sso) 또는 [LDAP](/ko/guides/hosting/iam/authentication/ldap)를 사용하여 인증합니다.
-* 조직 범위 및 Team 내에서 [적절한 User 역할 구성](/ko/guides/hosting/iam/access-management/manage-organization.md#assign-or-update-a-users-role)합니다.
+* 조직 범위 및 Team 내에서 [적절한 User 역할 구성](/ko/guides/hosting/iam/access-management/manage-organization#assign-or-update-a-users-role)합니다.
 * W&B project의 범위를 정의하여 [제한된 Projects](/ko/guides/hosting/iam/access-management/restricted-projects)를 통해 누가 W&B runs를 보고, 편집하고, 제출할 수 있는지 제한합니다.
 * [ID 페더레이션](/ko/guides/hosting/iam/authentication/identity_federation)으로 JSON 웹 토큰을 활용하여 W&B API에 엑세스합니다.
 

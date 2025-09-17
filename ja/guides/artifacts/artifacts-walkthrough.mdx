@@ -69,8 +69,8 @@ run.log_artifact(artifact)
 次のコード例では、ログされ保存されたアーティファクトを W&B サーバーで使用する手順を示します。
 
 1. まず、**`wandb.init()`.** を使用して新しい run オブジェクトを初期化します。
-2. 次に、run オブジェクトの [`use_artifact()`](/ja/ref/python/run.md#use_artifact) メソッドを使用して、W&B に使用するアーティファクトを指定します。これにより、アーティファクトオブジェクトが返されます。
-3. 最後に、アーティファクトの [`download()`](/ja/ref/python/artifact.md#download) メソッドを使用してアーティファクトの内容をダウンロードします。
+2. 次に、run オブジェクトの [`use_artifact()`](/ja/ref/python/run#use_artifact) メソッドを使用して、W&B に使用するアーティファクトを指定します。これにより、アーティファクトオブジェクトが返されます。
+3. 最後に、アーティファクトの [`download()`](/ja/ref/python/artifact#download) メソッドを使用してアーティファクトの内容をダウンロードします。
 
 ```python
 # W&B Run を作成します。ここでは 'training' を 'type' として指定します

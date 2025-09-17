@@ -28,7 +28,7 @@ import wandb
 run = wandb.init(project="<example>", job_type="<job-type>")
 ```
 
-使用したいアーティファクトを [`use_artifact`](/ja/ref/python/run.md#use_artifact) メソッドで指定します。これにより run オブジェクトが返されます。次のコードスニペットでは、`'bike-dataset'` というアーティファクトを `'latest'` というエイリアスで指定しています。
+使用したいアーティファクトを [`use_artifact`](/ja/ref/python/run#use_artifact) メソッドで指定します。これにより run オブジェクトが返されます。次のコードスニペットでは、`'bike-dataset'` というアーティファクトを `'latest'` というエイリアスで指定しています。
 
 ```python
 artifact = run.use_artifact("bike-dataset:latest")
@@ -40,9 +40,9 @@ artifact = run.use_artifact("bike-dataset:latest")
 datadir = artifact.download()
 ```
 
-アーティファクトの内容を特定のディレクトリーにダウンロードするには、`root` パラメータにパスをオプションで渡すことができます。詳細については、[Python SDK Reference Guide](/ja/ref/python/artifact.md#download) を参照してください。
+アーティファクトの内容を特定のディレクトリーにダウンロードするには、`root` パラメータにパスをオプションで渡すことができます。詳細については、[Python SDK Reference Guide](/ja/ref/python/artifact#download) を参照してください。
 
-[`get_path`](/ja/ref/python/artifact.md#get_path) メソッドを使用して、ファイルのサブセットのみをダウンロードできます。
+[`get_path`](/ja/ref/python/artifact#get_path) メソッドを使用して、ファイルのサブセットのみをダウンロードできます。
 
 ```python
 path = artifact.get_path(name)
@@ -71,7 +71,7 @@ artifact = api.artifact("entity/project/artifact:alias")
 artifact.download()
 ```
 
-アーティファクトの内容を特定のディレクトリーにダウンロードするために `root` パラメータにパスをオプションで渡すことができます。詳細については、[API Reference Guide](/ja/ref/python/artifact.md#download) を参照してください。
+アーティファクトの内容を特定のディレクトリーにダウンロードするために `root` パラメータにパスをオプションで渡すことができます。詳細については、[API Reference Guide](/ja/ref/python/artifact#download) を参照してください。
 </Tab>
 <Tab title="W&B CLI">
 `wandb artifact get` コマンドを使用して、W&B サーバーからアーティファクトをダウンロードします。
@@ -119,7 +119,7 @@ artifact = run.use_artifact("my-entity/my-project/artifact:alias")
 
 ### アーティファクトを同時に構築して使用する
 
-アーティファクトを同時に構築して使用します。アーティファクト オブジェクトを作成して、それを use_artifact に渡します。これにより、W&B にアーティファクトが存在しない場合は作成されます。[`use_artifact`](/ja/ref/python/run.md#use_artifact) API は冪等性があり、あなたが好きなだけ何度も呼び出すことができます。
+アーティファクトを同時に構築して使用します。アーティファクト オブジェクトを作成して、それを use_artifact に渡します。これにより、W&B にアーティファクトが存在しない場合は作成されます。[`use_artifact`](/ja/ref/python/run#use_artifact) API は冪等性があり、あなたが好きなだけ何度も呼び出すことができます。
 
 ```python
 import wandb

@@ -92,7 +92,7 @@ wandb launch --docker-image "wandb/job_hello_world:main" --project "hello-world"
 
 W&B는 추적된 소스 코드가 있는 모든 run에 대해 Launch로 생성되지 않은 경우에도 작업을 자동으로 생성하고 추적합니다. run은 다음 세 가지 조건 중 하나라도 충족되면 추적된 소스 코드가 있는 것으로 간주됩니다.
 - run에 연결된 git 원격 및 커밋 해시가 있습니다.
-- run이 코드 Artifact를 기록했습니다(자세한 내용은 [`Run.log_code`](/ko/ref/python/run.md#log_code) 참조).
+- run이 코드 Artifact를 기록했습니다(자세한 내용은 [`Run.log_code`](/ko/ref/python/run#log_code) 참조).
 - run이 `WANDB_DOCKER` 환경 변수가 이미지 태그로 설정된 Docker 컨테이너에서 실행되었습니다.
 
 Launch 작업이 W&B run에 의해 자동으로 생성되는 경우 Git 원격 URL은 로컬 git 저장소에서 유추됩니다.

@@ -47,17 +47,17 @@ artifact = wandb.Artifact(name="<replace>", type="<replace>")
 
 ### 2. Artifact에 파일을 하나 이상 추가합니다.
 
-Artifact 메소드를 사용하여 파일, 디렉토리, 외부 URI 참조 (예: Amazon S3) 등을 추가합니다. 예를 들어, 단일 텍스트 파일을 추가하려면 [`add_file`](/ko/ref/python/artifact.md#add_file) 메소드를 사용합니다.
+Artifact 메소드를 사용하여 파일, 디렉토리, 외부 URI 참조 (예: Amazon S3) 등을 추가합니다. 예를 들어, 단일 텍스트 파일을 추가하려면 [`add_file`](/ko/ref/python/artifact#add_file) 메소드를 사용합니다.
 
 ```python
 artifact.add_file(local_path="hello_world.txt", name="optional-name")
 ```
 
-[`add_dir`](/ko/ref/python/artifact.md#add_dir) 메소드를 사용하여 여러 파일을 추가할 수도 있습니다. 파일을 추가하는 방법에 대한 자세한 내용은 [Artifact 업데이트](/ko/./update-an-artifact)를 참조하세요.
+[`add_dir`](/ko/ref/python/artifact#add_dir) 메소드를 사용하여 여러 파일을 추가할 수도 있습니다. 파일을 추가하는 방법에 대한 자세한 내용은 [Artifact 업데이트](/ko/./update-an-artifact)를 참조하세요.
 
 ### 3. Artifact를 W&B 서버에 저장합니다.
 
-마지막으로, Artifact를 W&B 서버에 저장합니다. Artifacts는 Run과 연결되어 있습니다. 따라서 Run 오브젝트의 [`log_artifact()`](/ko/ref/python/run.md#log_artifact) 메소드를 사용하여 Artifact를 저장합니다.
+마지막으로, Artifact를 W&B 서버에 저장합니다. Artifacts는 Run과 연결되어 있습니다. 따라서 Run 오브젝트의 [`log_artifact()`](/ko/ref/python/run#log_artifact) 메소드를 사용하여 Artifact를 저장합니다.
 
 ```python
 # W&B Run을 생성합니다. 'job-type'을 바꿉니다.
@@ -163,7 +163,7 @@ artifact.add_dir(local_path="path/file.format", name="optional-prefix")
 
 Artifacts는 W&B 라이브러리가 처리 방법을 알고 있는 스키마가 URI에 있는 경우 재현성을 위해 체크섬 및 기타 정보를 추적합니다.
 
-[`add_reference`](/ko/ref/python/artifact.md#add_reference) 메소드를 사용하여 외부 URI 참조를 Artifact에 추가합니다. `'uri'` 문자열을 자신의 URI로 바꿉니다. 선택적으로 name 파라미터에 대해 Artifact 내에서 원하는 경로를 전달합니다.
+[`add_reference`](/ko/ref/python/artifact#add_reference) 메소드를 사용하여 외부 URI 참조를 Artifact에 추가합니다. `'uri'` 문자열을 자신의 URI로 바꿉니다. 선택적으로 name 파라미터에 대해 Artifact 내에서 원하는 경로를 전달합니다.
 
 ```python
 # URI 참조 추가

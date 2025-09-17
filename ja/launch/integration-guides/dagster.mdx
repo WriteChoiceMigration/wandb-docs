@@ -305,9 +305,9 @@ def create_datasets():
 * `type`: (str) アーティファクトのタイプで、アーティファクトを整理し差別化するために使用されます。一般的なタイプにはデータセットやモデルがありますが、任意の文字列を使用することができ、数字、アンダースコア、ハイフン、ドットを含めることができます。出力がすでにアーティファクトでない場合に必要です。
 * `description`: (str) アーティファクトを説明するための自由なテキスト.説明は Markdownとして UIでレンダリングされるため,テーブル,リンクなどを配置するのに良い場所です。
 * `aliases`: (list[str]) アーティファクトに適用したい 1つ以上のエイリアスを含む配列。インテグレーションは、それが設定されていようとなかろうと「最新」のタグもそのリストに追加します。これはモデルとデータセットのバージョン管理に効果的な方法です。
-* [`add_dirs`](/ja/ref/python/artifact.md#add_dir): 配列（list[dict[str, Any]]）: Artifact に含める各ローカルディレクトリの設定を含む配列。SDK内の同名メソッドと同じ引数をサポートしています。
-* [`add_files`](/ja/ref/python/artifact.md#add_file): 配列（list[dict[str, Any]]）: Artifact に含める各ローカルファイルの設定を含む配列。SDK内の同名メソッドと同じ引数をサポートしています。
-* [`add_references`](/ja/ref/python/artifact.md#add_reference): 配列（list[dict[str, Any]]）: Artifact に含める各外部リファレンスの設定を含む配列。SDK内の同名メソッドと同じ引数をサポートしています。
+* [`add_dirs`](/ja/ref/python/artifact#add_dir): 配列（list[dict[str, Any]]）: Artifact に含める各ローカルディレクトリの設定を含む配列。SDK内の同名メソッドと同じ引数をサポートしています。
+* [`add_files`](/ja/ref/python/artifact#add_file): 配列（list[dict[str, Any]]）: Artifact に含める各ローカルファイルの設定を含む配列。SDK内の同名メソッドと同じ引数をサポートしています。
+* [`add_references`](/ja/ref/python/artifact#add_reference): 配列（list[dict[str, Any]]）: Artifact に含める各外部リファレンスの設定を含む配列。SDK内の同名メソッドと同じ引数をサポートしています。
 * `serialization_module`: (dict) 使用するシリアライズモジュールの設定。詳細については シリアル化 セクションを参照してください。
     * `name`: (str) シリアライズモジュールの名前。受け入れられる値: `pickle`, `dill`, `cloudpickle`, `joblib`。モジュールはローカルで使用可能である必要があります。
     * `parameters`: (dict[str, Any]) シリアライズ関数に渡されるオプション引数。モジュールの dump メソッドと同じ引数を受け入れます。例えば、`{"compress": 3, "protocol": 4}`。
@@ -933,7 +933,7 @@ def run_launch_job_example():
 ## ベストプラクティス
 
 1. IO マネージャーを使用して Artifacts を読み書きします。
-[`Artifact.download()`](/ja/ref/python/artifact.md#download) や [`Run.log_artifact()`](/ja/ref/python/run.md#log_artifact) を直接使用する必要はありません。これらのメソッドはインテグレーションによって処理されます。Artifacts に保存したいデータを単に返し、インテグレーションに任せてください。これにより W&B での Artifact リネージが改善されます。
+[`Artifact.download()`](/ja/ref/python/artifact#download) や [`Run.log_artifact()`](/ja/ref/python/run#log_artifact) を直接使用する必要はありません。これらのメソッドはインテグレーションによって処理されます。Artifacts に保存したいデータを単に返し、インテグレーションに任せてください。これにより W&B での Artifact リネージが改善されます。
 
 2. 複雑なユースケースのためにのみ Artifact オブジェクトを自分で構築します。
 Python オブジェクトと W&B オブジェクトを ops/assets から返すべきです。インテグレーションは Artifact のバンドルを扱います。

@@ -81,7 +81,7 @@ with wandb.init() as run:
     run.log_artifact(artifact)
 ```
 
-アーティファクトオブジェクトの [`logged_by`](/ja/ref/python/artifact.md#logged_by) と [`used_by`](/ja/ref/python/artifact.md#used_by) メソッドを使用して、アーティファクトからグラフをたどります：
+アーティファクトオブジェクトの [`logged_by`](/ja/ref/python/artifact#logged_by) と [`used_by`](/ja/ref/python/artifact#used_by) メソッドを使用して、アーティファクトからグラフをたどります：
 
 ```python
 # アーティファクトからグラフを上下にたどります：

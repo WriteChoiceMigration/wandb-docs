@@ -23,7 +23,7 @@ Artifacts inherit access permissions from their parent project:
 
 ## Artifacts Workflows
 
-This section outlines workflows for managing and editing Artifacts. Many workflows utilize [the W&B API](/guides/models/track/public-api-guide.md), a component of [the client library](/ref/python/) that provides access to W&B-stored data.
+This section outlines workflows for managing and editing Artifacts. Many workflows utilize [the W&B API](/guides/models/track/public-api-guide), a component of [the client library](/ref/python/) that provides access to W&B-stored data.
 </Update>
 
 <Update tags={["Experiments"]}>
@@ -148,7 +148,7 @@ To add multiple authors, click on the **+** icon next to the name of the author.
 <Update tags={["Administrator"]}>
 ## If I am the admin of my local instance, how should I manage it?
 
-If you are the admin for your instance, review the [User Management](/guides/hosting/iam/access-management/manage-organization.md) section for instructions on adding users and creating teams.
+If you are the admin for your instance, review the [User Management](/guides/hosting/iam/access-management/manage-organization) section for instructions on adding users and creating teams.
 </Update>
 
 <Update tags={["Python"]}>
@@ -250,7 +250,7 @@ wandb.Artifact(name="sweep_name", type="model")
 
 Set unique tags with `wandb.init(tags='your_tag')`. This allows efficient filtering of project runs by selecting the corresponding tag in a Project Page's Runs Table. 
 
-For more information on `wandb.init()`, see the [`wandb.init()` reference](/ref/python/sdk/functions/init.md).
+For more information on `wandb.init()`, see the [`wandb.init()` reference](/ref/python/sdk/functions/init).
 </Update>
 
 <Update tags={["Security"]}>
@@ -366,7 +366,7 @@ A new account can use an email previously associated with a deleted account.
 <Update tags={["Team Management"]}>
 ## Who can create a team? Who can add or delete people from a team? Who can delete projects?
 
-Refer to the link for details on roles and permissions: [Team Roles and Permissions](/guides/models/app/settings-page/teams.md#team-roles-and-permissions).
+Refer to the link for details on roles and permissions: [Team Roles and Permissions](/guides/models/app/settings-page/teams#team-roles-and-permissions).
 </Update>
 
 <Update tags={["Sweeps"]}>
@@ -443,7 +443,7 @@ Dark mode is in beta and not optimized for accessibility. To enable dark mode:
 If you encounter SSL or network errors, such as `wandb: Network error (ConnectionError), entering retry loop`, use the following solutions:
 
 1. Upgrade the SSL certificate. On an Ubuntu server, run `update-ca-certificates`. A valid SSL certificate is essential for syncing training logs to mitigate security risks.
-2. If the network connection is unstable, operate in offline mode by setting the [optional environment variable](/guides/models/track/environment-variables.md#optional-environment-variables) `WANDB_MODE` to `offline`, and sync files later from a device with Internet access.
+2. If the network connection is unstable, operate in offline mode by setting the [optional environment variable](/guides/models/track/environment-variables#optional-environment-variables) `WANDB_MODE` to `offline`, and sync files later from a device with Internet access.
 3. Consider using [W&B Private Hosting](/guides/hosting/), which runs locally and avoids syncing to cloud servers.
 
 For the `SSL CERTIFICATE_VERIFY_FAILED` error, this issue might stem from a company firewall. Configure local CAs and execute:
@@ -518,7 +518,7 @@ A team serves as a collaborative workspace for users working on the same project
 These modes are available:
 
 * `online` (default): The client sends data to the wandb server.
-* `offline`: The client stores data locally on the machine instead of sending it to the wandb server. Use the [`wandb sync`](/ref/cli/wandb-sync.md) command to synchronize the data later.
+* `offline`: The client stores data locally on the machine instead of sending it to the wandb server. Use the [`wandb sync`](/ref/cli/wandb-sync) command to synchronize the data later.
 * `disabled`: The client simulates operation by returning mocked objects and prevents any network communication. All logging is turned off, but all API method stubs remain callable. This mode is typically used for testing.
 </Update>
 
@@ -802,7 +802,7 @@ Changing the colors of individual runs within a group is not possible. All runs 
 <Update tags={["Runs"]}>
 ## Can you group runs by tags?
 
-A run can have multiple tags, so grouping by tags is not supported. Add a value to the [`config`](/guides/models/track/config.md) object for these runs and group by this config value instead. This can be accomplished using [the API](/guides/models/track/config.md#set-the-configuration-after-your-run-has-finished).
+A run can have multiple tags, so grouping by tags is not supported. Add a value to the [`config`](/guides/models/track/config) object for these runs and group by this config value instead. This can be accomplished using [the API](/guides/models/track/config#set-the-configuration-after-your-run-has-finished).
 </Update>
 
 <Update tags={["Workspaces", "Runs"]}>
@@ -814,7 +814,7 @@ Yes, you can also use tags or custom metadata to categorize runs. That can be do
 <Update tags={["Administrator", "Team Management"]}>
 ## How can I be removed from a team?
 
-A team admin can [remove you from a team](/guides/models/app/settings-page/teams.md)  from the **Users** tab of the team settings.
+A team admin can [remove you from a team](/guides/models/app/settings-page/teams)  from the **Users** tab of the team settings.
 </Update>
 
 <Update tags={["Environment Variables", "Experiments"]}>
@@ -830,7 +830,7 @@ A team admin can [remove you from a team](/guides/models/app/settings-page/teams
 <Update tags={["Projects", "Runs"]}>
 ## How can I delete multiple runs in bulk instead of one at a time?
 
-Use the [public API](/ref/python/public-api/api.md) to delete multiple runs in a single operation:
+Use the [public API](/ref/python/public-api/api) to delete multiple runs in a single operation:
 
 ```python
 import wandb
@@ -846,13 +846,13 @@ for run in runs:
 <Update tags={["User Management"]}>
 ## How can I delete my user account?
 
-Delete your user account by clicking **Delete account** in your [user settings](/guides/models/app/settings-page/user-settings.md#delete-your-account). Note that this action is irreversible and it takes effect immediately.
+Delete your user account by clicking **Delete account** in your [user settings](/guides/models/app/settings-page/user-settings#delete-your-account). Note that this action is irreversible and it takes effect immediately.
 </Update>
 
 <Update tags={["Metrics", "Runs"]}>
 ## How can I disable logging of system metrics to W&B?
 
-To disable logging of [system metrics](/ref/system-metrics.md), set `_disable_stats` to `True`:
+To disable logging of [system metrics](/ref/system-metrics), set `_disable_stats` to `True`:
 
 ```python
 wandb.init(settings=wandb.Settings(x_disable_stats=True))
@@ -865,7 +865,7 @@ wandb.init(settings=wandb.Settings(x_disable_stats=True))
 Set the login URL by either of these methods:
 
 - Set the [environment variable](guides/models/track/environment-variables.md) `WANDB_BASE_URL` to the Server URL.
-- Set the `--host` flag of [`wandb login`](/ref/cli/wandb-login.md) to the Server URL.
+- Set the `--host` flag of [`wandb login`](/ref/cli/wandb-login) to the Server URL.
 </Update>
 
 <Update tags={["Logs", "Metrics"]}>
@@ -877,7 +877,7 @@ To overwrite logs from previous steps, use [forking](guides/models/track/runs/fo
 <Update tags={["Metrics", "Runs"]}>
 ## How can I change how frequently to log system metrics?
 
-To configure the frequency to log [system metrics](/ref/system-metrics.md), set `_stats_sampling_interval` to a number of seconds, expressed as a float. Default: `10.0`.
+To configure the frequency to log [system metrics](/ref/system-metrics), set `_stats_sampling_interval` to a number of seconds, expressed as a float. Default: `10.0`.
 
 ```python
 wandb.init(settings=wandb.Settings(x_stats_sampling_interval=30.0))
@@ -897,7 +897,7 @@ pip uninstall wandb; rm -rI wandb; pip install wandb
 <Update tags={["Experiments"]}>
 ## How can I see files that do not appear in the Files tab?
 
-The Files tab shows a maximum of 10,000 files. To download all files, use the [public API](/ref/python/public-api/api.md):
+The Files tab shows a maximum of 10,000 files. To download all files, use the [public API](/ref/python/public-api/api):
 
 ```python
 import wandb
@@ -921,7 +921,7 @@ If you encounter the error `resume='must' but run (<run_id>) doesn't exist`, the
 wandb.init(entity=<entity>, project=<project>, id=<run-id>, resume='must')
 ```
 
-Run [`wandb login --relogin`](/ref/cli/wandb-login.md) to verify that you are authenticated.
+Run [`wandb login --relogin`](/ref/cli/wandb-login) to verify that you are authenticated.
 </Update>
 
 <Update tags={["Reports"]}>
@@ -1499,7 +1499,7 @@ Check the `Debug Bundle`. An admin can retrieve it from the `/system-admin` page
 
 There are several ways to manage experiments.
 
-For complex workflows, use multiple runs and set the group parameters in [`wandb.init()`](/guides/models/track/create-an-experiment.md) to a unique value for all processes within a single experiment. The [**Runs** tab](/guides/models/track/project-page.md#runs-tab) will group the table by group ID, ensuring that visualizations function properly. This approach enables concurrent experiments and training runs while logging results in one location.
+For complex workflows, use multiple runs and set the group parameters in [`wandb.init()`](/guides/models/track/create-an-experiment) to a unique value for all processes within a single experiment. The [**Runs** tab](/guides/models/track/project-page#runs-tab) will group the table by group ID, ensuring that visualizations function properly. This approach enables concurrent experiments and training runs while logging results in one location.
 
 For simpler workflows, call `wandb.init()` with `resume=True` and `id=UNIQUE_ID`, then call `wandb.init()` again with the same `id=UNIQUE_ID`. Log normally with [`run.log()`](/guides/models/track/log/) or `run.summary()`, and the run values will update accordingly.
 </Update>
@@ -1724,11 +1724,11 @@ If a training program uses multiple processes, structure the program to avoid ma
 
 Manage multiprocess training using these approaches:
 
-1. Call `wandb.init` in all processes and use the [group](/guides/models/track/runs/grouping.md) keyword argument to create a shared group. Each process will have its own wandb run, and the UI will group the training processes together.
+1. Call `wandb.init` in all processes and use the [group](/guides/models/track/runs/grouping) keyword argument to create a shared group. Each process will have its own wandb run, and the UI will group the training processes together.
 2. Call `wandb.init` from only one process and pass data to log through [multiprocessing queues](https://docs.python.org/3/library/multiprocessing.html#exchanging-objects-between-processes).
 
 <Note>
-Refer to the [Distributed Training Guide](/guides/models/track/log/distributed-training.md) for detailed explanations of these approaches, including code examples with Torch DDP.
+Refer to the [Distributed Training Guide](/guides/models/track/log/distributed-training) for detailed explanations of these approaches, including code examples with Torch DDP.
 </Note>
 </Update>
 
@@ -1826,7 +1826,7 @@ with wandb.init() as run:
    run.log({"train/loss": 0.1, "train/acc": 0.94})
 ```
 
-In the [Workspace](/guides/models/track/project-page.md#workspace-tab) settings, adjust the grouping of panels based on either the first segment or all segments separated by `/`.
+In the [Workspace](/guides/models/track/project-page#workspace-tab) settings, adjust the grouping of panels based on either the first segment or all segments separated by `/`.
 </Update>
 
 <Update tags={["Workspaces"]}>
@@ -1850,7 +1850,7 @@ Create a scatter plot of the metric. Open the **Edit** menu and select **Annotat
 <Update tags={["Experiments"]}>
 ## How do I plot multiple lines on a plot with a legend?
 
-Create a multi-line custom chart with `wandb.plot.line_series()`. Navigate to the [project page](/guides/models/track/project-page.md) to view the line chart. To add a legend, include the `keys` argument in `wandb.plot.line_series()`. For example:
+Create a multi-line custom chart with `wandb.plot.line_series()`. Navigate to the [project page](/guides/models/track/project-page) to view the line chart. To add a legend, include the `keys` argument in `wandb.plot.line_series()`. For example:
 
 ```python
 
@@ -1865,7 +1865,7 @@ with wandb.init(project="my_project") as run:
     )
 ```
 
-Refer to additional details about multi-line plots [here](/guides/models/track/log/plots.md#basic-charts) under the **Multi-line** tab.
+Refer to additional details about multi-line plots [here](/guides/models/track/log/plots#basic-charts) under the **Multi-line** tab.
 </Update>
 
 <Update tags={["Experiments"]}>
@@ -1897,7 +1897,7 @@ To change a project's privacy (visibility):
     - **Public**: Anyone can view the project, but only your team can edit it.
 
         <Note>
-        If your W&B admins have turned off **Public** visibility, you cannot choose it. Instead, you can share a view-only [W&B Report](/guides/core/reports/collaborate-on-reports.md#share-a-report), or contact your W&B organization's admins for assistance.
+        If your W&B admins have turned off **Public** visibility, you cannot choose it. Instead, you can share a view-only [W&B Report](/guides/core/reports/collaborate-on-reports#share-a-report), or contact your W&B organization's admins for assistance.
         </Note>
 1. Click **Save**.
     
@@ -2025,7 +2025,7 @@ To delete a W&B account, navigate to the **User settings** page, scroll to the b
 <Update tags={["Sweeps", "Hyperparameter", "Runs"]}>
 ## Can I rerun a grid search?
 
-If a grid search completes but some W&B Runs need re-execution due to crashes, delete the specific W&B Runs to re-run. Then, select the **Resume** button on the [sweep control page](/guides/models/sweeps/sweeps-ui.md). Start new W&B Sweep agents using the new Sweep ID.
+If a grid search completes but some W&B Runs need re-execution due to crashes, delete the specific W&B Runs to re-run. Then, select the **Resume** button on the [sweep control page](/guides/models/sweeps/sweeps-ui). Start new W&B Sweep agents using the new Sweep ID.
 
 W&B Run parameter combinations that completed are not re-executed.
 </Update>
@@ -2105,7 +2105,7 @@ wandb.agent(sweep_id=sweep_id, function=train)
 <Update tags={["Artifacts"]}>
 ## How do I set a retention or expiration policy on my artifact?
 
-To manage artifacts that contain sensitive data or to schedule the deletion of artifact versions, set a TTL (time-to-live) policy. For detailed instructions, refer to the [TTL guide](/guides/core/artifacts/manage-data/ttl.md).
+To manage artifacts that contain sensitive data or to schedule the deletion of artifact versions, set a TTL (time-to-live) policy. For detailed instructions, refer to the [TTL guide](/guides/core/artifacts/manage-data/ttl).
 </Update>
 
 <Update tags={["Administrator", "Security"]}>
@@ -2321,9 +2321,9 @@ Key benefits of service accounts:
 - **Enterprise-ready**: Built for production automation at scale
 - **Delegated operations**: Service accounts operate on behalf of the user or organization that creates them
 
-Among other things, service accounts are useful for tracking automated jobs logged to wandb, like periodic retraining, nightly builds, and so on. If you'd like, you can associate a username with one of these machine-launched runs with the [environment variables](/guides/models/track/environment-variables.md) `WANDB_USERNAME` or `WANDB_USER_EMAIL`.
+Among other things, service accounts are useful for tracking automated jobs logged to wandb, like periodic retraining, nightly builds, and so on. If you'd like, you can associate a username with one of these machine-launched runs with the [environment variables](/guides/models/track/environment-variables) `WANDB_USERNAME` or `WANDB_USER_EMAIL`.
 
-For comprehensive information about service accounts, including best practices and detailed setup instructions, refer to [Use service accounts to automate workflows](/guides/hosting/iam/authentication/service-accounts.md). For information about how service accounts behave in team contexts, refer to [Team Service Account Behavior](/guides/models/app/settings-page/teams.md#team-service-account-behavior).
+For comprehensive information about service accounts, including best practices and detailed setup instructions, refer to [Use service accounts to automate workflows](/guides/hosting/iam/authentication/service-accounts). For information about how service accounts behave in team contexts, refer to [Team Service Account Behavior](/guides/models/app/settings-page/teams#team-service-account-behavior).
 
 You can get the API key for a service account in your team at `<WANDB_HOST_URL>/<your-team-name>/service-accounts`. Alternatively you can go to the **Team settings** for your team and then refer to the **Service Accounts** tab. 
 
@@ -2335,7 +2335,7 @@ To create a new service account for your team:
 * Click the **Copy API key** button for the newly created service account and store it in a secret manager or another safe but accessible location
 
 <Note>
-Apart from the **Built-in** service accounts, W&B also supports **External service accounts** using [identity federation for SDK and CLI](/guides/hosting/iam/authentication/identity_federation.md#external-service-accounts). Use external service accounts if you are looking to automate W&B tasks using service identities managed in your identity provider that can issue JSON Web Tokens (JWT).
+Apart from the **Built-in** service accounts, W&B also supports **External service accounts** using [identity federation for SDK and CLI](/guides/hosting/iam/authentication/identity_federation#external-service-accounts). Use external service accounts if you are looking to automate W&B tasks using service identities managed in your identity provider that can issue JSON Web Tokens (JWT).
 </Note>
 </Update>
 
@@ -2404,7 +2404,7 @@ After completing the setup, contact the customer success manager (CSM) with the 
 <Update tags={["Environment Variables"]}>
 ## How do I stop wandb from writing to my terminal or my Jupyter notebook output?
 
-Set the environment variable [`WANDB_SILENT`](/guides/models/track/environment-variables.md) to `true`.
+Set the environment variable [`WANDB_SILENT`](/guides/models/track/environment-variables) to `true`.
 
 <Tabs>
 <Tab title="Python">
@@ -2452,7 +2452,7 @@ For example, launch an Amazon EC2 instance and execute `wandb agent` on it. Use 
 <Update tags={["Sweeps", "Aws"]}>
 ## Can I use Sweeps and SageMaker?
 
-To authenticate W&B, complete the following steps: create a `requirements.txt` file if using a built-in Amazon SageMaker estimator. For details on authentication and setting up the `requirements.txt` file, refer to the [SageMaker integration](/guides/integrations/sagemaker.md) guide.
+To authenticate W&B, complete the following steps: create a `requirements.txt` file if using a built-in Amazon SageMaker estimator. For details on authentication and setting up the `requirements.txt` file, refer to the [SageMaker integration](/guides/integrations/sagemaker) guide.
 
 <Note>
 Find a complete example on [GitHub](https://github.com/wandb/examples/tree/master/examples/pytorch/pytorch-cifar10-sagemaker) and additional insights on our [blog](https://wandb.ai/site/articles/running-sweeps-with-sagemaker).\
@@ -2480,7 +2480,7 @@ Metrics collect by default every 10 seconds. For higher resolution metrics, emai
 <Update tags={["Team Management"]}>
 ## What is a team and where can I find more information about it?
 
-For additional information about teams, visit the [teams section](/guides/models/app/settings-page/teams.md).
+For additional information about teams, visit the [teams section](/guides/models/app/settings-page/teams).
 </Update>
 
 <Update tags={["Artifacts"]}>
@@ -2502,7 +2502,7 @@ Pass a SHA or unique identifier to `wandb.Run.config.update(...)` to associate a
 <Update tags={["User Management", "Team Management"]}>
 ## What type of roles are available and what are the differences between them?
 
-Visit the [Team roles and permissions](/guides/models/app/settings-page/teams.md#team-roles-and-permissions) page for an overview of the available roles and permissions.
+Visit the [Team roles and permissions](/guides/models/app/settings-page/teams#team-roles-and-permissions) page for an overview of the available roles and permissions.
 </Update>
 
 <Update tags={["Billing"]}>
@@ -2567,7 +2567,7 @@ While a sweep is running:
 
 By default, artifacts download to the `artifacts/` folder. To change the location:
 
-- Pass it to [`wandb.Artifact().download`](/ref/python/public-api/api.md):
+- Pass it to [`wandb.Artifact().download`](/ref/python/public-api/api):
 
     ```python
     wandb.Artifact().download(root="<path_to_download>")

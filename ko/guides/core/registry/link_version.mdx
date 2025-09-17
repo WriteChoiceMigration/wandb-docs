@@ -14,7 +14,7 @@ Artifact를 레지스트리에 연결하면 해당 Artifact가 레지스트리�
 즉, Artifact를 레지스트리 컬렉션에 연결하면 해당 Artifact 버전이 개인 프로젝트 수준 범위에서 공유 조직 수준 범위로 이동합니다.
 
 <Note>
-"유형"이라는 용어는 Artifact 오브젝트의 유형을 나타냅니다. Artifact 오브젝트([`wandb.Artifact`](/ko/ref/python/artifact))를 생성하거나 Artifact([`wandb.init.log_artifact`](/ko/ref/python/run.md#log_artifact))를 기록할 때 `type` 파라미터에 대한 유형을 지정합니다.
+"유형"이라는 용어는 Artifact 오브젝트의 유형을 나타냅니다. Artifact 오브젝트([`wandb.Artifact`](/ko/ref/python/artifact))를 생성하거나 Artifact([`wandb.init.log_artifact`](/ko/ref/python/run#log_artifact))를 기록할 때 `type` 파라미터에 대한 유형을 지정합니다.
 </Note>
 
 ## Artifact를 컬렉션에 연결
@@ -37,7 +37,7 @@ Artifact 버전이 메트릭을 기록하는 경우(`run.log_artifact()` 사용)
 [버전 연결을 시연하는 비디오](https://www.youtube.com/watch?v=2i_n1ExgO0A) (8분)를 시청하십시오.
 </Note>
 
-[`wandb.init.Run.link_artifact()`](/ko/ref/python/run.md#link_artifact)를 사용하여 Artifact 버전을 프로그래밍 방식으로 컬렉션에 연결합니다.
+[`wandb.init.Run.link_artifact()`](/ko/ref/python/run#link_artifact)를 사용하여 Artifact 버전을 프로그래밍 방식으로 컬렉션에 연결합니다.
 
 <Note>
 Artifact를 컬렉션에 연결하기 전에 컬렉션이 속한 레지스트리가 이미 존재하는지 확인하십시오. 레지스트리가 존재하는지 확인하려면 W&B App UI에서 레지스트리 앱으로 이동하여 레지스트리 이름을 검색하십시오.

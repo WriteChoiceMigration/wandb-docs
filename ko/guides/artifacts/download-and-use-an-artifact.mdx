@@ -28,7 +28,7 @@ import wandb
 run = wandb.init(project="<example>", job_type="<job-type>")
 ```
 
-[`use_artifact`](/ko/ref/python/run.md#use_artifact) 메서드를 사용하여 사용하려는 Artifact를 지정합니다. 그러면 run 오브젝트가 반환됩니다. 다음 코드 조각은 에일리어스 `'latest'`를 가진 `'bike-dataset'`이라는 Artifact를 지정합니다.
+[`use_artifact`](/ko/ref/python/run#use_artifact) 메서드를 사용하여 사용하려는 Artifact를 지정합니다. 그러면 run 오브젝트가 반환됩니다. 다음 코드 조각은 에일리어스 `'latest'`를 가진 `'bike-dataset'`이라는 Artifact를 지정합니다.
 
 ```python
 artifact = run.use_artifact("bike-dataset:latest")
@@ -40,9 +40,9 @@ artifact = run.use_artifact("bike-dataset:latest")
 datadir = artifact.download()
 ```
 
-선택적으로 `root` 파라미터에 경로를 전달하여 Artifact의 내용을 특정 디렉토리로 다운로드할 수 있습니다. 자세한 내용은 [Python SDK 레퍼런스 가이드](/ko/ref/python/artifact.md#download)를 참조하세요.
+선택적으로 `root` 파라미터에 경로를 전달하여 Artifact의 내용을 특정 디렉토리로 다운로드할 수 있습니다. 자세한 내용은 [Python SDK 레퍼런스 가이드](/ko/ref/python/artifact#download)를 참조하세요.
 
-파일의 서브셋만 다운로드하려면 [`get_path`](/ko/ref/python/artifact.md#get_path) 메서드를 사용하세요.
+파일의 서브셋만 다운로드하려면 [`get_path`](/ko/ref/python/artifact#get_path) 메서드를 사용하세요.
 
 ```python
 path = artifact.get_path(name)
@@ -71,7 +71,7 @@ artifact = api.artifact("entity/project/artifact:alias")
 artifact.download()
 ```
 
-선택적으로 `root` 파라미터에 경로를 전달하여 Artifact의 내용을 특정 디렉토리로 다운로드할 수 있습니다. 자세한 내용은 [API 레퍼런스 가이드](/ko/ref/python/artifact.md#download)를 참조하세요.
+선택적으로 `root` 파라미터에 경로를 전달하여 Artifact의 내용을 특정 디렉토리로 다운로드할 수 있습니다. 자세한 내용은 [API 레퍼런스 가이드](/ko/ref/python/artifact#download)를 참조하세요.
 </Tab>
 <Tab title="W&B CLI">
 `wandb artifact get` 코맨드를 사용하여 W&B 서버에서 Artifact를 다운로드합니다.
@@ -118,7 +118,7 @@ artifact = run.use_artifact("my-entity/my-project/artifact:alias")
 
 ### Artifact를 동시에 구성하고 사용
 
-Artifact를 동시에 구성하고 사용합니다. Artifact 오브젝트를 생성하고 use_artifact에 전달합니다. 이렇게 하면 아직 존재하지 않는 경우 W&B에 Artifact가 생성됩니다. [`use_artifact`](/ko/ref/python/run.md#use_artifact) API는 idempotent이므로 원하는 만큼 여러 번 호출할 수 있습니다.
+Artifact를 동시에 구성하고 사용합니다. Artifact 오브젝트를 생성하고 use_artifact에 전달합니다. 이렇게 하면 아직 존재하지 않는 경우 W&B에 Artifact가 생성됩니다. [`use_artifact`](/ko/ref/python/run#use_artifact) API는 idempotent이므로 원하는 만큼 여러 번 호출할 수 있습니다.
 
 ```python
 import wandb

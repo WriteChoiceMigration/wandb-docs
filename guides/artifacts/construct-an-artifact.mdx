@@ -50,17 +50,17 @@ Replace the string arguments in the preceding code snippet with your own name an
 
 ### 2. Add one more files to the artifact
 
-Add files, directories, external URI references (such as Amazon S3) and more with artifact methods. For example, to add a single text file, use the [`add_file`](/ref/python/sdk/classes/artifact.md#add_file) method:
+Add files, directories, external URI references (such as Amazon S3) and more with artifact methods. For example, to add a single text file, use the [`add_file`](/ref/python/sdk/classes/artifact#add_file) method:
 
 ```python
 artifact.add_file(local_path="hello_world.txt", name="optional-name")
 ```
 
-You can also add multiple files with the [`add_dir`](/ref/python/sdk/classes/artifact.md#add_dir) method. To add files, see [Update an artifact](./update-an-artifact).
+You can also add multiple files with the [`add_dir`](/ref/python/sdk/classes/artifact#add_dir) method. To add files, see [Update an artifact](./update-an-artifact).
 
 ### 3. Save your artifact to the W&B server
 
-Finally, save your artifact to the W&B server. Artifacts are associated with a run. Therefore, use a run objects [`log_artifact()`](/ref/python/sdk/classes/run.md#log_artifact) method to save the artifact.
+Finally, save your artifact to the W&B server. Artifacts are associated with a run. Therefore, use a run objects [`log_artifact()`](/ref/python/sdk/classes/run#log_artifact) method to save the artifact.
 
 ```python
 # Create a W&B Run. Replace 'job-type'.
@@ -171,7 +171,7 @@ The proceeding API calls produce the proceeding artifact content:
 
 Artifacts track checksums and other information for reproducibility if the URI has a scheme that W&B library knows how to handle.
 
-Add an external URI reference to an artifact with the [`add_reference`](/ref/python/sdk/classes/artifact.md#add_reference) method. Replace the `'uri'` string with your own URI. Optionally pass the desired path within the artifact for the name parameter.
+Add an external URI reference to an artifact with the [`add_reference`](/ref/python/sdk/classes/artifact#add_reference) method. Replace the `'uri'` string with your own URI. Optionally pass the desired path within the artifact for the name parameter.
 
 ```python
 # Add a URI reference

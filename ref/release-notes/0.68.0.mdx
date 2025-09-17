@@ -14,8 +14,8 @@ v0.68.0 introduced a bug, fixed in [v0.68.1](#0_68_1), that could prevent media 
 
 ## Features
 - Release notes for W&B Server are now published [in the W&B documentation](/ref/release-notes/) in addition to on GitHub. [Subscribe using RSS]({/ref/release-notes/index.xml).
-- Registry admins can define and assign [*protected aliases*](/guides/core/registry/model_registry/access_controls.md#add-protected-aliases) to represent key stages of your development pipeline. A protected alias can be assigned only by a registry admin. W&B blocks other users from adding or removing protected aliases from versions in a registry using the API or UI.
-- You can now filter console logs based on a run's `x_label` value. During [distributed training](/guides/models/track/log/distributed-training.md#track-all-processes-to-a-single-run), this optional parameter tracks the node that logged the run.
+- Registry admins can define and assign [*protected aliases*](/guides/core/registry/model_registry/access_controls#add-protected-aliases) to represent key stages of your development pipeline. A protected alias can be assigned only by a registry admin. W&B blocks other users from adding or removing protected aliases from versions in a registry using the API or UI.
+- You can now filter console logs based on a run's `x_label` value. During [distributed training](/guides/models/track/log/distributed-training#track-all-processes-to-a-single-run), this optional parameter tracks the node that logged the run.
 - You can now move runs between `Groups`, one by one or in bulk. Also, you can now create new `Groups` after the initial logging time.
 - Line plots now support **synchronized zooming** mode, where zooming to a given range on one plot automatically zooms into the same range on all other line plots with a common x-axis. Turn this on in the [workspace display settings for line plots](/guides/models/app/features/panels/line-plot/#all-line-plots-in-a-workspace).
 - Line plots now support formatting custom metrics as timestamps. This is useful when synchronizing or uploading runs from a different system.

@@ -92,7 +92,7 @@ wandb launch --docker-image "wandb/job_hello_world:main" --project "hello-world"
 
 W&B は、追跡されたソースコードを持つ任意の Run に対してジョブを自動的に作成して追跡します。この Run が Launch で作成されていなくてもです。Run が追跡されたソースコードを持つと見なされる条件は次の3つのうちのいずれかを満たした場合です:
 - Run に関連付けられた git リモートとコミットハッシュがある
-- Run がコードアーティファクトを記録した (詳細については [`Run.log_code`](/ja/ref/python/run.md#log_code) を参照)
+- Run がコードアーティファクトを記録した (詳細については [`Run.log_code`](/ja/ref/python/run#log_code) を参照)
 - Run が `WANDB_DOCKER` 環境変数をイメージタグに設定した Docker コンテナで実行された
 
 Git リモート URL は、W&B Run によって自動的に作成された Launch ジョブの場合、ローカルの git リポジトリから推測されます。
