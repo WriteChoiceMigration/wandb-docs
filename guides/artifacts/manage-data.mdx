@@ -1,10 +1,30 @@
 ---
-menu:
-  default:
-    identifier: manage-data
-    parent: artifacts
 title: Manage data
-weight: 8
-url: guides/artifacts/manage-data
 ---
 
+<Columns cols={1}>
+  <Card
+    title="Delete an artifact"
+    href="/guides/artifacts/delete-artifacts/"
+    arrow
+  >
+    Delete artifacts interactively with the App UI or programmatically with the W&B SDK.
+  </Card>
+
+  <Card
+    title="Manage artifact data retention"
+    href="/guides/artifacts/ttl/"
+    arrow
+  >
+    Time to live policies (TTL)
+  </Card>
+
+  <Card
+    title="Manage artifact storage and memory allocation"
+    href="/guides/artifacts/storage/"
+    arrow
+  >
+    Manage storage, memory allocation of W&B Artifacts.
+  </Card>
+
+</Columns>

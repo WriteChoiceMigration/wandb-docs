@@ -90,6 +90,7 @@
                           {
                             "group": "Dedicated Cloud",
                             "pages": [
+                              "guides/hosting/hosting-options/dedicated_cloud",
                               "guides/hosting/hosting-options/dedicated_regions",
                               "guides/hosting/export-data-from-dedicated-cloud"
                             ]
@@ -97,16 +98,19 @@
                           {
                             "group": "Self-Managed",
                             "pages": [
+                              "guides/hosting/hosting-options/self-managed",
                               "guides/hosting/self-managed/ref-arch",
                               {
                                 "group": "Run W&B Server on Kubernetes",
                                 "pages": [
+                                  "guides/hosting/operator",
                                   "guides/hosting/self-managed/operator-airgapped"
                                 ]
                               },
                               {
                                 "group": "Install on public cloud",
                                 "pages": [
+                                  "guides/hosting/self-managed/install-on-public-cloud",
                                   "guides/hosting/self-managed/aws-tf",
                                   "guides/hosting/self-managed/gcp-tf",
                                   "guides/hosting/self-managed/azure-tf"
@@ -122,9 +126,11 @@
                       {
                         "group": "Identity and access management (IAM)",
                         "pages": [
+                          "guides/hosting/iam/org_team_struct",
                           {
                             "group": "Authentication",
                             "pages": [
+                              "guides/hosting/iam/authentication",
                               "guides/hosting/iam/ldap",
                               "guides/hosting/iam/sso",
                               "guides/hosting/iam/identity_federation",
@@ -134,6 +140,7 @@
                           {
                             "group": "Access management",
                             "pages": [
+                              "guides/hosting/iam/access-management-intro",
                               "guides/hosting/iam/access-management/manage-organization",
                               "guides/hosting/iam/access-management/restricted-projects"
                             ]
@@ -146,6 +153,7 @@
                       {
                         "group": "Data security",
                         "pages": [
+                          "guides/hosting/data-security",
                           "guides/hosting/data-security/secure-storage-connector",
                           "guides/hosting/data-security/presigned-urls",
                           "guides/hosting/data-security/ip-allowlisting",
@@ -157,6 +165,7 @@
                       {
                         "group": "Monitoring and usage",
                         "pages": [
+                          "guides/hosting/monitoring-usage",
                           "guides/hosting/monitoring-usage/audit-logging",
                           "guides/hosting/monitoring-usage/prometheus-logging",
                           "guides/hosting/monitoring-usage/slack-alerts",
@@ -182,6 +191,7 @@
                   {
                     "group": "Experiments",
                     "pages": [
+                      "guides/track",
                       "guides/track/create-an-experiment",
                       "guides/track/config",
                       "guides/track/project-page",
@@ -189,6 +199,7 @@
                       {
                         "group": "What are runs?",
                         "pages": [
+                          "guides/runs",
                           "guides/runs/tags",
                           "guides/runs/multiple-runs-per-process",
                           "guides/runs/run-colors",
@@ -205,6 +216,7 @@
                       {
                         "group": "Log objects and media",
                         "pages": [
+                          "guides/track/log",
                           "guides/track/log/plots",
                           "guides/track/log/customize-logging-axes",
                           "guides/track/log/distributed-training",
@@ -225,11 +237,13 @@
                   {
                     "group": "Sweeps",
                     "pages": [
+                      "guides/sweeps",
                       "guides/sweeps/walkthrough",
                       "guides/sweeps/add-w-and-b-to-your-code",
                       {
                         "group": "Define a sweep configuration",
                         "pages": [
+                          "guides/sweeps/define-sweep-configuration",
                           "guides/sweeps/sweep-config-keys"
                         ]
                       },
@@ -248,6 +262,7 @@
                   {
                     "group": "Tables",
                     "pages": [
+                      "guides/tables",
                       "guides/tables/tables-walkthrough",
                       "guides/tables/log_tables",
                       "guides/tables/visualize-tables",
@@ -259,13 +274,16 @@
                   {
                     "group": "W&B App UI",
                     "pages": [
-                      "guides/models/app/keyboard-shortcuts",
+                      "guides/app",
+                      "guides/app/keyboard-shortcuts",
                       {
                         "group": "Panels",
                         "pages": [
+                          "guides/app/features/panels",
                           {
                             "group": "Line plots",
                             "pages": [
+                              "guides/app/features/panels/line-plot",
                               "guides/app/features/panels/line-plot/reference",
                               "guides/app/features/panels/line-plot/sampling",
                               "guides/app/features/panels/line-plot/smoothing"
@@ -281,6 +299,7 @@
                           {
                             "group": "Query panels",
                             "pages": [
+                              "guides/app/features/panels/query-panels",
                               "guides/app/features/panels/query-panels/embedding-projector"
                             ]
                           }
@@ -289,6 +308,7 @@
                       {
                         "group": "Custom charts",
                         "pages": [
+                          "guides/app/features/custom-charts",
                           "guides/app/features/custom-charts/walkthrough"
                         ]
                       },
@@ -305,6 +325,7 @@
                   {
                     "group": "Artifacts",
                     "pages": [
+                      "guides/artifacts",
                       "guides/artifacts/construct-an-artifact",
                       "guides/artifacts/download-and-use-an-artifact",
                       "guides/artifacts/update-an-artifact",
@@ -314,6 +335,7 @@
                       {
                         "group": "Manage data",
                         "pages": [
+                          "guides/artifacts/manage-data",
                           "guides/artifacts/delete-artifacts",
                           "guides/artifacts/ttl",
                           "guides/artifacts/storage"
@@ -327,6 +349,7 @@
                   {
                     "group": "Registry",
                     "pages": [
+                      "guides/registry",
                       "guides/registry/registry_types",
                       "guides/registry/create_registry",
                       "guides/registry/configure_registry",
@@ -343,6 +366,7 @@
                       {
                         "group": "Model registry",
                         "pages": [
+                          "guides/registry/model_registry",
                           "guides/registry/model_registry/walkthrough",
                           "guides/registry/model_registry/model-management-concepts",
                           "guides/registry/model_registry/log-model-to-experiment",
@@ -361,6 +385,7 @@
                   {
                     "group": "Reports",
                     "pages": [
+                      "guides/reports",
                       "guides/reports/create-a-report",
                       "guides/reports/edit-a-report",
                       "guides/reports/collaborate-on-reports",
@@ -373,9 +398,11 @@
                   {
                     "group": "Automations",
                     "pages": [
+                      "guides/automations",
                       {
                         "group": "Create an automation",
                         "pages": [
+                          "guides/automations/create-automations",
                           "guides/automations/create-automations/slack",
                           "guides/automations/create-automations/webhook"
                         ]
@@ -1632,6 +1659,7 @@
                   {
                     "group": "Experiments",
                     "pages": [
+                      "ko/guides/track",
                       "ko/guides/track/create-an-experiment",
                       "ko/guides/track/config",
                       "ko/guides/track/project-page",
