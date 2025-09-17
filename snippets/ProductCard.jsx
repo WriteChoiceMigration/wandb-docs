@@ -7,7 +7,7 @@ export const ProductCard = ({ href, icon, title, subtitle, children, links }) =>
       <div className="flex items-start">
         {icon && (
           <div className="mr-4 flex-shrink-0" style={{ marginTop: "-12px" }}>
-            <img src={icon} alt="" width="60" height="60" />
+            <img noZoom src={icon} alt="" width="60" height="60" />
           </div>
         )}
         <div className="flex-1 min-w-0">
