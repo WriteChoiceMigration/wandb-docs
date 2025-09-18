@@ -133,11 +133,12 @@ def apply_fixes_to_page(page_path, links, dry_run=False):
     Returns:
         tuple: (total_fixes, successful_fixes)
     """
+    ROOT_DIR = Path(__file__).resolve().parent
     # Convert relative path to absolute path
     if not page_path.startswith("/"):
-        full_path = f"D:/writechoice/wandb-docs/{page_path}"
+        full_path = ROOT_DIR / page_path
     else:
-        full_path = f"D:/writechoice/wandb-docs{page_path}"
+        full_path = ROOT_DIR / page_path.lstrip("/")
 
     print(f"\nProcessing page: {page_path}")
     print(f"Full path: {full_path}")

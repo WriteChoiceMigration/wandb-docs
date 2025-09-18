@@ -1306,33 +1306,33 @@
                   {
                     "group": "レジストリ",
                     "pages": [
-                      "ja/guides/registry",
-                      "ja/guides/registry/registry_types",
-                      "ja/guides/registry/create_registry",
-                      "ja/guides/registry/configure_registry",
-                      "ja/guides/registry/create_collection",
-                      "ja/guides/registry/link_version",
-                      "ja/guides/registry/download_use_artifact",
-                      "ja/guides/registry/search_registry",
-                      "ja/guides/registry/organize-with-tags",
-                      "ja/guides/registry/registry_cards",
-                      "ja/guides/registry/lineage",
-                      "ja/guides/registry/model_registry_eol",
+                      "ja/guides/core/registry",
+                      "ja/guides/core/registry/registry_types",
+                      "ja/guides/core/registry/create_registry",
+                      "ja/guides/core/registry/configure_registry",
+                      "ja/guides/core/registry/create_collection",
+                      "ja/guides/core/registry/link_version",
+                      "ja/guides/core/registry/download_use_artifact",
+                      "ja/guides/core/registry/search_registry",
+                      "ja/guides/core/registry/organize-with-tags",
+                      "ja/guides/core/registry/registry_cards",
+                      "ja/guides/core/registry/lineage",
+                      "ja/guides/core/registry/model_registry_eol",
                       {
                         "group": "モデルレジストリ",
                         "pages": [
-                          "ja/guides/registry/model_registry",
-                          "ja/guides/registry/model_registry/walkthrough",
-                          "ja/guides/registry/model_registry/model-management-concepts",
-                          "ja/guides/registry/model_registry/log-model-to-experiment",
-                          "ja/guides/registry/model_registry/create-registered-model",
-                          "ja/guides/registry/model_registry/link-model-version",
-                          "ja/guides/registry/model_registry/organize-models",
-                          "ja/guides/registry/model_registry/model-lineage",
-                          "ja/guides/registry/model_registry/create-model-cards",
-                          "ja/guides/registry/model_registry/consume-models",
-                          "ja/guides/registry/model_registry/notifications",
-                          "ja/guides/registry/model_registry/access_controls"
+                          "ja/guides/core/registry/model_registry",
+                          "ja/guides/core/registry/model_registry/walkthrough",
+                          "ja/guides/core/registry/model_registry/model-management-concepts",
+                          "ja/guides/core/registry/model_registry/log-model-to-experiment",
+                          "ja/guides/core/registry/model_registry/create-registered-model",
+                          "ja/guides/core/registry/model_registry/link-model-version",
+                          "ja/guides/core/registry/model_registry/organize-models",
+                          "ja/guides/core/registry/model_registry/model-lineage",
+                          "ja/guides/core/registry/model_registry/create-model-cards",
+                          "ja/guides/core/registry/model_registry/consume-models",
+                          "ja/guides/core/registry/model_registry/notifications",
+                          "ja/guides/core/registry/model_registry/access_controls"
                         ]
                       }
                     ]
@@ -1340,16 +1340,16 @@
                   {
                     "group": "オートメーション",
                     "pages": [
-                      "ja/guides/automations",
+                      "ja/guides/core/automations",
                       {
                         "group": "自動化の作成",
                         "pages": [
-                          "ja/guides/automations/create-automations",
-                          "ja/guides/automations/create-automations/slack",
-                          "ja/guides/automations/create-automations/webhook"
+                          "ja/guides/core/automations/create-automations",
+                          "ja/guides/core/automations/create-automations/slack",
+                          "ja/guides/core/automations/create-automations/webhook"
                         ]
                       },
-                      "ja/guides/automations/automation-events"
+                      "ja/guides/core/automations/automation-events"
                     ]
                   }
                 ]
@@ -1916,16 +1916,16 @@
                   {
                     "group": "Automations",
                     "pages": [
-                      "ko/guides/automations",
+                      "ko/guides/core/automations",
                       {
                         "group": "Create an automation",
                         "pages": [
-                          "ko/guides/automations/create-automations",
-                          "ko/guides/automations/create-automations/slack",
-                          "ko/guides/automations/create-automations/webhook"
+                          "ko/guides/core/automations/create-automations",
+                          "ko/guides/core/automations/create-automations/slack",
+                          "ko/guides/core/automations/create-automations/webhook"
                         ]
                       },
-                      "ko/guides/automations/automation-events"
+                      "ko/guides/core/automations/automation-events"
                     ]
                   }
                 ]
