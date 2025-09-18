@@ -9,12 +9,23 @@ data_type_classification: class
 
 
 
-## <kbd>class</kbd> `Artifact`
+### <kbd>class</kbd> `Artifact`
 Flexible and lightweight building block for dataset and model versioning. 
 
 Construct an empty W&B Artifact. Populate an artifacts contents with methods that begin with `add`. Once the artifact has all the desired files, you can call `run.log_artifact()` to log it. 
 
+## <kbd>method</kbd> `Artifact.__init__`
 
+```python
+__init__(
+    name: 'str',
+    type: 'str',
+    description: 'str | None' = None,
+    metadata: 'dict[str, Any] | None' = None,
+    incremental: 'bool' = False,
+    use_as: 'str | None' = None
+) → None
+```
 
 **Args:**
  
@@ -31,24 +42,6 @@ Construct an empty W&B Artifact. Populate an artifacts contents with methods tha
 **Returns:**
  An `Artifact` object. 
 
-### <kbd>method</kbd> `Artifact.__init__`
-
-```python
-__init__(
-    name: 'str',
-    type: 'str',
-    description: 'str | None' = None,
-    metadata: 'dict[str, Any] | None' = None,
-    incremental: 'bool' = False,
-    use_as: 'str | None' = None
-) → None
-```
-
-
-
-
-
-
 ---
 
 ### <kbd>property</kbd> Artifact.aliases
@@ -57,7 +50,7 @@ List of one or more semantically-friendly references or
 
 identifying "nicknames" assigned to an artifact version. 
 
-Aliases are mutable references that you can programmatically reference. Change an artifact's alias with the W&B App UI or programmatically. See [Create new artifact versions](https://docs.wandb.ai/guides/artifacts/create-a-new-artifact-version) for more information. 
+Aliases are mutable references that you can programmatically reference. Change an artifact's alias with the W&B App UI or programmatically. See [Create new artifact versions](/guides/artifacts/create-a-new-artifact-version) for more information. 
 
 ---
 
